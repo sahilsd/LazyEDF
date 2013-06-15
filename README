@@ -1,3 +1,6 @@
 This is the code for my college project. The code is an implementation of proposed scheduler for rt-systems.
 $make
 $./runcc <task input> <job input>
+
+
+Rights reserved
