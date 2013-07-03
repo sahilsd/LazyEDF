@@ -338,25 +338,6 @@ void Schedule()
 			time_per_freq[freq_find] += exec;
 			
 			(Q->front->job).abs_rem = (Q->front->job).abs_rem - (exec * alpha);
-/*
-	because of act exe, situation may arise where the hyper_head has not yet arrived 
-	(we rectified plausible times by release time wrt WCET only)
-	so the case where cpu cant shut down but has different hyper_head id (the one that arrives momentarily after) is handled explicitly :P
-
-	NEW:But no need of hyper->abs.rem since != act exec!!!
-*/
-/*			if(Q->front->job.id != Q_Hyper_head->job.id)
-			{
-				printf("Gandanaaar... %d-%f-%d\n",Q_Hyper_head->next->job.id, Q_Hyper_head->next->job.abs_rem, Q_Hyper_head->next->job.deadline);			
-				(Q_Hyper_head->next->job).abs_rem -= exec*alpha;
-				printf("exe %d(%f-%d) %d(%f-%d)%c [#%f]\n",Q->front->job.id,Q->front->job.abs_rem,Q->front->job.deadline, Q_Hyper_head->next->job.id,Q_Hyper_head->next->job.abs_rem,Q_Hyper_head->next->job.deadline,provisional,time);
-			}
-			else
-			{
-				(Q_Hyper_head->job).abs_rem -= exec*alpha;
-				printf("exe %d(%f-%d) %d(%f-%d)%c [@%f]\n",Q->front->job.id,Q->front->job.abs_rem,Q->front->job.deadline, Q_Hyper_head->job.id,Q_Hyper_head->job.abs_rem,Q_Hyper_head->job.deadline,provisional,time);
-			}
-*/
 			printf("exe %d %d-%c [@%f]\n",Q->front->job.id, Q_Hyper_head->job.id,provisional,time);
 			if(provisional == '*' && Q->front->job.id != Q_Hyper_head->job.id){printf("lololol\n"); exit(0);}
 			instance = (Q->front->job).release_time / (Q->front->job).period;
@@ -417,7 +398,7 @@ void Schedule()
 						Enqueue(Q->front->prev);
 						fprintf(fpout,"new Q->front - T[%d](%d)\n",Q->front->job.id,Q->front->job.deadline);
 					
-						Q_Hyper_head = Q_Hyper_head->next;			
+						if(Q->front->job.id == Q_Hyper_head->next->job.id) Q_Hyper_head = Q_Hyper_head->next;			
 					}		
 			}
 			if(Check_Sleep(Q_Hyper_head) && finishTask)
@@ -679,7 +660,8 @@ void Schedule()
 		fprintf(fpout,"Time : %f (plau[%d] %f)\n",time,(Q_Hyper_head->job).id,(Q_Hyper_head->job).plausible_time);	
 		fprintf(fpout,"\n\n");
 		//Print_Current_Status();
-		usleep(1000000);
+	
+//		if(time==2920)	usleep(1000000);
 		fflush(fpout);
 
 	}
