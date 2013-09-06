@@ -14,7 +14,53 @@ float next_highest_plausible(node *x)
 	
 	return x->next->job.plausible_time;
 }
+
 void Calc_Plausible_Time_Hyper()
+{
+	node *temp;
+	node *temp1;
+	node *z;
+	prev_min = NULL;
+	temp = Q_Hyper->rear;
+	float min_plausible_time;
+	float rem_wcet=0;
+	fflush(stdout);
+	while(temp != Q_Hyper->front)
+	{
+		temp1 = temp->prev;
+		if(temp1->job.release_time+temp1->job.max_computation_time > temp->job.plausible_time)
+		{
+			fprintf(hyper,"Breaking bad S%dE%d\n",temp->job.id,temp->job.instance);
+			/****Breaking Bad****/
+			z = create_node(z);
+				
+				(z->job).id = (temp->job).id;
+				(z->job).release_time = (temp->job).release_time;
+				(z->job).max_computation_time = temp1->job.release_time+temp1->job.max_computation_time - temp->job.plausible_time;
+				(z->job).deadline = (temp1->job).release_time;
+				(z->job).period = (temp1->job).period;
+				//(z->job).remaining_time = (float)rem_wcet;
+				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
+				//job[i][instance].ui = (z->job).ui;
+				//(z->job).abs_rem = (temp1->job).abs_rem;
+				(z->job).plausible_time = (float)((temp1->job).release_time - (z->job).max_computation_time);
+				(z->job).start_time = (float)temp->job.release_time;
+				(z->job).slack = 0;
+				(z->job).execution_time = 0;
+				z->job.instance = temp->job.instance;
+				
+				Enqueue_Hyper(z);
+				/****Broken*****/
+			temp1->job.plausible_time=temp1->job.release_time;
+		}
+		else
+			temp1->job.plausible_time = MIN(temp1->job.plausible_time , temp->job.plausible_time - temp1->job.max_computation_time);		
+		
+		temp = temp->prev;
+	}
+}
+		
+void Calc_Plausible_Time_Hyper_prev()
 {
 	node *temp;
 	node *temp1;
@@ -31,13 +77,12 @@ void Calc_Plausible_Time_Hyper()
 		temp = temp->prev;
 	}
 }
-
-void Calc_Plausible_Time_Hyper_change()
+void Calc_Plausible_Time_Hyper_OBSOLETE()
 {
 	node *temp;
 	node *temp1;
 	node *z;
-
+	prev_min = NULL;
 	temp = Q_Hyper->rear;
 	float min_plausible_time;
 	float rem_wcet=0;
@@ -57,43 +102,27 @@ void Calc_Plausible_Time_Hyper_change()
 //		while(temp->prev->job.release_time + temp->prev->job.max_computation_time >= temp1->job.release_time + temp1->job.max_computation_time)
 		while(1)
 		{
+			if(temp1 == NULL) { temp1 = temp->prev; break; }
 			if(temp->prev->job.plausible_time < temp1->job.release_time+temp1->job.max_computation_time)
 			{
+				prev_min = min;			
 				min = temp1;
 				break;
 			}
 			temp1 = temp1->prev;
-			if(temp1 == NULL) { temp1 = temp->prev; break; }
 		}
 
 		fprintf(hyper,"***Found prev min(%d) rls T[%d][%d] = %f(%d)\n",min!=temp1,min->job.id, min->job.instance, min->job.plausible_time, min->job.deadline);
 		temp1 = temp->prev;
 		
 //BUG same min found twice... to avoid this, move min towards left when same
-/*		if(temp1->next->job.plausible_time == min->job.deadline && temp1 != min) 
-		{
-			fprintf(hyper,"lolol\n\n");
-			temp1 = min->prev;
-			while(1)
-			{
-				if(temp->prev->job.plausible_time < temp1->job.release_time+temp1->job.max_computation_time)
-				{
-					min = temp1;
-					break;
-				}
-				temp1 = temp1->prev;
-				if(temp1 == NULL) {min=temp->prev; temp1 = temp->prev; break; }
-			}
-			fprintf(hyper,"2***Found 2nd prev min(%d) rls T[%d][%d] = %f(%d)\n",min!=temp1,min->job.id, min->job.instance, min->job.plausible_time, min->job.deadline);
-			temp1 = temp->prev;
-		}
-*/		
 //		while((temp1->job).plausible_time < (temp1->prev->job).release_time + temp1->prev->job.max_computation_time)
 		if((temp1->job).plausible_time < min->job.release_time + min->job.max_computation_time && temp1 != min)
 		{
 			fprintf(hyper,"Changing plau T[%d][%d] from %f to %d\n\n",(temp1->job).id,(temp1->job).release_time/(temp1->job).period, (temp1->job).plausible_time, (min->job).deadline);
 		
 			(temp1->job).plausible_time = (min->job).deadline;
+			if((temp1->job).plausible_time == (temp1->next->job).plausible_time) fprintf(hyper,"______________________\n");
 		/*	if(temp1->job.deadline > min->job.plausible_time)
 			{
 				fprintf(hyper,"Gandla ka\n");
@@ -105,9 +134,9 @@ void Calc_Plausible_Time_Hyper_change()
 			temp1->job.max_computation_time -= rem_wcet;
 //we get rem_wcet<0 whenever the task is too small to break (we have to move the entire task i.e. dequeue-> change deadline -> enqueu)
 
-			if(rem_wcet < 0 )
+			if(rem_wcet < 0 || (temp1->job).plausible_time == (temp1->next->job).plausible_time)
 			{
-				fprintf(hyper,"can't be broken... so moving\n");
+				fprintf(hyper,"can't be broken... so moving (%d)\n",(temp1->job).plausible_time == (temp1->next->job).plausible_time);
 				rem_wcet += temp1->job.max_computation_time;
 				temp1->prev->next = temp1->next;
 				temp1->next->prev = temp1->prev;
@@ -138,7 +167,7 @@ void Calc_Plausible_Time_Hyper_change()
 				fprintf(hyper,"rem_wcet T[%d][%d] %f = %f - (%f-%f)\n",(temp1->job).id,(temp1->job).release_time/(temp1->job).period,rem_wcet,((temp1->job).max_computation_time) , next_highest_plausible(temp1), (temp1->job).plausible_time);
 
 				z = create_node(z);
-				//here change release time to avoid mispalced enqueue!! to stop any further mishap, job->instance will be used
+				//here change release time to avoid mispalced enqueue!! use job->instance 
 				(z->job).id = (temp1->job).id;
 				(z->job).release_time = (temp1->job).release_time;
 				(z->job).max_computation_time = rem_wcet;

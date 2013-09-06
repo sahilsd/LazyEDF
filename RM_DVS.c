@@ -77,7 +77,7 @@ void select_frequency()
 	int i = 0;
 	float utilization;
 	utilization = calc_utilization();
-	//fprintf(fpout,"The utilization is : %f\n\n\n",utilization);
+	fprintf(fpout,"The utilization is : %f\n\n\n",utilization);
 	
 	if (utilization == 0)
 	operating_frequency = 0;
@@ -216,6 +216,7 @@ void remove_hyper(node * hyper)
 	int rls = hyper->prev->job.release_time;
 	int period = hyper->prev->job.period;
 //printf("remove %d|%d\n",i,rls/period);
+	//if(hyper!=NULL)
 	while(hyper->job.deadline <=  rls+period)
 	{
 		if(hyper->job.id == i && hyper->job.release_time == rls)
@@ -253,7 +254,7 @@ void Schedule()
 		time_bef_dec = time;
 		decision_pt = calc_decision_pt();
 		//BUG: while calculating decision point in case of a provisional execution
-		if(decision_pt > Q_Hyper_head->job.plausible_time &&  decision_pt!=curr_exec)
+/*		if(decision_pt > Q_Hyper_head->job.plausible_time &&  decision_pt!=curr_exec)
 		{
 		printf("chamya\n\n");
 			decision_pt = Q_Hyper_head->job.plausible_time;
@@ -269,7 +270,7 @@ void Schedule()
 			}
 			curr_exec = decision_pt;
 			fprintf(fpout,"are dadadaada(%f,%f-%d)\n\n\n",curr_exec,decision_pt,Q_Hyper_head->job.deadline);
-		}
+		}*/
 		//BUG:because we broke the jobs, even at t = q->head deadline, q->remainig_time>=0
 		no_of_decn_pts++;
 		
@@ -339,7 +340,7 @@ void Schedule()
 			
 			(Q->front->job).abs_rem = (Q->front->job).abs_rem - (exec * alpha);
 			printf("exe %d %d-%c [@%f]\n",Q->front->job.id, Q_Hyper_head->job.id,provisional,time);
-			if(provisional == '*' && Q->front->job.id != Q_Hyper_head->job.id){printf("lololol\n"); exit(0);}
+//			if(provisional == '*' && Q->front->job.id != Q_Hyper_head->job.id){printf("lololol\n"); exit(0);}
 			instance = (Q->front->job).release_time / (Q->front->job).period;
 			job[(Q->front->job).id][instance].ui = (float)(job[(Q->front->job).id][instance].invocation)/t[(Q->front->job).id].period;
 			//fprintf(fpout,"New Utilization : %f\n",job[(Q->front->job).id][instance].ui);
@@ -369,7 +370,7 @@ void Schedule()
 				{
 					Q_Hyper_head = Q_Hyper_head->next;
 					//remove all the subjobs of T[i][j] from hyper queue****
-					remove_hyper(Q_Hyper_head);
+				//	remove_hyper(Q_Hyper_head);
 				}
 				fprintf(fpout,"(%f) DEQUEUEUEUE (plau moved T[%d] %f ***%f***)\n",(Q->front->job).abs_rem,Q_Hyper_head->job.id,(Q_Hyper_head->job).plausible_time,Q_Hyper_head->job.abs_rem);				
 				Dequeue();

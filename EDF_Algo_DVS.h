@@ -109,6 +109,7 @@ typedef struct Queue			/*Queue for all tasks*/
 Queue *Q;
 Queue *Q_Hyper;
 node *min;
+node *prev_min;
 /*Queue functions*/
 void create_Queue();
 node *create_node(node *z);

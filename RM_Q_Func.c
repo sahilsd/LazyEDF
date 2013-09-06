@@ -41,7 +41,7 @@ void Enqueue(node *z)
 		while(x!=NULL && (x->job).deadline <= (z->job).deadline)
 		{
 			if((x->job).deadline == (z->job).deadline && x->job.release_time>z->job.release_time) {
-				fprintf(fpout,"broken enqueue with same deadline  %d(%d-%d) after  %d(%d-%d)\n",z->job.id,z->job.release_time, z->job.deadline,y->job.id,y->job.release_time,y->job.deadline);
+			//	fprintf(fpout,"broken enqueue with same deadline  %d(%d-%d) after  %d(%d-%d)\n",z->job.id,z->job.release_time, z->job.deadline,y->job.id,y->job.release_time,y->job.deadline);
 				break;
 			}
 
