@@ -33,12 +33,17 @@ void Calc_Plausible_Time_Hyper()
 			fprintf(hyper,"Breaking bad S%dE%d\n",temp->job.id,temp->job.instance);
 			/****Breaking Bad****/
 			z = create_node(z);
-				
+			
+			/*
+			 * IF small task finish time > large task finish time, shift large task instead of breaking
+			 */
+			if(temp1->job.release_time + temp1->job.max_computation_time < temp->job.plausible_time + temp->job.max_computation_time)
+			{
 				(z->job).id = (temp->job).id;
 				(z->job).release_time = (temp->job).release_time;
 				(z->job).max_computation_time = temp1->job.release_time+temp1->job.max_computation_time - temp->job.plausible_time;
 				(z->job).deadline = (temp1->job).release_time;
-				(z->job).period = (temp1->job).period;
+				(z->job).period = (temp->job).period;
 				//(z->job).remaining_time = (float)rem_wcet;
 				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
 				//job[i][instance].ui = (z->job).ui;
@@ -50,8 +55,44 @@ void Calc_Plausible_Time_Hyper()
 				z->job.instance = temp->job.instance;
 				
 				Enqueue_Hyper(z);
+				
+				temp->job.plausible_time = temp1->job.release_time + temp1->job.max_computation_time;
+				temp->job.max_computation_time -= z->job.max_computation_time;
 				/****Broken*****/
-			temp1->job.plausible_time=temp1->job.release_time;
+				temp1->job.plausible_time=temp1->job.release_time;
+			}
+			else
+			{
+				(z->job).id = (temp->job).id;
+				(z->job).release_time = (temp->job).release_time;
+				(z->job).max_computation_time = temp->job.max_computation_time;
+				(z->job).deadline = (temp1->job).release_time;
+				(z->job).period = (temp->job).period;
+				//(z->job).remaining_time = (float)rem_wcet;
+				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
+				//job[i][instance].ui = (z->job).ui;
+				//(z->job).abs_rem = (temp1->job).abs_rem;
+				z->job.plausible_time = z->job.deadline - z->job.max_computation_time;
+				//OR 				(z->job).plausible_time = (float)((temp->job).plausible_time);
+				(z->job).start_time = (float)temp->job.release_time;
+				(z->job).slack = 0;
+				(z->job).execution_time = 0;
+				z->job.instance = temp->job.instance;
+				
+				Enqueue_Hyper(z);
+				z = temp;
+				temp->prev->next = temp->next;
+				temp->next->prev = temp->prev;				
+				temp = temp->prev;
+				
+				z->next = NULL;
+				z->prev = NULL;
+				free(z);
+				continue;
+				
+				/****Shifted*****/
+				temp1->job.plausible_time=temp1->job.release_time;
+			}
 		}
 		else
 			temp1->job.plausible_time = MIN(temp1->job.plausible_time , temp->job.plausible_time - temp1->job.max_computation_time);		
@@ -253,7 +294,7 @@ void Calc_Urgent_Time_Hyper()
 {
 	node *temp;
 	temp = Q_Hyper->front;
-	fprintf(fp_plau,"T[%d][%d]\t%f\t%d\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.release_time/temp->job.period,(temp->job).start_time,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
+	fprintf(fp_plau,"T[%d][%d]\t%d >\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.release_time/temp->job.period,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
 //	fprintf(fp_plau,"URGE time of T[%d] is %f Rls time is %d ",(temp->job).id,(temp->job).start_time,(temp->job).release_time);
 //	fprintf(fp_plau,"Plau T[%d] is %f\n",(temp->job).id,(temp->job).plausible_time);
 	temp = Q_Hyper->front->next;
@@ -263,7 +304,7 @@ void Calc_Urgent_Time_Hyper()
 	{
 		temp1 = temp->prev;
 		(temp->job).start_time = MAX(((temp1->job).start_time + (temp1->job).max_computation_time),(temp->job).start_time);
-		fprintf(fp_plau,"T[%d][%d]\t%f\t%d\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.release_time/temp->job.period,(temp->job).start_time,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
+		fprintf(fp_plau,"T[%d][%d]\t%d >\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.release_time/temp->job.period,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
 
 //	fprintf(fp_plau,"URGE time of T[%d] is %f Rls time is %d ",(temp->job).id,(temp->job).start_time,(temp->job).release_time);
 //		fprintf(fp_plau,"Plau T[%d] is %f\n",(temp->job).id,(temp->job).plausible_time);

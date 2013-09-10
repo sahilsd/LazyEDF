@@ -98,6 +98,7 @@ typedef struct node			/*node in the queue of tasks*/
 		job_instance job;
 		struct node *next;
 		struct node *prev;
+		//to maintain LL of subjobs, keep another link *next_sub
 	}node;
 
 typedef struct Queue			/*Queue for all tasks*/

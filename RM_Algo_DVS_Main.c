@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 	for(i=0; i<no_of_freq; i++)
 	fprintf(fpout,"%f\n",freq[i]);
 	fprintf(fpout,"\n\n");
-	fprintf(fp_plau,"T[i][j]\tUrg\tRls\tPlau\tDeadline\truntime\n\n");
+	fprintf(fp_plau,"T[i][j]\tRls\tPlau\tDeadline\truntime\n\n");
 	
 	time = 0;
 	min_arrival = 9999999;
