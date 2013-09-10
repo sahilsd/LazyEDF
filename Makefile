@@ -14,3 +14,5 @@ RM_DVS.o : RM_DVS.c
 clean :
 	rm runcc $(objects) schedule.txt parameters.txt latencies.txt time_per_freq.txt output_param.txt execution_times.txt table_schedule.txt plausibles.txt Hyper_debug.txt 
 
+semi :
+	rm schedule.txt parameters.txt latencies.txt time_per_freq.txt output_param.txt execution_times.txt table_schedule.txt plausibles.txt Hyper_debug.txt 
