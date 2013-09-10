@@ -1,0 +1,10 @@
+
+
+The parameters of the algorithm are :
+
+
+Total Energy consumption per unit capacitance is : 18238.898438
+Total Sleep Energy is : 428.500000
+Total sleep time is : 4176.000000
+Total Static Energy is : 5112.000000
+Total Energy is : 23779.398438

@@ -146,34 +146,16 @@ float calc_decision_pt()
 {
 	float min;
 	int i = 1;
-
+	no_of_decn_pts++;
 	min_arrival = find_min_arrival();
-	//fprintf(fpout,"MIN ARRIVAL : %d\n",min_arrival);
-	if((Q->front) != NULL)
+	if(Q->front != NULL)						//CPU <> IDLE
 	{
-/* EDIT1:To avoid the unaccounted time from finishing time to the arrival time,
- * modify curr_exec in order to execute task from time to min_arrival
- * even if it cant be executed from time to time+remaining time
- */	
-		if(min_arrival < time + (Q->front->job).remaining_time && time!=min_arrival && min_arrival-time<SLEEPTHR)	//provisional exec
-			curr_exec = min_arrival;
-		else
-			curr_exec = (Q->front->job).remaining_time + time;
-			
-		//fprintf(fpout,"TIME : %f, REM TIME : %f Alpha : %f Prev_Alpha : %f\n",time,(Q->front->job).remaining_time,alpha,prev_alpha);
-		//fprintf(fpout,"CURR EXEC : %f\n",curr_exec);
+		return MIN(min_arrival,time + (Q->front->job).remaining_time/alpha);
 	}
 	else
-	{
-		return min_arrival;
-	}
+		return  min_arrival;
 	
-	if(min_arrival < curr_exec)
-	min = min_arrival;
-	else
-	min = curr_exec;
-	fprintf(fpout,"decision pt = min(arr:%d,exec:%f)\n",min_arrival,curr_exec);
-	return min;		
+	return min_arrival;
 }
 int update_deadline(node *hyper_head,node *x)
 {
@@ -181,31 +163,17 @@ int update_deadline(node *hyper_head,node *x)
 	node * temp = hyper_head;
 	while(temp->next != NULL)
 	{
-		if(x->job.id == temp->job.id && x->job.instance == temp->job.instance)//BUG:release time of subjobs causing problem while comparing 2 fragments of subjobs!
+		if(x->job.id == temp->job.id && x->job.instance == temp->job.instance)
 		{
-		//	printf("%d=%d || %d==%d\n",temp->job.release_time/temp->job.period, x->job.release_time/ x->job.period,temp->job.instance, x->job.instance);
-			//if(temp->job.instance != x->job.instance) exit(1);
-			//fprintf(fpout,"compare to update %d<>%d\n",x->job.deadline,temp->job.deadline);
 			if(x->job.deadline == temp->job.deadline)
 			{
 					temp=temp->next;
 					continue;
 			}
-			if(x->job.deadline != temp->job.deadline)
+			else 
 			{
 				x->job.deadline = temp->job.deadline;
-//				x->job.plausible_time = temp->job.plausible_time;
-			//	fprintf(plau_debug,"T[%d][%d] = %f\n",temp->job.id,temp->job.release_time/temp->job.period,temp->job.plausible_time);
-				////fprintf(fpout,"QQQ PLAUU T[%d][%d] = %f\n",temp->job.id,temp->job.release_time/temp->job.period,temp->job.plausible_time);
-				//x->job.abs_rem = temp->job.abs_rem;
-				//x->job.remaining_time = ??
-				//fprintf(fpout,"Deadline updated\n");
 				return 1;
-			}
-			else
-			{
-				//fprintf(fpout,"no deadline update\n");
-				return 0;
 			}
 		}
 		temp = temp->next;
@@ -217,8 +185,7 @@ void remove_hyper(node * hyper)
 	int i = hyper->prev->job.id;
 	int rls = hyper->prev->job.release_time;
 	int period = hyper->prev->job.period;
-//printf("remove %d|%d\n",i,rls/period);
-	//if(hyper!=NULL)
+
 	while(hyper->next != NULL && hyper->job.deadline <=  rls+period)
 	{
 		if(hyper->job.id == i && hyper->job.release_time == rls)
@@ -226,16 +193,8 @@ void remove_hyper(node * hyper)
 			hyper->prev->next = hyper->next;
 			hyper->next->prev = hyper->prev;
 			fprintf(fpout,"removed %d|%d(%f)\n",i,rls/period,hyper->job.plausible_time);
-		//	printf("removed %d|%d(%f)\n",i,rls/period,hyper->job.plausible_time);
 		}
 		hyper = hyper->next;
-	}
-	if(hyper->job.id == i && hyper->job.release_time == rls)
-	{
-		hyper->prev->next = hyper->next;
-		hyper->next->prev = hyper->prev;
-		fprintf(fpout,"removed %d|%d(%f)\n",i,rls/period,hyper->job.plausible_time);
-	//	printf("removed %d|%d(%f)\n",i,rls/period,hyper->job.plausible_time);
 	}
 }
 void move_subjob(Queue **rq, node *hq)
@@ -245,7 +204,6 @@ void move_subjob(Queue **rq, node *hq)
 	{
 		if((*rq)->front->job.id == hq->job.id && (*rq)->front->job.instance == hq->job.instance)
 		{
-			(*rq)->front->job.plausible_time = hq->job.plausible_time;	//not required
 			(*rq)->front->job.deadline = hq->job.deadline;				//update deadline
 			
 			tempRQ = (*rq)->front;						//Q->front temp
@@ -258,450 +216,215 @@ void move_subjob(Queue **rq, node *hq)
 				Enqueue(tempRQ);						//Q->front->prev enqueue
 			}
 			fprintf(fpout,"moved subjob to dd=%d\n",tempRQ->job.deadline);
+			Print_Current_Status();
 		}
 		hq = hq->next;
 	}
 }
+void wrapper_enqueue(float from, float to)
+{
+	node *z;
+											//Enqueue code//
+	int task=0;
+	int instance = (int)to/t[task].period;
+	while(task<no_of_tasks)
+	{
+		if((int)(from)/t[task].period != (int)(to)/t[task].period || !(int)to%t[task].period)
+		{
+			z = create_node(z);
+			instance = (int)to/t[task].period;
+			(z->job).id = t[task].id;
+			(z->job).release_time = instance*t[task].period;
+			(z->job).max_computation_time = job[task][instance].max_computation_time;
+			(z->job).deadline = job[task][instance].deadline;
+			(z->job).period = t[task].period;
+			(z->job).remaining_time = (float)job[task][instance].remaining_time;
+			(z->job).abs_rem = (float)job[task][instance].abs_rem;
+			(z->job).ui = (float)(z->job).max_computation_time / (z->job).period;
+			job[task][instance].ui = (z->job).ui;
+			(z->job).plausible_time = (float)(job[task][instance].deadline - job[task][instance].max_computation_time);
+			(z->job).start_time = (float)job[task][instance].release_time;
+			(z->job).slack = 0;
+			(z->job).execution_time = 0;
+			(z->job).invocation = (float)job[task][instance].invocation;
+			z->job.instance = z->job.release_time / z->job.period;
+//			update_deadline(Q_Hyper_head,z);
+			Enqueue(z);
+			t[task].release_time += t[task].period;
+					
+			fprintf(fpout,"Delayed arrival of T[%d][%d] at %f with deadline %d (rls %d)\n",task,z->job.instance,decision_pt,job[task][instance].deadline,t[task].release_time);
+		fprintf(fp_excel_sched,"%f\t_______\tT[%d][%d]\tDelayedArrival\t____\n",decision_pt,task,t[task].release_time/t[task].period);
+		}
+		task++;
+	}
+
+}
+
 void Schedule()
 {
-	finishTask=1;
-	int flag = 0;
 	int i = 0;
-	char provisional = ' ';
 	int check;
 	node *z;
 	float time_bef_dec = 0;
 	int instance;
 	float utilization;
-	node *x;
 	float exec;
+	float next_plausible;
 	int freq_find;
-	//node *preempt;	
-	//node *Q_head;
 	float prev_alpha = 1;
 	node *Q_Hyper_head = Q_Hyper->front;
 	while(time < hyperperiod)
 	{	
-		//preempt = Q->front;
-		fprintf(fpout,"Time : %f (a=%f)\n",time,alpha);
+		fprintf(fpout,"Time : %f (a=%f)\t\t",time,alpha);
+		wrapper_enqueue(time_bef_dec,time);
 		time_bef_dec = time;
 		decision_pt = calc_decision_pt();
 		if(decision_pt < time) fprintf(fpout,"time travel----need towel\n");
 		fprintf(fpout,"Decision point : %f\n\n",decision_pt);
 		if(Q->front !=NULL)
 		{
-			fprintf(fpout,"RQ:T[%d][%d] <> HQ[%d][%d]\n\n",Q->front->job.id,Q->front->job.instance,Q_Hyper_head->job.id,Q_Hyper_head->job.instance);
-			printf("Time:%f | DP:%f | Plau: %f\n",time,decision_pt,Q_Hyper_head->job.plausible_time);
-			if(decision_pt>Q_Hyper_head->job.plausible_time && decision_pt != curr_exec)
-			{
-				if(min_arrival<curr_exec)
-					curr_exec = min_arrival;
-				
-				decision_pt = curr_exec;
-				fprintf(fpout,"kami ka zala (%f)\n",decision_pt);
-			}
-			if(decision_pt == curr_exec && Q->front->job.remaining_time > Q_Hyper_head->job.max_computation_time)
-			{
-				fprintf(fpout,"rq %f > hq %f\n",Q->front->job.remaining_time,Q_Hyper_head->job.remaining_time);
-				curr_exec = time+Q_Hyper_head->job.max_computation_time;
-				decision_pt = curr_exec;
-				fprintf(fpout,"subjob not considered(%f)\n",decision_pt);
-			}
-		}		
-		//BUG: while calculating decision point in case of a provisional execution
-/*		if(decision_pt > Q_Hyper_head->job.plausible_time &&  decision_pt!=curr_exec)
-		{
-	//	printf("chamya\n\n");
-			decision_pt = Q_Hyper_head->job.plausible_time;
-			if(time >= Q_Hyper_head->job.plausible_time)
-			{
-				alpha = 1;
-				if(min_arrival < Q_Hyper_head->next->job.plausible_time) decision_pt = min_arrival; 
-				else decision_pt = Q_Hyper_head->next->job.plausible_time;
-//				decision_pt = min_arrival;
-				curr_exec = decision_pt;
-				//fprintf(fpout,"Ting\n%f=min(%d,%f)-%f",decision_pt,min_arrival,Q_Hyper_head->next->job.plausible_time,alpha);
-		//	printf("pingu\n");
-			}
-			curr_exec = decision_pt;
-			//fprintf(fpout,"are dadadaada(%f,%f-%d)\n\n\n",curr_exec,decision_pt,Q_Hyper_head->job.deadline);
-		}*/
-		//BUG:because we broke the jobs, even at t = q->head deadline, q->remainig_time>=0
-		no_of_decn_pts++;
+			fprintf(fpout,"(RQ:T[%d][%d] <> HQ[%d][%d])\n\n",Q->front->job.id,Q->front->job.instance,Q_Hyper_head->job.id,Q_Hyper_head->job.instance);
+			printf("Time:%f | DP:%f\n",time,decision_pt);
+		}				
 		
-			if(!Print_Current_Status())
-			{
-				idleenergy += IdleEnergy*(decision_pt - time_bef_dec);
-			}
-			/*if(Q->front!=NULL)
-			{
-			//	printf("%f<>%f\n",Q_Hyper_head->job.plausible_time,Q->front->job.plausible_time);		
-			}*/
-			
-		//fprintf(fpout,"Decision : %f (T[%d]-%f)",decision_pt,(Q_Hyper_head->job).id,(Q_Hyper_head->job).plausible_time);
-		if(Q->front != NULL) //fprintf(fpout,"||%f",Q->front->job.plausible_time);
-		//fprintf(fpout,"\n");
-		if(decision_pt == curr_exec)
+		next_plausible = Q_Hyper_head->job.plausible_time;
+		if(!Print_Current_Status())
 		{
-			fprintf(fpout,"Execute-T[%d][%d] from %f to  %f\n",Q->front->job.id,Q->front->job.instance,time,decision_pt);
-			for(freq_find=0; freq_find<no_of_freq; freq_find++)
-			{
-				if(alpha == freq[freq_find])
-				break;
-			}
-/*			if(decision_pt-time > Q_Hyper_head->job.abs_rem / alpha+0.01)
-			//	printf("Parat gandanaarrr...%d-%f ",Q_Hyper_head->job.id, Q_Hyper_head->job.plausible_time);
-			if(Q->front->job.id != Q_Hyper_head->job.id && decision_pt-time > Q_Hyper_head->next->job.abs_rem / alpha+0.01)
-				//	printf("Parat parat gandanaarrr...%d-%f ",Q_Hyper_head->next->job.id,Q_Hyper_head->next->job.plausible_time);
-*/
-			//if((Q->front->job).id != (Q_Hyper_head->job).id)
-			if((Q_Hyper_head->job).plausible_time > time)//+remaining time)
-			{
-				if((Q_Hyper_head->job).id != Q->front->job.id)	//fprintf(fpout,"wont be equal... lol no problem\n");
-				
-				provisional = 'p';
-			/*Every provisional execution will go from Time till Next plausible time (not till decision_pt)*/	
-				//MIN_FREQ
-//				operating_frequency = freq[0];
-//				alpha = operating_frequency;
-				//fprintf(fpout,"dvfs exec alpha (%d,%d)\n",(Q->front->job).id, (Q_Hyper_head->job).id);
-				decision_pt = (Q_Hyper_head->job).plausible_time;
-				exec = decision_pt-time;
-				//change plausible time!!!!
-				//update_plausible((Q->front->job).id,Q_Hyper_head,decision_pt-time,alpha);
-				//fprintf(fpout,"hyper head still at T[%d] (%f)\n",(Q_Hyper_head->job).id,(Q_Hyper_head->job).plausible_time);
-			}
-			else
-				provisional = '*';
+				if(next_plausible - time >= zzzTime)
+				{
+														//Shut down code//
+					fprintf(fpout,"Sleep from %f to %f \n", time, next_plausible);
+					fprintf(fp_excel_sched,"%f\t%f\t____\tSleep\t____\n",time,next_plausible);				
 
-			if(Q_Hyper_head->job.id != Q->front->job.id)	//fprintf(fpout,"\n\n***LOL***\n\n");
-			
-			//fprintf(fpout,"Current task T[%d][%d] executed from %f to %f with frequency %f\n",(Q->front->job).id,(Q->front->job).release_time / (Q->front->job).period ,time,decision_pt,alpha);
-			fprintf(fpout,"task T[%d][%d] from %f to %f\n\n",Q->front->job.id, Q->front->job.instance,time,decision_pt);
-			fprintf(fp_excel_sched,"%f\t%f\tT[%d][%d]\tExecute(%c)\t%f\n",time,decision_pt,(Q->front->job).id,(Q->front->job).release_time / (Q->front->job).period ,provisional,alpha);
-			exec = decision_pt - time;
-			total_exec_tasks[(Q->front->job).id] += exec;
-			(Q->front->job).execution_time += exec;
-			fprintf(fp_execution_times,"Total Execution time of Task[%d] is %f\n",(Q->front->job).id,(Q->front->job).execution_time);
-			
-			if((Q->front->job).execution_time < min_exec_tasks[(Q->front->job).id])
-			{
-				//fprintf(fpout,"min exec T[%d]=%f\n",(Q->front->job).id,(Q->front->job).execution_time);
-				min_exec_tasks[(Q->front->job).id] = (Q->front->job).execution_time;
-			}
-			if((Q->front->job).execution_time > max_exec_tasks[(Q->front->job).id])
-				max_exec_tasks[(Q->front->job).id] = (Q->front->job).execution_time; 
-			
-			
-			time_per_freq[freq_find] += exec;
-			
-			(Q->front->job).abs_rem = (Q->front->job).abs_rem - (exec * alpha);
-//			if(provisional == '*' && Q->front->job.id != Q_Hyper_head->job.id){printf("lololol\n"); exit(0);}
-			instance = (Q->front->job).release_time / (Q->front->job).period;
-			job[(Q->front->job).id][instance].ui = (float)(job[(Q->front->job).id][instance].invocation)/t[(Q->front->job).id].period;
-			////fprintf(fpout,"New Utilization : %f\n",job[(Q->front->job).id][instance].ui);
-			//fprintf(fpout,"REMTIME***** IS %f\n",(Q->front->job).remaining_time);
-			
-			energy += (float)alpha*Volts*Volts*alpha*alpha*Freq*(Q->front->job).remaining_time;
-			//fprintf(fpout,"ENERGY ****** IS ***** %f\n",energy);
-			
-			latency = decision_pt - (Q->front->job).release_time;
-			if(latency < min_lat[(Q->front->job).id])
-				min_lat[(Q->front->job).id] = latency;
-			if(latency > max_lat[(Q->front->job).id])
-				max_lat[(Q->front->job).id] = latency;
-			
-			total_lat[(Q->front->job).id] += latency;
-			fprintf(fp_lat,"Latency of (%d %d) released at %d and completed at %f is %f\n",(Q->front->job).id,instance,(Q->front->job).release_time,decision_pt,latency);
-			fflush(fp_lat);
-		
-			time = decision_pt;			
-			fprintf(fpout,"Time : %f and decision pt : %f\n",time,decision_pt);
-				//fprintf(fpout,"Moving plau %f>%f+%f\n",time , (Q_Hyper_head->job).plausible_time,(Q->front->job).invocation);
-
-//			if(Q_Hyper_head->job.abs_rem < 0.01)
-			if((Q->front->job).abs_rem<0.01) 		//T[i][j] act exec exhausted completely
-			{
-				//fprintf(fpout,"Moving plau %f>%f+%f\n",time , (Q_Hyper_head->job).plausible_time,(Q->front->job).invocation);
-				if(Q_Hyper_head->next != NULL)// && time >= (Q_Hyper_head->job).plausible_time+(Q->front->job).invocation )
-				{
-					Q_Hyper_head = Q_Hyper_head->next;
-					//remove all the subjobs of T[i][j] from hyper queue****
-					remove_hyper(Q_Hyper_head);
-				}				
-				Dequeue();
-				if(Q->front != NULL)		
-					fprintf(fpout,"Dequeued to T[%d][%d] == T[%d][%d]\n\n",Q->front->job.id,Q->front->job.instance,Q_Hyper_head->job.id,Q_Hyper_head->job.instance);
-				finishTask = 1;
-			}
-			else
-			{
-				preemptions++;
-				if(Q_Hyper_head->job.max_computation_time == exec)	
-				{
-					fprintf(fpout,"need to move\n");
-					move_subjob(&Q,Q_Hyper_head);
-				}
-			}	
-			if(Check_Sleep(Q_Hyper_head) && finishTask)
-			{
-				operating_frequency = 1;
-				alpha = operating_frequency;
-				if(alpha != prev_alpha)
-				{
-					no_of_freq_switches++;
-					prev_alpha = alpha;
-				}
-				//decision_pt = findMin(((Q_Hyper_head->job).plausible_time),((float)find_min_arrival()));
-				decision_pt = (Q_Hyper_head->job).plausible_time;
-				//fprintf(fpout,"sahil:plau %f\n",(Q_Hyper_head->job).plausible_time);
-				//if(time > (Q_Hyper_head->job).plausible_time && (Q_Hyper_head->job).plausible_time-time <(float)find_min_arrival()-time && Q_Hyper_head->next != NULL && finishTask)
-					//Q_Hyper_head = Q_Hyper_head->next;					
-				////fprintf(fpout,"sahil2:plau %f\n",(Q_Hyper_head->job).plausible_time);				
-				fprintf(fpout,"Sleep from %f to %f \n", time, decision_pt);
-
-				fprintf(fp_excel_sched,"%f\t%f\t____\tSleep\t____\n",time,decision_pt);				
-				sleepenergy += 1*SleepEnergy;
-				sleepTimeTotal += (decision_pt - time);
-				//sleepFlag = 1;
-				int task=0;
-				while(task<no_of_tasks)
-				{
-					if((int)(time)/t[task].period != (int)(decision_pt)/t[task].period && (int)decision_pt%t[task].period)
-					{
-						z = create_node(z);
-						instance = (int)decision_pt/t[task].period;
-						(z->job).id = t[task].id;
-						(z->job).release_time = instance*t[task].period;
-						(z->job).max_computation_time = job[task][instance].max_computation_time;
-						(z->job).deadline = job[task][instance].deadline;
-						//(z->job).period = t[task].period;
-						(z->job).period = t[task].period;
-						(z->job).remaining_time = (float)job[task][instance].remaining_time;
-						(z->job).abs_rem = (float)job[task][instance].abs_rem;
-						//(z->job).ui = (float)(z->job).max_computation_time / t[task].period;
-						(z->job).ui = (float)(z->job).max_computation_time / (z->job).period;
-						job[task][instance].ui = (z->job).ui;
-						(z->job).plausible_time = (float)(job[task][instance].deadline - job[task][instance].max_computation_time);
-						(z->job).start_time = (float)job[task][instance].release_time;
-						(z->job).slack = 0;
-						(z->job).execution_time = 0;
-						(z->job).invocation = (float)job[task][instance].invocation;
-						z->job.instance = z->job.release_time / z->job.period;
-					//	z->job.plausible_time = get_plau(z,Q_Hyper_head);
-			update_deadline(Q_Hyper_head,z);
-						Enqueue(z);
-						t[task].release_time += t[task].period;
-						finishTask=1;
+					sleepTimeTotal += (next_plausible - time);
+					time = next_plausible;
+					if(decision_pt != next_plausible) no_of_decn_pts++;
 					
-						fprintf(fpout,"Delayed arrival of T[%d][%d] at %f with deadline %d (rls %d)\n",task,z->job.instance,decision_pt,job[task][instance].deadline,t[task].release_time);
-						//fprintf(fpout,"DELAYED ARR:T[%d] %d %d\n",t[task].release_time/t[task].period,(int)(time)/t[task].period,(int)(decision_pt)/t[task].period);
-						fprintf(fp_excel_sched,"%f\t_______\tT[%d][%d]\tDelayedArrival\t____\n",decision_pt,task,t[task].release_time/t[task].period);
-					}
-					task++;
-				}
-				time = decision_pt;
-				
-			}
-			else
-			{
-				if(decision_pt == (Q_Hyper_head->job).plausible_time) {
-				operating_frequency = 1;
-				alpha = operating_frequency;}
-				else
-				{
-					select_frequency();
-					alpha = operating_frequency; }
+															//awake//					
+					operating_frequency = 1;
+					alpha = operating_frequency;
 					if(alpha != prev_alpha)
 					{
 						no_of_freq_switches++;
 						prev_alpha = alpha;
 					}
-				
-				//sleepFlag = 0;
-			}
-			fprintf(fpout,"Operating Frequency : %f\n",operating_frequency);
-			
-			if(Q->front!=NULL)
-			{
-				(Q->front->job).remaining_time = (float)((Q->front->job).abs_rem)/alpha;
-			}
-			
-			if((Q->front != NULL) && (Q->front->next != NULL) && (Q->front->job).id != (Q->front->next->job).id)
-			{
-				cache_impacts ++;
-				//fprintf(fpout,"CACHE IMPACT NO. ***** %d\n",cache_impacts);
-			}
-		
-			flag = 1;
+					sleepenergy += 1*SleepEnergy;
+					continue;
+				}
+				else									//idle code//				
+				{
+					operating_frequency = freq[0];
+					alpha = operating_frequency;
+					fprintf(fpout,"Idle from %f to %f \n", time, decision_pt);
+					fprintf(fp_excel_sched,"%f\t%f\t____\tIdle\t%f\n",time,next_plausible,alpha);
+					if(alpha != prev_alpha)
+					{
+						no_of_freq_switches++;
+						prev_alpha = alpha;
+					}
+					idleenergy += IdleEnergy*(decision_pt - time_bef_dec);
+					time = decision_pt;
+					continue;
+				}
 		}
-		
-		if(decision_pt == min_arrival)
+		else
 		{
-			if(!(IsEmpty()) && flag != 1)
+			if(next_plausible - time >= zzzTime)
 			{
-				(Q->front->job).remaining_time = (Q->front->job).remaining_time - (decision_pt-time_bef_dec);
-				total_exec_tasks[(Q->front->job).id] += decision_pt-time_bef_dec;
+														//Shut down code//
+					fprintf(fpout,"Sleep from %f to %f \n", time, next_plausible);
+					fprintf(fp_excel_sched,"%f\t%f\t____\tSleep\t____\n",time,next_plausible);				
+
+					sleepTimeTotal += (next_plausible - time);
+					time = next_plausible;
+					if(decision_pt != next_plausible) no_of_decn_pts++;
+					
+															//awake//					
+					operating_frequency = 1;
+					alpha = operating_frequency;
+					if(alpha != prev_alpha)
+					{
+						no_of_freq_switches++;
+						prev_alpha = alpha;
+					}
+					sleepenergy += 1*SleepEnergy;
+					continue;
+			}
+			else										//execute code//
+			{
 				for(freq_find=0; freq_find<no_of_freq; freq_find++)
 				{
 					if(alpha == freq[freq_find])
 					break;
 				}
 			
-				time_per_freq[freq_find] += (decision_pt-time_bef_dec);
-				(Q->front->job).execution_time += decision_pt-time_bef_dec;
+				fprintf(fpout,"task T[%d][%d] from %f to %f\n\n",Q->front->job.id, Q->front->job.instance,time,decision_pt);
+				fprintf(fp_excel_sched,"%f\t%f\tT[%d][%d]\tExecute()\t%f\n",time,decision_pt,(Q->front->job).id,(Q->front->job).release_time / (Q->front->job).period ,alpha);
+				exec = decision_pt - time;
+				total_exec_tasks[(Q->front->job).id] += exec;
+				(Q->front->job).execution_time += exec;
+				fprintf(fp_execution_times,"Total Execution time of Task[%d] is %f\n",(Q->front->job).id,(Q->front->job).execution_time);
 			
-				(Q->front->job).abs_rem = (Q->front->job).abs_rem - ((decision_pt-time_bef_dec)*alpha);
-				//fprintf(fpout,"Remaining time : %f\n",(Q->front->job).remaining_time);
-				
-				energy += (float)Volts*Volts*Freq*alpha*alpha*alpha*(decision_pt - time_bef_dec);
-				//fprintf(fpout,"ENERGY ******ARR BEF DEP IS ***** %f\n",energy);
-			}
-			time = decision_pt;
-			i = 0;
-			while(i<no_of_tasks)
-			{
-				check = min_arrival%(t[i].period);
-				if(check == 0)
+				if((Q->front->job).execution_time < min_exec_tasks[(Q->front->job).id])
 				{
-					z = create_node(z);
-					instance = decision_pt/t[i].period;
-					(z->job).id = t[i].id;
-					(z->job).release_time = decision_pt;
-					(z->job).max_computation_time = job[i][instance].max_computation_time;
-					(z->job).deadline = job[i][instance].deadline;
-					(z->job).period = t[i].period;
-					(z->job).remaining_time = (float)job[i][instance].remaining_time;
-					(z->job).abs_rem = (float)job[i][instance].abs_rem;
-					(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
-					job[i][instance].ui = (z->job).ui;
-					(z->job).plausible_time = (float)(job[i][instance].deadline - job[i][instance].max_computation_time);
-				//		z->job.plausible_time = get_plau(z,Q_Hyper_head);
-					(z->job).start_time = (float)job[i][instance].release_time;
-					(z->job).slack = 0;
-					(z->job).execution_time = 0;
-					(z->job).invocation = (float)job[i][instance].invocation;
-					z->job.instance = z->job.release_time / z->job.period;
-			update_deadline(Q_Hyper_head,z);
-					Enqueue(z);
-					t[i].release_time += t[i].period;
-					fprintf(fpout,"Job of T[%d] arrived with deadline %d at time %f (fT %d)\n",i,z->job.deadline,time,finishTask);
-					fprintf(fp_excel_sched,"%f\t_______\tT[%d][%d]\tArrival\t____\n",time,z->job.id, z->job.instance);
-					//printf("Job of task%d arrived with deadline %d\n",i+1,(z->job).deadline);
-					//fprintf(fpout,"\n\n");
-			//to avoid unnecessary provisional execution, reset finishTask flag
+					fprintf(fpout,"min exec T[%d]=%f\n",(Q->front->job).id,(Q->front->job).execution_time);
+					min_exec_tasks[(Q->front->job).id] = (Q->front->job).execution_time;
+				}
+				if((Q->front->job).execution_time > max_exec_tasks[(Q->front->job).id])
+					max_exec_tasks[(Q->front->job).id] = (Q->front->job).execution_time; 
+			
+			
+				time_per_freq[freq_find] += exec;
+			
+				(Q->front->job).abs_rem = (Q->front->job).abs_rem - (exec * alpha);
+				fprintf(fpout,"Absolute remaining time %f, alpha %f\n",Q->front->job.abs_rem, alpha);
+				instance = (Q->front->job).release_time / (Q->front->job).period;
+				job[(Q->front->job).id][instance].ui = (float)(job[(Q->front->job).id][instance].invocation)/t[(Q->front->job).id].period;
+				////fprintf(fpout,"New Utilization : %f\n",job[(Q->front->job).id][instance].ui);
+				energy += (float)alpha*Volts*Volts*alpha*alpha*Freq*(Q->front->job).remaining_time;
+			
+				latency = decision_pt - (Q->front->job).release_time;
+				if(latency < min_lat[(Q->front->job).id])
+					min_lat[(Q->front->job).id] = latency;
+				if(latency > max_lat[(Q->front->job).id])
+					max_lat[(Q->front->job).id] = latency;
+			
+				total_lat[(Q->front->job).id] += latency;
+				fprintf(fp_lat,"Latency of (%d %d) released at %d and completed at %f is %f\n",(Q->front->job).id,instance,(Q->front->job).release_time,decision_pt,latency);
+				fflush(fp_lat);
+		
+				time = decision_pt;			
+				fprintf(fpout,"Time : %f and decision pt : %f\n",time,decision_pt);
+
+				if((Q->front->job).abs_rem<0.01) 		//T[i][j] act exec exhausted completely
+				{
+					fprintf(fpout,"Moving plau %f>%f+%f\n",time , (Q_Hyper_head->job).plausible_time,(Q->front->job).invocation);
+					if(Q_Hyper_head->next != NULL)
+					{
+						Q_Hyper_head = Q_Hyper_head->next;
+						//remove all the subjobs of T[i][j] from hyper queue
+						remove_hyper(Q_Hyper_head);
+					}				
+					Dequeue();
+					if(Q->front != NULL)		
+						fprintf(fpout,"Dequeued to T[%d][%d] == T[%d][%d]\n\n",Q->front->job.id,Q->front->job.instance,Q_Hyper_head->job.id,Q_Hyper_head->job.instance);
 					finishTask = 1;
 				}
-				i++;
-			}
-			//Print_Queue();
-			//Calc_Plausible_Time();
-			//Calc_Urgent_Time();						
-//ORIG			if(Q_Hyper_head->next != NULL && time > (Q_Hyper_head->job).plausible_time)
-			//fprintf(fpout,"NEW CONDITION %f = %f + %f\n",time , (Q_Hyper_head->job).plausible_time,(Q->front->job).invocation);
-			if(Q_Hyper_head->next != NULL && time >= (Q_Hyper_head->job).plausible_time+(Q->front->job).invocation && finishTask)
-			{
-					//fprintf(fpout,"NEW CONDITION SATISFIED\n");
-					//Q_Hyper_head = Q_Hyper_head->next;
-			}
-			if(Check_Sleep(Q_Hyper_head) && finishTask) //&& prev task finished
-			{
-				operating_frequency = 1;
-				alpha = operating_frequency;
-				if(alpha != prev_alpha)
-				{
-					no_of_freq_switches++;
-					prev_alpha = alpha;
-				}
-				//decision_pt = findMin(((Q_Hyper_head->job).plausible_time - time),((float)find_min_arrival()-time)) + time;
-				decision_pt = (Q_Hyper_head->job).plausible_time;
-				fprintf(fpout,"Time:%f Decision_pt:%f\n",time,decision_pt);
-				//if((Q_Hyper_head->job).plausible_time-time < (float)find_min_arrival()-time && Q_Hyper_head->next != NULL && finishTask)
-					//Q_Hyper_head = Q_Hyper_head->next;				
-				fprintf(fpout,"Sleep from %f to %f\n", time, decision_pt);
-				fprintf(fp_excel_sched,"%f\t%f\t____\tSleep\t____\n",time,decision_pt);
-				sleepenergy += 1*SleepEnergy;
-				sleepTimeTotal += (decision_pt - time);
-				//sleepFlag = 1;
-				int task=0;
-				while(task<no_of_tasks)
-				{
-					if((int)(time)/t[task].period != (int)(decision_pt)/t[task].period && (int)decision_pt % t[task].period)
-					{
-						z = create_node(z);
-						instance = (int)decision_pt/t[task].period;
-						(z->job).id = t[task].id;
-						(z->job).release_time = instance*t[task].period;
-						(z->job).max_computation_time = job[task][instance].max_computation_time;
-						(z->job).deadline = job[task][instance].deadline;
-						//(z->job).period = t[task].period;
-						(z->job).period = t[task].period;
-						(z->job).remaining_time = (float)job[task][instance].remaining_time;
-						(z->job).abs_rem = (float)job[task][instance].abs_rem;
-						//(z->job).ui = (float)(z->job).max_computation_time / t[task].period;
-						(z->job).ui = (float)(z->job).max_computation_time / (z->job).period;
-						job[task][instance].ui = (z->job).ui;
-						(z->job).plausible_time = (float)(job[task][instance].deadline - job[task][instance].max_computation_time);
-						//z->job.plausible_time = get_plau(z,Q_Hyper_head);
-						(z->job).start_time = (float)job[task][instance].release_time;
-						(z->job).slack = 0;
-						(z->job).execution_time = 0;
-						(z->job).invocation = (float)job[task][instance].invocation;
-						z->job.instance = z->job.release_time / z->job.period;
-				update_deadline(Q_Hyper_head,z);
-						Enqueue(z);
-						t[task].release_time += t[task].period;
-						finishTask=1;
-					
-						fprintf(fpout,"Delayed arrival of T[%d] at %f with deadline %d (rls %d)\n",task,decision_pt,job[task][instance].deadline,t[task].release_time);
-						fprintf(fpout,"DELAYED ARR:T[%d] %d %d\n",t[task].release_time/t[task].period,(int)(time)/t[task].period,(int)(decision_pt)/t[task].period);
-						fprintf(fp_excel_sched,"%f\t_______\tT[%d][%d]\tDelayedArrival\t____\n",decision_pt,z->job.id,z->job.instance);
-					}
-					task++;
-				}
-				time = decision_pt;
-			}
-			else if(time < (Q_Hyper_head->job).plausible_time) //if min_arrival = next plausible then ~@~
-			{
-				if(decision_pt == (Q_Hyper_head->job).plausible_time){
-				operating_frequency = 1;
-				alpha = operating_frequency; }
 				else
 				{
-					select_frequency();
-					alpha = operating_frequency; }
-					if(alpha != prev_alpha)
+					if(Q->front!=NULL)
+						(Q->front->job).remaining_time = (float)((Q->front->job).abs_rem)/alpha;
+
+					preemptions++;
+					if(Q_Hyper_head->job.max_computation_time == exec)	
 					{
-						no_of_freq_switches++;
-						prev_alpha = alpha;
+						fprintf(fpout,"need to move\n");
+						move_subjob(&Q,Q_Hyper_head);
 					}
-				
-				//sleepFlag = 0;
-			}
-
-			fprintf(fpout,"ALPHA : %f\n",alpha);
-			if(Q->front!=NULL)
-			{
-				(Q->front->job).remaining_time = (float)((Q->front->job).abs_rem)/alpha;
-			}
-			
-			if((Q->front != NULL) && (Q->front->next != NULL) && (Q->front->job).id != (Q->front->next->job).id)
-			{
-				cache_impacts ++;
-				//fprintf(fpout,"CACHE IMPACT NO. ***** %d\n",cache_impacts);
-			}
-		
+				}	
+				time = decision_pt;
+				continue;
+			}										
 		}
-		
-		flag = 0;
-		time = decision_pt;
-		fprintf(fpout,"Time : %f (plau[%d] %f)\n",time,(Q_Hyper_head->job).id,(Q_Hyper_head->job).plausible_time);	
-		fprintf(fpout,"\n\n");
-		//Print_Current_Status();
-	
-//		if(time==2920)	usleep(1000000);
-		fflush(fpout);
-
 	}
-			
 }

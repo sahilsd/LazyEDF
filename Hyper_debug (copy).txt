@@ -1,0 +1,2385 @@
+Enqueued T[0][0] (r-0, dd-8, plau-6.000000)
+Enqueued T[0][1] (r-8, dd-16, plau-14.000000)
+Enqueued T[0][2] (r-16, dd-24, plau-22.000000)
+Enqueued T[0][3] (r-24, dd-32, plau-30.000000)
+Enqueued T[0][4] (r-32, dd-40, plau-38.000000)
+Enqueued T[0][5] (r-40, dd-48, plau-46.000000)
+Enqueued T[0][6] (r-48, dd-56, plau-54.000000)
+Enqueued T[0][7] (r-56, dd-64, plau-62.000000)
+Enqueued T[0][8] (r-64, dd-72, plau-70.000000)
+Enqueued T[0][9] (r-72, dd-80, plau-78.000000)
+Enqueued T[0][10] (r-80, dd-88, plau-86.000000)
+Enqueued T[0][11] (r-88, dd-96, plau-94.000000)
+Enqueued T[0][12] (r-96, dd-104, plau-102.000000)
+Enqueued T[0][13] (r-104, dd-112, plau-110.000000)
+Enqueued T[0][14] (r-112, dd-120, plau-118.000000)
+Enqueued T[0][15] (r-120, dd-128, plau-126.000000)
+Enqueued T[0][16] (r-128, dd-136, plau-134.000000)
+Enqueued T[0][17] (r-136, dd-144, plau-142.000000)
+Enqueued T[0][18] (r-144, dd-152, plau-150.000000)
+Enqueued T[0][19] (r-152, dd-160, plau-158.000000)
+Enqueued T[0][20] (r-160, dd-168, plau-166.000000)
+Enqueued T[0][21] (r-168, dd-176, plau-174.000000)
+Enqueued T[0][22] (r-176, dd-184, plau-182.000000)
+Enqueued T[0][23] (r-184, dd-192, plau-190.000000)
+Enqueued T[0][24] (r-192, dd-200, plau-198.000000)
+Enqueued T[0][25] (r-200, dd-208, plau-206.000000)
+Enqueued T[0][26] (r-208, dd-216, plau-214.000000)
+Enqueued T[0][27] (r-216, dd-224, plau-222.000000)
+Enqueued T[0][28] (r-224, dd-232, plau-230.000000)
+Enqueued T[0][29] (r-232, dd-240, plau-238.000000)
+Enqueued T[0][30] (r-240, dd-248, plau-246.000000)
+Enqueued T[0][31] (r-248, dd-256, plau-254.000000)
+Enqueued T[0][32] (r-256, dd-264, plau-262.000000)
+Enqueued T[0][33] (r-264, dd-272, plau-270.000000)
+Enqueued T[0][34] (r-272, dd-280, plau-278.000000)
+Enqueued T[0][35] (r-280, dd-288, plau-286.000000)
+Enqueued T[0][36] (r-288, dd-296, plau-294.000000)
+Enqueued T[0][37] (r-296, dd-304, plau-302.000000)
+Enqueued T[0][38] (r-304, dd-312, plau-310.000000)
+Enqueued T[0][39] (r-312, dd-320, plau-318.000000)
+Enqueued T[0][40] (r-320, dd-328, plau-326.000000)
+Enqueued T[0][41] (r-328, dd-336, plau-334.000000)
+Enqueued T[0][42] (r-336, dd-344, plau-342.000000)
+Enqueued T[0][43] (r-344, dd-352, plau-350.000000)
+Enqueued T[0][44] (r-352, dd-360, plau-358.000000)
+Enqueued T[0][45] (r-360, dd-368, plau-366.000000)
+Enqueued T[0][46] (r-368, dd-376, plau-374.000000)
+Enqueued T[0][47] (r-376, dd-384, plau-382.000000)
+Enqueued T[0][48] (r-384, dd-392, plau-390.000000)
+Enqueued T[0][49] (r-392, dd-400, plau-398.000000)
+Enqueued T[0][50] (r-400, dd-408, plau-406.000000)
+Enqueued T[0][51] (r-408, dd-416, plau-414.000000)
+Enqueued T[0][52] (r-416, dd-424, plau-422.000000)
+Enqueued T[0][53] (r-424, dd-432, plau-430.000000)
+Enqueued T[0][54] (r-432, dd-440, plau-438.000000)
+Enqueued T[0][55] (r-440, dd-448, plau-446.000000)
+Enqueued T[0][56] (r-448, dd-456, plau-454.000000)
+Enqueued T[0][57] (r-456, dd-464, plau-462.000000)
+Enqueued T[0][58] (r-464, dd-472, plau-470.000000)
+Enqueued T[0][59] (r-472, dd-480, plau-478.000000)
+Enqueued T[0][60] (r-480, dd-488, plau-486.000000)
+Enqueued T[0][61] (r-488, dd-496, plau-494.000000)
+Enqueued T[0][62] (r-496, dd-504, plau-502.000000)
+Enqueued T[0][63] (r-504, dd-512, plau-510.000000)
+Enqueued T[0][64] (r-512, dd-520, plau-518.000000)
+Enqueued T[0][65] (r-520, dd-528, plau-526.000000)
+Enqueued T[0][66] (r-528, dd-536, plau-534.000000)
+Enqueued T[0][67] (r-536, dd-544, plau-542.000000)
+Enqueued T[0][68] (r-544, dd-552, plau-550.000000)
+Enqueued T[0][69] (r-552, dd-560, plau-558.000000)
+Enqueued T[0][70] (r-560, dd-568, plau-566.000000)
+Enqueued T[0][71] (r-568, dd-576, plau-574.000000)
+Enqueued T[0][72] (r-576, dd-584, plau-582.000000)
+Enqueued T[0][73] (r-584, dd-592, plau-590.000000)
+Enqueued T[0][74] (r-592, dd-600, plau-598.000000)
+Enqueued T[0][75] (r-600, dd-608, plau-606.000000)
+Enqueued T[0][76] (r-608, dd-616, plau-614.000000)
+Enqueued T[0][77] (r-616, dd-624, plau-622.000000)
+Enqueued T[0][78] (r-624, dd-632, plau-630.000000)
+Enqueued T[0][79] (r-632, dd-640, plau-638.000000)
+Enqueued T[0][80] (r-640, dd-648, plau-646.000000)
+Enqueued T[0][81] (r-648, dd-656, plau-654.000000)
+Enqueued T[0][82] (r-656, dd-664, plau-662.000000)
+Enqueued T[0][83] (r-664, dd-672, plau-670.000000)
+Enqueued T[0][84] (r-672, dd-680, plau-678.000000)
+Enqueued T[0][85] (r-680, dd-688, plau-686.000000)
+Enqueued T[0][86] (r-688, dd-696, plau-694.000000)
+Enqueued T[0][87] (r-696, dd-704, plau-702.000000)
+Enqueued T[0][88] (r-704, dd-712, plau-710.000000)
+Enqueued T[0][89] (r-712, dd-720, plau-718.000000)
+Enqueued T[0][90] (r-720, dd-728, plau-726.000000)
+Enqueued T[0][91] (r-728, dd-736, plau-734.000000)
+Enqueued T[0][92] (r-736, dd-744, plau-742.000000)
+Enqueued T[0][93] (r-744, dd-752, plau-750.000000)
+Enqueued T[0][94] (r-752, dd-760, plau-758.000000)
+Enqueued T[0][95] (r-760, dd-768, plau-766.000000)
+Enqueued T[0][96] (r-768, dd-776, plau-774.000000)
+Enqueued T[0][97] (r-776, dd-784, plau-782.000000)
+Enqueued T[0][98] (r-784, dd-792, plau-790.000000)
+Enqueued T[0][99] (r-792, dd-800, plau-798.000000)
+Enqueued T[0][100] (r-800, dd-808, plau-806.000000)
+Enqueued T[0][101] (r-808, dd-816, plau-814.000000)
+Enqueued T[0][102] (r-816, dd-824, plau-822.000000)
+Enqueued T[0][103] (r-824, dd-832, plau-830.000000)
+Enqueued T[0][104] (r-832, dd-840, plau-838.000000)
+Enqueued T[0][105] (r-840, dd-848, plau-846.000000)
+Enqueued T[0][106] (r-848, dd-856, plau-854.000000)
+Enqueued T[0][107] (r-856, dd-864, plau-862.000000)
+Enqueued T[0][108] (r-864, dd-872, plau-870.000000)
+Enqueued T[0][109] (r-872, dd-880, plau-878.000000)
+Enqueued T[0][110] (r-880, dd-888, plau-886.000000)
+Enqueued T[0][111] (r-888, dd-896, plau-894.000000)
+Enqueued T[0][112] (r-896, dd-904, plau-902.000000)
+Enqueued T[0][113] (r-904, dd-912, plau-910.000000)
+Enqueued T[0][114] (r-912, dd-920, plau-918.000000)
+Enqueued T[0][115] (r-920, dd-928, plau-926.000000)
+Enqueued T[0][116] (r-928, dd-936, plau-934.000000)
+Enqueued T[0][117] (r-936, dd-944, plau-942.000000)
+Enqueued T[0][118] (r-944, dd-952, plau-950.000000)
+Enqueued T[0][119] (r-952, dd-960, plau-958.000000)
+Enqueued T[0][120] (r-960, dd-968, plau-966.000000)
+Enqueued T[0][121] (r-968, dd-976, plau-974.000000)
+Enqueued T[0][122] (r-976, dd-984, plau-982.000000)
+Enqueued T[0][123] (r-984, dd-992, plau-990.000000)
+Enqueued T[0][124] (r-992, dd-1000, plau-998.000000)
+Enqueued T[0][125] (r-1000, dd-1008, plau-1006.000000)
+Enqueued T[0][126] (r-1008, dd-1016, plau-1014.000000)
+Enqueued T[0][127] (r-1016, dd-1024, plau-1022.000000)
+Enqueued T[0][128] (r-1024, dd-1032, plau-1030.000000)
+Enqueued T[0][129] (r-1032, dd-1040, plau-1038.000000)
+Enqueued T[0][130] (r-1040, dd-1048, plau-1046.000000)
+Enqueued T[0][131] (r-1048, dd-1056, plau-1054.000000)
+Enqueued T[0][132] (r-1056, dd-1064, plau-1062.000000)
+Enqueued T[0][133] (r-1064, dd-1072, plau-1070.000000)
+Enqueued T[0][134] (r-1072, dd-1080, plau-1078.000000)
+Enqueued T[0][135] (r-1080, dd-1088, plau-1086.000000)
+Enqueued T[0][136] (r-1088, dd-1096, plau-1094.000000)
+Enqueued T[0][137] (r-1096, dd-1104, plau-1102.000000)
+Enqueued T[0][138] (r-1104, dd-1112, plau-1110.000000)
+Enqueued T[0][139] (r-1112, dd-1120, plau-1118.000000)
+Enqueued T[0][140] (r-1120, dd-1128, plau-1126.000000)
+Enqueued T[0][141] (r-1128, dd-1136, plau-1134.000000)
+Enqueued T[0][142] (r-1136, dd-1144, plau-1142.000000)
+Enqueued T[0][143] (r-1144, dd-1152, plau-1150.000000)
+Enqueued T[0][144] (r-1152, dd-1160, plau-1158.000000)
+Enqueued T[0][145] (r-1160, dd-1168, plau-1166.000000)
+Enqueued T[0][146] (r-1168, dd-1176, plau-1174.000000)
+Enqueued T[0][147] (r-1176, dd-1184, plau-1182.000000)
+Enqueued T[0][148] (r-1184, dd-1192, plau-1190.000000)
+Enqueued T[0][149] (r-1192, dd-1200, plau-1198.000000)
+Enqueued T[0][150] (r-1200, dd-1208, plau-1206.000000)
+Enqueued T[0][151] (r-1208, dd-1216, plau-1214.000000)
+Enqueued T[0][152] (r-1216, dd-1224, plau-1222.000000)
+Enqueued T[0][153] (r-1224, dd-1232, plau-1230.000000)
+Enqueued T[0][154] (r-1232, dd-1240, plau-1238.000000)
+Enqueued T[0][155] (r-1240, dd-1248, plau-1246.000000)
+Enqueued T[0][156] (r-1248, dd-1256, plau-1254.000000)
+Enqueued T[0][157] (r-1256, dd-1264, plau-1262.000000)
+Enqueued T[0][158] (r-1264, dd-1272, plau-1270.000000)
+Enqueued T[0][159] (r-1272, dd-1280, plau-1278.000000)
+Enqueued T[0][160] (r-1280, dd-1288, plau-1286.000000)
+Enqueued T[0][161] (r-1288, dd-1296, plau-1294.000000)
+Enqueued T[0][162] (r-1296, dd-1304, plau-1302.000000)
+Enqueued T[0][163] (r-1304, dd-1312, plau-1310.000000)
+Enqueued T[0][164] (r-1312, dd-1320, plau-1318.000000)
+Enqueued T[0][165] (r-1320, dd-1328, plau-1326.000000)
+Enqueued T[0][166] (r-1328, dd-1336, plau-1334.000000)
+Enqueued T[0][167] (r-1336, dd-1344, plau-1342.000000)
+Enqueued T[0][168] (r-1344, dd-1352, plau-1350.000000)
+Enqueued T[0][169] (r-1352, dd-1360, plau-1358.000000)
+Enqueued T[0][170] (r-1360, dd-1368, plau-1366.000000)
+Enqueued T[0][171] (r-1368, dd-1376, plau-1374.000000)
+Enqueued T[0][172] (r-1376, dd-1384, plau-1382.000000)
+Enqueued T[0][173] (r-1384, dd-1392, plau-1390.000000)
+Enqueued T[0][174] (r-1392, dd-1400, plau-1398.000000)
+Enqueued T[0][175] (r-1400, dd-1408, plau-1406.000000)
+Enqueued T[0][176] (r-1408, dd-1416, plau-1414.000000)
+Enqueued T[0][177] (r-1416, dd-1424, plau-1422.000000)
+Enqueued T[0][178] (r-1424, dd-1432, plau-1430.000000)
+Enqueued T[0][179] (r-1432, dd-1440, plau-1438.000000)
+Enqueued T[0][180] (r-1440, dd-1448, plau-1446.000000)
+Enqueued T[0][181] (r-1448, dd-1456, plau-1454.000000)
+Enqueued T[0][182] (r-1456, dd-1464, plau-1462.000000)
+Enqueued T[0][183] (r-1464, dd-1472, plau-1470.000000)
+Enqueued T[0][184] (r-1472, dd-1480, plau-1478.000000)
+Enqueued T[0][185] (r-1480, dd-1488, plau-1486.000000)
+Enqueued T[0][186] (r-1488, dd-1496, plau-1494.000000)
+Enqueued T[0][187] (r-1496, dd-1504, plau-1502.000000)
+Enqueued T[0][188] (r-1504, dd-1512, plau-1510.000000)
+Enqueued T[0][189] (r-1512, dd-1520, plau-1518.000000)
+Enqueued T[0][190] (r-1520, dd-1528, plau-1526.000000)
+Enqueued T[0][191] (r-1528, dd-1536, plau-1534.000000)
+Enqueued T[0][192] (r-1536, dd-1544, plau-1542.000000)
+Enqueued T[0][193] (r-1544, dd-1552, plau-1550.000000)
+Enqueued T[0][194] (r-1552, dd-1560, plau-1558.000000)
+Enqueued T[0][195] (r-1560, dd-1568, plau-1566.000000)
+Enqueued T[0][196] (r-1568, dd-1576, plau-1574.000000)
+Enqueued T[0][197] (r-1576, dd-1584, plau-1582.000000)
+Enqueued T[0][198] (r-1584, dd-1592, plau-1590.000000)
+Enqueued T[0][199] (r-1592, dd-1600, plau-1598.000000)
+Enqueued T[0][200] (r-1600, dd-1608, plau-1606.000000)
+Enqueued T[0][201] (r-1608, dd-1616, plau-1614.000000)
+Enqueued T[0][202] (r-1616, dd-1624, plau-1622.000000)
+Enqueued T[0][203] (r-1624, dd-1632, plau-1630.000000)
+Enqueued T[0][204] (r-1632, dd-1640, plau-1638.000000)
+Enqueued T[0][205] (r-1640, dd-1648, plau-1646.000000)
+Enqueued T[0][206] (r-1648, dd-1656, plau-1654.000000)
+Enqueued T[0][207] (r-1656, dd-1664, plau-1662.000000)
+Enqueued T[0][208] (r-1664, dd-1672, plau-1670.000000)
+Enqueued T[0][209] (r-1672, dd-1680, plau-1678.000000)
+Enqueued T[0][210] (r-1680, dd-1688, plau-1686.000000)
+Enqueued T[0][211] (r-1688, dd-1696, plau-1694.000000)
+Enqueued T[0][212] (r-1696, dd-1704, plau-1702.000000)
+Enqueued T[0][213] (r-1704, dd-1712, plau-1710.000000)
+Enqueued T[0][214] (r-1712, dd-1720, plau-1718.000000)
+Enqueued T[0][215] (r-1720, dd-1728, plau-1726.000000)
+Enqueued T[0][216] (r-1728, dd-1736, plau-1734.000000)
+Enqueued T[0][217] (r-1736, dd-1744, plau-1742.000000)
+Enqueued T[0][218] (r-1744, dd-1752, plau-1750.000000)
+Enqueued T[0][219] (r-1752, dd-1760, plau-1758.000000)
+Enqueued T[0][220] (r-1760, dd-1768, plau-1766.000000)
+Enqueued T[0][221] (r-1768, dd-1776, plau-1774.000000)
+Enqueued T[0][222] (r-1776, dd-1784, plau-1782.000000)
+Enqueued T[0][223] (r-1784, dd-1792, plau-1790.000000)
+Enqueued T[0][224] (r-1792, dd-1800, plau-1798.000000)
+Enqueued T[0][225] (r-1800, dd-1808, plau-1806.000000)
+Enqueued T[0][226] (r-1808, dd-1816, plau-1814.000000)
+Enqueued T[0][227] (r-1816, dd-1824, plau-1822.000000)
+Enqueued T[0][228] (r-1824, dd-1832, plau-1830.000000)
+Enqueued T[0][229] (r-1832, dd-1840, plau-1838.000000)
+Enqueued T[0][230] (r-1840, dd-1848, plau-1846.000000)
+Enqueued T[0][231] (r-1848, dd-1856, plau-1854.000000)
+Enqueued T[0][232] (r-1856, dd-1864, plau-1862.000000)
+Enqueued T[0][233] (r-1864, dd-1872, plau-1870.000000)
+Enqueued T[0][234] (r-1872, dd-1880, plau-1878.000000)
+Enqueued T[0][235] (r-1880, dd-1888, plau-1886.000000)
+Enqueued T[0][236] (r-1888, dd-1896, plau-1894.000000)
+Enqueued T[0][237] (r-1896, dd-1904, plau-1902.000000)
+Enqueued T[0][238] (r-1904, dd-1912, plau-1910.000000)
+Enqueued T[0][239] (r-1912, dd-1920, plau-1918.000000)
+Enqueued T[0][240] (r-1920, dd-1928, plau-1926.000000)
+Enqueued T[0][241] (r-1928, dd-1936, plau-1934.000000)
+Enqueued T[0][242] (r-1936, dd-1944, plau-1942.000000)
+Enqueued T[0][243] (r-1944, dd-1952, plau-1950.000000)
+Enqueued T[0][244] (r-1952, dd-1960, plau-1958.000000)
+Enqueued T[0][245] (r-1960, dd-1968, plau-1966.000000)
+Enqueued T[0][246] (r-1968, dd-1976, plau-1974.000000)
+Enqueued T[0][247] (r-1976, dd-1984, plau-1982.000000)
+Enqueued T[0][248] (r-1984, dd-1992, plau-1990.000000)
+Enqueued T[0][249] (r-1992, dd-2000, plau-1998.000000)
+Enqueued T[0][250] (r-2000, dd-2008, plau-2006.000000)
+Enqueued T[0][251] (r-2008, dd-2016, plau-2014.000000)
+Enqueued T[0][252] (r-2016, dd-2024, plau-2022.000000)
+Enqueued T[0][253] (r-2024, dd-2032, plau-2030.000000)
+Enqueued T[0][254] (r-2032, dd-2040, plau-2038.000000)
+Enqueued T[0][255] (r-2040, dd-2048, plau-2046.000000)
+Enqueued T[0][256] (r-2048, dd-2056, plau-2054.000000)
+Enqueued T[0][257] (r-2056, dd-2064, plau-2062.000000)
+Enqueued T[0][258] (r-2064, dd-2072, plau-2070.000000)
+Enqueued T[0][259] (r-2072, dd-2080, plau-2078.000000)
+Enqueued T[0][260] (r-2080, dd-2088, plau-2086.000000)
+Enqueued T[0][261] (r-2088, dd-2096, plau-2094.000000)
+Enqueued T[0][262] (r-2096, dd-2104, plau-2102.000000)
+Enqueued T[0][263] (r-2104, dd-2112, plau-2110.000000)
+Enqueued T[0][264] (r-2112, dd-2120, plau-2118.000000)
+Enqueued T[0][265] (r-2120, dd-2128, plau-2126.000000)
+Enqueued T[0][266] (r-2128, dd-2136, plau-2134.000000)
+Enqueued T[0][267] (r-2136, dd-2144, plau-2142.000000)
+Enqueued T[0][268] (r-2144, dd-2152, plau-2150.000000)
+Enqueued T[0][269] (r-2152, dd-2160, plau-2158.000000)
+Enqueued T[0][270] (r-2160, dd-2168, plau-2166.000000)
+Enqueued T[0][271] (r-2168, dd-2176, plau-2174.000000)
+Enqueued T[0][272] (r-2176, dd-2184, plau-2182.000000)
+Enqueued T[0][273] (r-2184, dd-2192, plau-2190.000000)
+Enqueued T[0][274] (r-2192, dd-2200, plau-2198.000000)
+Enqueued T[0][275] (r-2200, dd-2208, plau-2206.000000)
+Enqueued T[0][276] (r-2208, dd-2216, plau-2214.000000)
+Enqueued T[0][277] (r-2216, dd-2224, plau-2222.000000)
+Enqueued T[0][278] (r-2224, dd-2232, plau-2230.000000)
+Enqueued T[0][279] (r-2232, dd-2240, plau-2238.000000)
+Enqueued T[0][280] (r-2240, dd-2248, plau-2246.000000)
+Enqueued T[0][281] (r-2248, dd-2256, plau-2254.000000)
+Enqueued T[0][282] (r-2256, dd-2264, plau-2262.000000)
+Enqueued T[0][283] (r-2264, dd-2272, plau-2270.000000)
+Enqueued T[0][284] (r-2272, dd-2280, plau-2278.000000)
+Enqueued T[0][285] (r-2280, dd-2288, plau-2286.000000)
+Enqueued T[0][286] (r-2288, dd-2296, plau-2294.000000)
+Enqueued T[0][287] (r-2296, dd-2304, plau-2302.000000)
+Enqueued T[0][288] (r-2304, dd-2312, plau-2310.000000)
+Enqueued T[0][289] (r-2312, dd-2320, plau-2318.000000)
+Enqueued T[0][290] (r-2320, dd-2328, plau-2326.000000)
+Enqueued T[0][291] (r-2328, dd-2336, plau-2334.000000)
+Enqueued T[0][292] (r-2336, dd-2344, plau-2342.000000)
+Enqueued T[0][293] (r-2344, dd-2352, plau-2350.000000)
+Enqueued T[0][294] (r-2352, dd-2360, plau-2358.000000)
+Enqueued T[0][295] (r-2360, dd-2368, plau-2366.000000)
+Enqueued T[0][296] (r-2368, dd-2376, plau-2374.000000)
+Enqueued T[0][297] (r-2376, dd-2384, plau-2382.000000)
+Enqueued T[0][298] (r-2384, dd-2392, plau-2390.000000)
+Enqueued T[0][299] (r-2392, dd-2400, plau-2398.000000)
+Enqueued T[0][300] (r-2400, dd-2408, plau-2406.000000)
+Enqueued T[0][301] (r-2408, dd-2416, plau-2414.000000)
+Enqueued T[0][302] (r-2416, dd-2424, plau-2422.000000)
+Enqueued T[0][303] (r-2424, dd-2432, plau-2430.000000)
+Enqueued T[0][304] (r-2432, dd-2440, plau-2438.000000)
+Enqueued T[0][305] (r-2440, dd-2448, plau-2446.000000)
+Enqueued T[0][306] (r-2448, dd-2456, plau-2454.000000)
+Enqueued T[0][307] (r-2456, dd-2464, plau-2462.000000)
+Enqueued T[0][308] (r-2464, dd-2472, plau-2470.000000)
+Enqueued T[0][309] (r-2472, dd-2480, plau-2478.000000)
+Enqueued T[0][310] (r-2480, dd-2488, plau-2486.000000)
+Enqueued T[0][311] (r-2488, dd-2496, plau-2494.000000)
+Enqueued T[0][312] (r-2496, dd-2504, plau-2502.000000)
+Enqueued T[0][313] (r-2504, dd-2512, plau-2510.000000)
+Enqueued T[0][314] (r-2512, dd-2520, plau-2518.000000)
+Enqueued T[0][315] (r-2520, dd-2528, plau-2526.000000)
+Enqueued T[0][316] (r-2528, dd-2536, plau-2534.000000)
+Enqueued T[0][317] (r-2536, dd-2544, plau-2542.000000)
+Enqueued T[0][318] (r-2544, dd-2552, plau-2550.000000)
+Enqueued T[0][319] (r-2552, dd-2560, plau-2558.000000)
+Enqueued T[0][320] (r-2560, dd-2568, plau-2566.000000)
+Enqueued T[0][321] (r-2568, dd-2576, plau-2574.000000)
+Enqueued T[0][322] (r-2576, dd-2584, plau-2582.000000)
+Enqueued T[0][323] (r-2584, dd-2592, plau-2590.000000)
+Enqueued T[0][324] (r-2592, dd-2600, plau-2598.000000)
+Enqueued T[0][325] (r-2600, dd-2608, plau-2606.000000)
+Enqueued T[0][326] (r-2608, dd-2616, plau-2614.000000)
+Enqueued T[0][327] (r-2616, dd-2624, plau-2622.000000)
+Enqueued T[0][328] (r-2624, dd-2632, plau-2630.000000)
+Enqueued T[0][329] (r-2632, dd-2640, plau-2638.000000)
+Enqueued T[0][330] (r-2640, dd-2648, plau-2646.000000)
+Enqueued T[0][331] (r-2648, dd-2656, plau-2654.000000)
+Enqueued T[0][332] (r-2656, dd-2664, plau-2662.000000)
+Enqueued T[0][333] (r-2664, dd-2672, plau-2670.000000)
+Enqueued T[0][334] (r-2672, dd-2680, plau-2678.000000)
+Enqueued T[0][335] (r-2680, dd-2688, plau-2686.000000)
+Enqueued T[0][336] (r-2688, dd-2696, plau-2694.000000)
+Enqueued T[0][337] (r-2696, dd-2704, plau-2702.000000)
+Enqueued T[0][338] (r-2704, dd-2712, plau-2710.000000)
+Enqueued T[0][339] (r-2712, dd-2720, plau-2718.000000)
+Enqueued T[0][340] (r-2720, dd-2728, plau-2726.000000)
+Enqueued T[0][341] (r-2728, dd-2736, plau-2734.000000)
+Enqueued T[0][342] (r-2736, dd-2744, plau-2742.000000)
+Enqueued T[0][343] (r-2744, dd-2752, plau-2750.000000)
+Enqueued T[0][344] (r-2752, dd-2760, plau-2758.000000)
+Enqueued T[0][345] (r-2760, dd-2768, plau-2766.000000)
+Enqueued T[0][346] (r-2768, dd-2776, plau-2774.000000)
+Enqueued T[0][347] (r-2776, dd-2784, plau-2782.000000)
+Enqueued T[0][348] (r-2784, dd-2792, plau-2790.000000)
+Enqueued T[0][349] (r-2792, dd-2800, plau-2798.000000)
+Enqueued T[0][350] (r-2800, dd-2808, plau-2806.000000)
+Enqueued T[0][351] (r-2808, dd-2816, plau-2814.000000)
+Enqueued T[0][352] (r-2816, dd-2824, plau-2822.000000)
+Enqueued T[0][353] (r-2824, dd-2832, plau-2830.000000)
+Enqueued T[0][354] (r-2832, dd-2840, plau-2838.000000)
+Enqueued T[0][355] (r-2840, dd-2848, plau-2846.000000)
+Enqueued T[0][356] (r-2848, dd-2856, plau-2854.000000)
+Enqueued T[0][357] (r-2856, dd-2864, plau-2862.000000)
+Enqueued T[0][358] (r-2864, dd-2872, plau-2870.000000)
+Enqueued T[0][359] (r-2872, dd-2880, plau-2878.000000)
+Enqueued T[0][360] (r-2880, dd-2888, plau-2886.000000)
+Enqueued T[0][361] (r-2888, dd-2896, plau-2894.000000)
+Enqueued T[0][362] (r-2896, dd-2904, plau-2902.000000)
+Enqueued T[0][363] (r-2904, dd-2912, plau-2910.000000)
+Enqueued T[0][364] (r-2912, dd-2920, plau-2918.000000)
+Enqueued T[0][365] (r-2920, dd-2928, plau-2926.000000)
+Enqueued T[0][366] (r-2928, dd-2936, plau-2934.000000)
+Enqueued T[0][367] (r-2936, dd-2944, plau-2942.000000)
+Enqueued T[0][368] (r-2944, dd-2952, plau-2950.000000)
+Enqueued T[0][369] (r-2952, dd-2960, plau-2958.000000)
+Enqueued T[0][370] (r-2960, dd-2968, plau-2966.000000)
+Enqueued T[0][371] (r-2968, dd-2976, plau-2974.000000)
+Enqueued T[0][372] (r-2976, dd-2984, plau-2982.000000)
+Enqueued T[0][373] (r-2984, dd-2992, plau-2990.000000)
+Enqueued T[0][374] (r-2992, dd-3000, plau-2998.000000)
+Enqueued T[0][375] (r-3000, dd-3008, plau-3006.000000)
+Enqueued T[0][376] (r-3008, dd-3016, plau-3014.000000)
+Enqueued T[0][377] (r-3016, dd-3024, plau-3022.000000)
+Enqueued T[0][378] (r-3024, dd-3032, plau-3030.000000)
+Enqueued T[0][379] (r-3032, dd-3040, plau-3038.000000)
+Enqueued T[0][380] (r-3040, dd-3048, plau-3046.000000)
+Enqueued T[0][381] (r-3048, dd-3056, plau-3054.000000)
+Enqueued T[0][382] (r-3056, dd-3064, plau-3062.000000)
+Enqueued T[0][383] (r-3064, dd-3072, plau-3070.000000)
+Enqueued T[0][384] (r-3072, dd-3080, plau-3078.000000)
+Enqueued T[0][385] (r-3080, dd-3088, plau-3086.000000)
+Enqueued T[0][386] (r-3088, dd-3096, plau-3094.000000)
+Enqueued T[0][387] (r-3096, dd-3104, plau-3102.000000)
+Enqueued T[0][388] (r-3104, dd-3112, plau-3110.000000)
+Enqueued T[0][389] (r-3112, dd-3120, plau-3118.000000)
+Enqueued T[0][390] (r-3120, dd-3128, plau-3126.000000)
+Enqueued T[0][391] (r-3128, dd-3136, plau-3134.000000)
+Enqueued T[0][392] (r-3136, dd-3144, plau-3142.000000)
+Enqueued T[0][393] (r-3144, dd-3152, plau-3150.000000)
+Enqueued T[0][394] (r-3152, dd-3160, plau-3158.000000)
+Enqueued T[0][395] (r-3160, dd-3168, plau-3166.000000)
+Enqueued T[0][396] (r-3168, dd-3176, plau-3174.000000)
+Enqueued T[0][397] (r-3176, dd-3184, plau-3182.000000)
+Enqueued T[0][398] (r-3184, dd-3192, plau-3190.000000)
+Enqueued T[0][399] (r-3192, dd-3200, plau-3198.000000)
+Enqueued T[0][400] (r-3200, dd-3208, plau-3206.000000)
+Enqueued T[0][401] (r-3208, dd-3216, plau-3214.000000)
+Enqueued T[0][402] (r-3216, dd-3224, plau-3222.000000)
+Enqueued T[0][403] (r-3224, dd-3232, plau-3230.000000)
+Enqueued T[0][404] (r-3232, dd-3240, plau-3238.000000)
+Enqueued T[0][405] (r-3240, dd-3248, plau-3246.000000)
+Enqueued T[0][406] (r-3248, dd-3256, plau-3254.000000)
+Enqueued T[0][407] (r-3256, dd-3264, plau-3262.000000)
+Enqueued T[0][408] (r-3264, dd-3272, plau-3270.000000)
+Enqueued T[0][409] (r-3272, dd-3280, plau-3278.000000)
+Enqueued T[0][410] (r-3280, dd-3288, plau-3286.000000)
+Enqueued T[0][411] (r-3288, dd-3296, plau-3294.000000)
+Enqueued T[0][412] (r-3296, dd-3304, plau-3302.000000)
+Enqueued T[0][413] (r-3304, dd-3312, plau-3310.000000)
+Enqueued T[0][414] (r-3312, dd-3320, plau-3318.000000)
+Enqueued T[0][415] (r-3320, dd-3328, plau-3326.000000)
+Enqueued T[0][416] (r-3328, dd-3336, plau-3334.000000)
+Enqueued T[0][417] (r-3336, dd-3344, plau-3342.000000)
+Enqueued T[0][418] (r-3344, dd-3352, plau-3350.000000)
+Enqueued T[0][419] (r-3352, dd-3360, plau-3358.000000)
+Enqueued T[0][420] (r-3360, dd-3368, plau-3366.000000)
+Enqueued T[0][421] (r-3368, dd-3376, plau-3374.000000)
+Enqueued T[0][422] (r-3376, dd-3384, plau-3382.000000)
+Enqueued T[0][423] (r-3384, dd-3392, plau-3390.000000)
+Enqueued T[0][424] (r-3392, dd-3400, plau-3398.000000)
+Enqueued T[0][425] (r-3400, dd-3408, plau-3406.000000)
+Enqueued T[0][426] (r-3408, dd-3416, plau-3414.000000)
+Enqueued T[0][427] (r-3416, dd-3424, plau-3422.000000)
+Enqueued T[0][428] (r-3424, dd-3432, plau-3430.000000)
+Enqueued T[0][429] (r-3432, dd-3440, plau-3438.000000)
+Enqueued T[0][430] (r-3440, dd-3448, plau-3446.000000)
+Enqueued T[0][431] (r-3448, dd-3456, plau-3454.000000)
+Enqueued T[0][432] (r-3456, dd-3464, plau-3462.000000)
+Enqueued T[0][433] (r-3464, dd-3472, plau-3470.000000)
+Enqueued T[0][434] (r-3472, dd-3480, plau-3478.000000)
+Enqueued T[0][435] (r-3480, dd-3488, plau-3486.000000)
+Enqueued T[0][436] (r-3488, dd-3496, plau-3494.000000)
+Enqueued T[0][437] (r-3496, dd-3504, plau-3502.000000)
+Enqueued T[0][438] (r-3504, dd-3512, plau-3510.000000)
+Enqueued T[0][439] (r-3512, dd-3520, plau-3518.000000)
+Enqueued T[0][440] (r-3520, dd-3528, plau-3526.000000)
+Enqueued T[0][441] (r-3528, dd-3536, plau-3534.000000)
+Enqueued T[0][442] (r-3536, dd-3544, plau-3542.000000)
+Enqueued T[0][443] (r-3544, dd-3552, plau-3550.000000)
+Enqueued T[0][444] (r-3552, dd-3560, plau-3558.000000)
+Enqueued T[0][445] (r-3560, dd-3568, plau-3566.000000)
+Enqueued T[0][446] (r-3568, dd-3576, plau-3574.000000)
+Enqueued T[0][447] (r-3576, dd-3584, plau-3582.000000)
+Enqueued T[0][448] (r-3584, dd-3592, plau-3590.000000)
+Enqueued T[0][449] (r-3592, dd-3600, plau-3598.000000)
+Enqueued T[0][450] (r-3600, dd-3608, plau-3606.000000)
+Enqueued T[0][451] (r-3608, dd-3616, plau-3614.000000)
+Enqueued T[0][452] (r-3616, dd-3624, plau-3622.000000)
+Enqueued T[0][453] (r-3624, dd-3632, plau-3630.000000)
+Enqueued T[0][454] (r-3632, dd-3640, plau-3638.000000)
+Enqueued T[0][455] (r-3640, dd-3648, plau-3646.000000)
+Enqueued T[0][456] (r-3648, dd-3656, plau-3654.000000)
+Enqueued T[0][457] (r-3656, dd-3664, plau-3662.000000)
+Enqueued T[0][458] (r-3664, dd-3672, plau-3670.000000)
+Enqueued T[0][459] (r-3672, dd-3680, plau-3678.000000)
+Enqueued T[0][460] (r-3680, dd-3688, plau-3686.000000)
+Enqueued T[0][461] (r-3688, dd-3696, plau-3694.000000)
+Enqueued T[0][462] (r-3696, dd-3704, plau-3702.000000)
+Enqueued T[0][463] (r-3704, dd-3712, plau-3710.000000)
+Enqueued T[0][464] (r-3712, dd-3720, plau-3718.000000)
+Enqueued T[0][465] (r-3720, dd-3728, plau-3726.000000)
+Enqueued T[0][466] (r-3728, dd-3736, plau-3734.000000)
+Enqueued T[0][467] (r-3736, dd-3744, plau-3742.000000)
+Enqueued T[0][468] (r-3744, dd-3752, plau-3750.000000)
+Enqueued T[0][469] (r-3752, dd-3760, plau-3758.000000)
+Enqueued T[0][470] (r-3760, dd-3768, plau-3766.000000)
+Enqueued T[0][471] (r-3768, dd-3776, plau-3774.000000)
+Enqueued T[0][472] (r-3776, dd-3784, plau-3782.000000)
+Enqueued T[0][473] (r-3784, dd-3792, plau-3790.000000)
+Enqueued T[0][474] (r-3792, dd-3800, plau-3798.000000)
+Enqueued T[0][475] (r-3800, dd-3808, plau-3806.000000)
+Enqueued T[0][476] (r-3808, dd-3816, plau-3814.000000)
+Enqueued T[0][477] (r-3816, dd-3824, plau-3822.000000)
+Enqueued T[0][478] (r-3824, dd-3832, plau-3830.000000)
+Enqueued T[0][479] (r-3832, dd-3840, plau-3838.000000)
+Enqueued T[0][480] (r-3840, dd-3848, plau-3846.000000)
+Enqueued T[0][481] (r-3848, dd-3856, plau-3854.000000)
+Enqueued T[0][482] (r-3856, dd-3864, plau-3862.000000)
+Enqueued T[0][483] (r-3864, dd-3872, plau-3870.000000)
+Enqueued T[0][484] (r-3872, dd-3880, plau-3878.000000)
+Enqueued T[0][485] (r-3880, dd-3888, plau-3886.000000)
+Enqueued T[0][486] (r-3888, dd-3896, plau-3894.000000)
+Enqueued T[0][487] (r-3896, dd-3904, plau-3902.000000)
+Enqueued T[0][488] (r-3904, dd-3912, plau-3910.000000)
+Enqueued T[0][489] (r-3912, dd-3920, plau-3918.000000)
+Enqueued T[0][490] (r-3920, dd-3928, plau-3926.000000)
+Enqueued T[0][491] (r-3928, dd-3936, plau-3934.000000)
+Enqueued T[0][492] (r-3936, dd-3944, plau-3942.000000)
+Enqueued T[0][493] (r-3944, dd-3952, plau-3950.000000)
+Enqueued T[0][494] (r-3952, dd-3960, plau-3958.000000)
+Enqueued T[0][495] (r-3960, dd-3968, plau-3966.000000)
+Enqueued T[0][496] (r-3968, dd-3976, plau-3974.000000)
+Enqueued T[0][497] (r-3976, dd-3984, plau-3982.000000)
+Enqueued T[0][498] (r-3984, dd-3992, plau-3990.000000)
+Enqueued T[0][499] (r-3992, dd-4000, plau-3998.000000)
+Enqueued T[0][500] (r-4000, dd-4008, plau-4006.000000)
+Enqueued T[0][501] (r-4008, dd-4016, plau-4014.000000)
+Enqueued T[0][502] (r-4016, dd-4024, plau-4022.000000)
+Enqueued T[0][503] (r-4024, dd-4032, plau-4030.000000)
+Enqueued T[0][504] (r-4032, dd-4040, plau-4038.000000)
+Enqueued T[0][505] (r-4040, dd-4048, plau-4046.000000)
+Enqueued T[0][506] (r-4048, dd-4056, plau-4054.000000)
+Enqueued T[0][507] (r-4056, dd-4064, plau-4062.000000)
+Enqueued T[0][508] (r-4064, dd-4072, plau-4070.000000)
+Enqueued T[0][509] (r-4072, dd-4080, plau-4078.000000)
+Enqueued T[0][510] (r-4080, dd-4088, plau-4086.000000)
+Enqueued T[0][511] (r-4088, dd-4096, plau-4094.000000)
+Enqueued T[0][512] (r-4096, dd-4104, plau-4102.000000)
+Enqueued T[0][513] (r-4104, dd-4112, plau-4110.000000)
+Enqueued T[0][514] (r-4112, dd-4120, plau-4118.000000)
+Enqueued T[0][515] (r-4120, dd-4128, plau-4126.000000)
+Enqueued T[0][516] (r-4128, dd-4136, plau-4134.000000)
+Enqueued T[0][517] (r-4136, dd-4144, plau-4142.000000)
+Enqueued T[0][518] (r-4144, dd-4152, plau-4150.000000)
+Enqueued T[0][519] (r-4152, dd-4160, plau-4158.000000)
+Enqueued T[0][520] (r-4160, dd-4168, plau-4166.000000)
+Enqueued T[0][521] (r-4168, dd-4176, plau-4174.000000)
+Enqueued T[0][522] (r-4176, dd-4184, plau-4182.000000)
+Enqueued T[0][523] (r-4184, dd-4192, plau-4190.000000)
+Enqueued T[0][524] (r-4192, dd-4200, plau-4198.000000)
+Enqueued T[0][525] (r-4200, dd-4208, plau-4206.000000)
+Enqueued T[0][526] (r-4208, dd-4216, plau-4214.000000)
+Enqueued T[0][527] (r-4216, dd-4224, plau-4222.000000)
+Enqueued T[0][528] (r-4224, dd-4232, plau-4230.000000)
+Enqueued T[0][529] (r-4232, dd-4240, plau-4238.000000)
+Enqueued T[0][530] (r-4240, dd-4248, plau-4246.000000)
+Enqueued T[0][531] (r-4248, dd-4256, plau-4254.000000)
+Enqueued T[0][532] (r-4256, dd-4264, plau-4262.000000)
+Enqueued T[0][533] (r-4264, dd-4272, plau-4270.000000)
+Enqueued T[0][534] (r-4272, dd-4280, plau-4278.000000)
+Enqueued T[0][535] (r-4280, dd-4288, plau-4286.000000)
+Enqueued T[0][536] (r-4288, dd-4296, plau-4294.000000)
+Enqueued T[0][537] (r-4296, dd-4304, plau-4302.000000)
+Enqueued T[0][538] (r-4304, dd-4312, plau-4310.000000)
+Enqueued T[0][539] (r-4312, dd-4320, plau-4318.000000)
+Enqueued T[0][540] (r-4320, dd-4328, plau-4326.000000)
+Enqueued T[0][541] (r-4328, dd-4336, plau-4334.000000)
+Enqueued T[0][542] (r-4336, dd-4344, plau-4342.000000)
+Enqueued T[0][543] (r-4344, dd-4352, plau-4350.000000)
+Enqueued T[0][544] (r-4352, dd-4360, plau-4358.000000)
+Enqueued T[0][545] (r-4360, dd-4368, plau-4366.000000)
+Enqueued T[0][546] (r-4368, dd-4376, plau-4374.000000)
+Enqueued T[0][547] (r-4376, dd-4384, plau-4382.000000)
+Enqueued T[0][548] (r-4384, dd-4392, plau-4390.000000)
+Enqueued T[0][549] (r-4392, dd-4400, plau-4398.000000)
+Enqueued T[0][550] (r-4400, dd-4408, plau-4406.000000)
+Enqueued T[0][551] (r-4408, dd-4416, plau-4414.000000)
+Enqueued T[0][552] (r-4416, dd-4424, plau-4422.000000)
+Enqueued T[0][553] (r-4424, dd-4432, plau-4430.000000)
+Enqueued T[0][554] (r-4432, dd-4440, plau-4438.000000)
+Enqueued T[0][555] (r-4440, dd-4448, plau-4446.000000)
+Enqueued T[0][556] (r-4448, dd-4456, plau-4454.000000)
+Enqueued T[0][557] (r-4456, dd-4464, plau-4462.000000)
+Enqueued T[0][558] (r-4464, dd-4472, plau-4470.000000)
+Enqueued T[0][559] (r-4472, dd-4480, plau-4478.000000)
+Enqueued T[0][560] (r-4480, dd-4488, plau-4486.000000)
+Enqueued T[0][561] (r-4488, dd-4496, plau-4494.000000)
+Enqueued T[0][562] (r-4496, dd-4504, plau-4502.000000)
+Enqueued T[0][563] (r-4504, dd-4512, plau-4510.000000)
+Enqueued T[0][564] (r-4512, dd-4520, plau-4518.000000)
+Enqueued T[0][565] (r-4520, dd-4528, plau-4526.000000)
+Enqueued T[0][566] (r-4528, dd-4536, plau-4534.000000)
+Enqueued T[0][567] (r-4536, dd-4544, plau-4542.000000)
+Enqueued T[0][568] (r-4544, dd-4552, plau-4550.000000)
+Enqueued T[0][569] (r-4552, dd-4560, plau-4558.000000)
+Enqueued T[0][570] (r-4560, dd-4568, plau-4566.000000)
+Enqueued T[0][571] (r-4568, dd-4576, plau-4574.000000)
+Enqueued T[0][572] (r-4576, dd-4584, plau-4582.000000)
+Enqueued T[0][573] (r-4584, dd-4592, plau-4590.000000)
+Enqueued T[0][574] (r-4592, dd-4600, plau-4598.000000)
+Enqueued T[0][575] (r-4600, dd-4608, plau-4606.000000)
+Enqueued T[0][576] (r-4608, dd-4616, plau-4614.000000)
+Enqueued T[0][577] (r-4616, dd-4624, plau-4622.000000)
+Enqueued T[0][578] (r-4624, dd-4632, plau-4630.000000)
+Enqueued T[0][579] (r-4632, dd-4640, plau-4638.000000)
+Enqueued T[0][580] (r-4640, dd-4648, plau-4646.000000)
+Enqueued T[0][581] (r-4648, dd-4656, plau-4654.000000)
+Enqueued T[0][582] (r-4656, dd-4664, plau-4662.000000)
+Enqueued T[0][583] (r-4664, dd-4672, plau-4670.000000)
+Enqueued T[0][584] (r-4672, dd-4680, plau-4678.000000)
+Enqueued T[0][585] (r-4680, dd-4688, plau-4686.000000)
+Enqueued T[0][586] (r-4688, dd-4696, plau-4694.000000)
+Enqueued T[0][587] (r-4696, dd-4704, plau-4702.000000)
+Enqueued T[0][588] (r-4704, dd-4712, plau-4710.000000)
+Enqueued T[0][589] (r-4712, dd-4720, plau-4718.000000)
+Enqueued T[0][590] (r-4720, dd-4728, plau-4726.000000)
+Enqueued T[0][591] (r-4728, dd-4736, plau-4734.000000)
+Enqueued T[0][592] (r-4736, dd-4744, plau-4742.000000)
+Enqueued T[0][593] (r-4744, dd-4752, plau-4750.000000)
+Enqueued T[0][594] (r-4752, dd-4760, plau-4758.000000)
+Enqueued T[0][595] (r-4760, dd-4768, plau-4766.000000)
+Enqueued T[0][596] (r-4768, dd-4776, plau-4774.000000)
+Enqueued T[0][597] (r-4776, dd-4784, plau-4782.000000)
+Enqueued T[0][598] (r-4784, dd-4792, plau-4790.000000)
+Enqueued T[0][599] (r-4792, dd-4800, plau-4798.000000)
+Enqueued T[0][600] (r-4800, dd-4808, plau-4806.000000)
+Enqueued T[0][601] (r-4808, dd-4816, plau-4814.000000)
+Enqueued T[0][602] (r-4816, dd-4824, plau-4822.000000)
+Enqueued T[0][603] (r-4824, dd-4832, plau-4830.000000)
+Enqueued T[0][604] (r-4832, dd-4840, plau-4838.000000)
+Enqueued T[0][605] (r-4840, dd-4848, plau-4846.000000)
+Enqueued T[0][606] (r-4848, dd-4856, plau-4854.000000)
+Enqueued T[0][607] (r-4856, dd-4864, plau-4862.000000)
+Enqueued T[0][608] (r-4864, dd-4872, plau-4870.000000)
+Enqueued T[0][609] (r-4872, dd-4880, plau-4878.000000)
+Enqueued T[0][610] (r-4880, dd-4888, plau-4886.000000)
+Enqueued T[0][611] (r-4888, dd-4896, plau-4894.000000)
+Enqueued T[0][612] (r-4896, dd-4904, plau-4902.000000)
+Enqueued T[0][613] (r-4904, dd-4912, plau-4910.000000)
+Enqueued T[0][614] (r-4912, dd-4920, plau-4918.000000)
+Enqueued T[0][615] (r-4920, dd-4928, plau-4926.000000)
+Enqueued T[0][616] (r-4928, dd-4936, plau-4934.000000)
+Enqueued T[0][617] (r-4936, dd-4944, plau-4942.000000)
+Enqueued T[0][618] (r-4944, dd-4952, plau-4950.000000)
+Enqueued T[0][619] (r-4952, dd-4960, plau-4958.000000)
+Enqueued T[0][620] (r-4960, dd-4968, plau-4966.000000)
+Enqueued T[0][621] (r-4968, dd-4976, plau-4974.000000)
+Enqueued T[0][622] (r-4976, dd-4984, plau-4982.000000)
+Enqueued T[0][623] (r-4984, dd-4992, plau-4990.000000)
+Enqueued T[0][624] (r-4992, dd-5000, plau-4998.000000)
+Enqueued T[0][625] (r-5000, dd-5008, plau-5006.000000)
+Enqueued T[0][626] (r-5008, dd-5016, plau-5014.000000)
+Enqueued T[0][627] (r-5016, dd-5024, plau-5022.000000)
+Enqueued T[0][628] (r-5024, dd-5032, plau-5030.000000)
+Enqueued T[0][629] (r-5032, dd-5040, plau-5038.000000)
+Enqueued T[0][630] (r-5040, dd-5048, plau-5046.000000)
+Enqueued T[0][631] (r-5048, dd-5056, plau-5054.000000)
+Enqueued T[0][632] (r-5056, dd-5064, plau-5062.000000)
+Enqueued T[0][633] (r-5064, dd-5072, plau-5070.000000)
+Enqueued T[0][634] (r-5072, dd-5080, plau-5078.000000)
+Enqueued T[0][635] (r-5080, dd-5088, plau-5086.000000)
+Enqueued T[0][636] (r-5088, dd-5096, plau-5094.000000)
+Enqueued T[0][637] (r-5096, dd-5104, plau-5102.000000)
+Enqueued T[0][638] (r-5104, dd-5112, plau-5110.000000)
+Enqueued T[0][639] (r-5112, dd-5120, plau-5118.000000)
+Enqueued T[0][640] (r-5120, dd-5128, plau-5126.000000)
+Enqueued T[0][641] (r-5128, dd-5136, plau-5134.000000)
+Enqueued T[0][642] (r-5136, dd-5144, plau-5142.000000)
+Enqueued T[0][643] (r-5144, dd-5152, plau-5150.000000)
+Enqueued T[0][644] (r-5152, dd-5160, plau-5158.000000)
+Enqueued T[0][645] (r-5160, dd-5168, plau-5166.000000)
+Enqueued T[0][646] (r-5168, dd-5176, plau-5174.000000)
+Enqueued T[0][647] (r-5176, dd-5184, plau-5182.000000)
+Enqueued T[0][648] (r-5184, dd-5192, plau-5190.000000)
+Enqueued T[0][649] (r-5192, dd-5200, plau-5198.000000)
+Enqueued T[0][650] (r-5200, dd-5208, plau-5206.000000)
+Enqueued T[0][651] (r-5208, dd-5216, plau-5214.000000)
+Enqueued T[0][652] (r-5216, dd-5224, plau-5222.000000)
+Enqueued T[0][653] (r-5224, dd-5232, plau-5230.000000)
+Enqueued T[0][654] (r-5232, dd-5240, plau-5238.000000)
+Enqueued T[0][655] (r-5240, dd-5248, plau-5246.000000)
+Enqueued T[0][656] (r-5248, dd-5256, plau-5254.000000)
+Enqueued T[0][657] (r-5256, dd-5264, plau-5262.000000)
+Enqueued T[0][658] (r-5264, dd-5272, plau-5270.000000)
+Enqueued T[0][659] (r-5272, dd-5280, plau-5278.000000)
+Enqueued T[0][660] (r-5280, dd-5288, plau-5286.000000)
+Enqueued T[0][661] (r-5288, dd-5296, plau-5294.000000)
+Enqueued T[0][662] (r-5296, dd-5304, plau-5302.000000)
+Enqueued T[0][663] (r-5304, dd-5312, plau-5310.000000)
+Enqueued T[0][664] (r-5312, dd-5320, plau-5318.000000)
+Enqueued T[0][665] (r-5320, dd-5328, plau-5326.000000)
+Enqueued T[0][666] (r-5328, dd-5336, plau-5334.000000)
+Enqueued T[0][667] (r-5336, dd-5344, plau-5342.000000)
+Enqueued T[0][668] (r-5344, dd-5352, plau-5350.000000)
+Enqueued T[0][669] (r-5352, dd-5360, plau-5358.000000)
+Enqueued T[0][670] (r-5360, dd-5368, plau-5366.000000)
+Enqueued T[0][671] (r-5368, dd-5376, plau-5374.000000)
+Enqueued T[0][672] (r-5376, dd-5384, plau-5382.000000)
+Enqueued T[0][673] (r-5384, dd-5392, plau-5390.000000)
+Enqueued T[0][674] (r-5392, dd-5400, plau-5398.000000)
+Enqueued T[0][675] (r-5400, dd-5408, plau-5406.000000)
+Enqueued T[0][676] (r-5408, dd-5416, plau-5414.000000)
+Enqueued T[0][677] (r-5416, dd-5424, plau-5422.000000)
+Enqueued T[0][678] (r-5424, dd-5432, plau-5430.000000)
+Enqueued T[0][679] (r-5432, dd-5440, plau-5438.000000)
+Enqueued T[0][680] (r-5440, dd-5448, plau-5446.000000)
+Enqueued T[0][681] (r-5448, dd-5456, plau-5454.000000)
+Enqueued T[0][682] (r-5456, dd-5464, plau-5462.000000)
+Enqueued T[0][683] (r-5464, dd-5472, plau-5470.000000)
+Enqueued T[0][684] (r-5472, dd-5480, plau-5478.000000)
+Enqueued T[0][685] (r-5480, dd-5488, plau-5486.000000)
+Enqueued T[0][686] (r-5488, dd-5496, plau-5494.000000)
+Enqueued T[0][687] (r-5496, dd-5504, plau-5502.000000)
+Enqueued T[0][688] (r-5504, dd-5512, plau-5510.000000)
+Enqueued T[0][689] (r-5512, dd-5520, plau-5518.000000)
+Enqueued T[0][690] (r-5520, dd-5528, plau-5526.000000)
+Enqueued T[0][691] (r-5528, dd-5536, plau-5534.000000)
+Enqueued T[0][692] (r-5536, dd-5544, plau-5542.000000)
+Enqueued T[0][693] (r-5544, dd-5552, plau-5550.000000)
+Enqueued T[0][694] (r-5552, dd-5560, plau-5558.000000)
+Enqueued T[0][695] (r-5560, dd-5568, plau-5566.000000)
+Enqueued T[0][696] (r-5568, dd-5576, plau-5574.000000)
+Enqueued T[0][697] (r-5576, dd-5584, plau-5582.000000)
+Enqueued T[0][698] (r-5584, dd-5592, plau-5590.000000)
+Enqueued T[0][699] (r-5592, dd-5600, plau-5598.000000)
+Enqueued T[0][700] (r-5600, dd-5608, plau-5606.000000)
+Enqueued T[0][701] (r-5608, dd-5616, plau-5614.000000)
+Enqueued T[0][702] (r-5616, dd-5624, plau-5622.000000)
+Enqueued T[0][703] (r-5624, dd-5632, plau-5630.000000)
+Enqueued T[0][704] (r-5632, dd-5640, plau-5638.000000)
+Enqueued T[0][705] (r-5640, dd-5648, plau-5646.000000)
+Enqueued T[0][706] (r-5648, dd-5656, plau-5654.000000)
+Enqueued T[0][707] (r-5656, dd-5664, plau-5662.000000)
+Enqueued T[0][708] (r-5664, dd-5672, plau-5670.000000)
+Enqueued T[0][709] (r-5672, dd-5680, plau-5678.000000)
+Enqueued T[0][710] (r-5680, dd-5688, plau-5686.000000)
+Enqueued T[0][711] (r-5688, dd-5696, plau-5694.000000)
+Enqueued T[0][712] (r-5696, dd-5704, plau-5702.000000)
+Enqueued T[0][713] (r-5704, dd-5712, plau-5710.000000)
+Enqueued T[0][714] (r-5712, dd-5720, plau-5718.000000)
+Enqueued T[0][715] (r-5720, dd-5728, plau-5726.000000)
+Enqueued T[0][716] (r-5728, dd-5736, plau-5734.000000)
+Enqueued T[0][717] (r-5736, dd-5744, plau-5742.000000)
+Enqueued T[0][718] (r-5744, dd-5752, plau-5750.000000)
+Enqueued T[0][719] (r-5752, dd-5760, plau-5758.000000)
+Enqueued T[0][720] (r-5760, dd-5768, plau-5766.000000)
+Enqueued T[0][721] (r-5768, dd-5776, plau-5774.000000)
+Enqueued T[0][722] (r-5776, dd-5784, plau-5782.000000)
+Enqueued T[0][723] (r-5784, dd-5792, plau-5790.000000)
+Enqueued T[0][724] (r-5792, dd-5800, plau-5798.000000)
+Enqueued T[0][725] (r-5800, dd-5808, plau-5806.000000)
+Enqueued T[0][726] (r-5808, dd-5816, plau-5814.000000)
+Enqueued T[0][727] (r-5816, dd-5824, plau-5822.000000)
+Enqueued T[0][728] (r-5824, dd-5832, plau-5830.000000)
+Enqueued T[0][729] (r-5832, dd-5840, plau-5838.000000)
+Enqueued T[0][730] (r-5840, dd-5848, plau-5846.000000)
+Enqueued T[0][731] (r-5848, dd-5856, plau-5854.000000)
+Enqueued T[0][732] (r-5856, dd-5864, plau-5862.000000)
+Enqueued T[0][733] (r-5864, dd-5872, plau-5870.000000)
+Enqueued T[0][734] (r-5872, dd-5880, plau-5878.000000)
+Enqueued T[1][0] (r-0, dd-14, plau-13.000000)
+Enqueued T[1][1] (r-14, dd-28, plau-27.000000)
+Enqueued T[1][2] (r-28, dd-42, plau-41.000000)
+Enqueued T[1][3] (r-42, dd-56, plau-55.000000)
+Enqueued T[1][4] (r-56, dd-70, plau-69.000000)
+Enqueued T[1][5] (r-70, dd-84, plau-83.000000)
+Enqueued T[1][6] (r-84, dd-98, plau-97.000000)
+Enqueued T[1][7] (r-98, dd-112, plau-111.000000)
+Enqueued T[1][8] (r-112, dd-126, plau-125.000000)
+Enqueued T[1][9] (r-126, dd-140, plau-139.000000)
+Enqueued T[1][10] (r-140, dd-154, plau-153.000000)
+Enqueued T[1][11] (r-154, dd-168, plau-167.000000)
+Enqueued T[1][12] (r-168, dd-182, plau-181.000000)
+Enqueued T[1][13] (r-182, dd-196, plau-195.000000)
+Enqueued T[1][14] (r-196, dd-210, plau-209.000000)
+Enqueued T[1][15] (r-210, dd-224, plau-223.000000)
+Enqueued T[1][16] (r-224, dd-238, plau-237.000000)
+Enqueued T[1][17] (r-238, dd-252, plau-251.000000)
+Enqueued T[1][18] (r-252, dd-266, plau-265.000000)
+Enqueued T[1][19] (r-266, dd-280, plau-279.000000)
+Enqueued T[1][20] (r-280, dd-294, plau-293.000000)
+Enqueued T[1][21] (r-294, dd-308, plau-307.000000)
+Enqueued T[1][22] (r-308, dd-322, plau-321.000000)
+Enqueued T[1][23] (r-322, dd-336, plau-335.000000)
+Enqueued T[1][24] (r-336, dd-350, plau-349.000000)
+Enqueued T[1][25] (r-350, dd-364, plau-363.000000)
+Enqueued T[1][26] (r-364, dd-378, plau-377.000000)
+Enqueued T[1][27] (r-378, dd-392, plau-391.000000)
+Enqueued T[1][28] (r-392, dd-406, plau-405.000000)
+Enqueued T[1][29] (r-406, dd-420, plau-419.000000)
+Enqueued T[1][30] (r-420, dd-434, plau-433.000000)
+Enqueued T[1][31] (r-434, dd-448, plau-447.000000)
+Enqueued T[1][32] (r-448, dd-462, plau-461.000000)
+Enqueued T[1][33] (r-462, dd-476, plau-475.000000)
+Enqueued T[1][34] (r-476, dd-490, plau-489.000000)
+Enqueued T[1][35] (r-490, dd-504, plau-503.000000)
+Enqueued T[1][36] (r-504, dd-518, plau-517.000000)
+Enqueued T[1][37] (r-518, dd-532, plau-531.000000)
+Enqueued T[1][38] (r-532, dd-546, plau-545.000000)
+Enqueued T[1][39] (r-546, dd-560, plau-559.000000)
+Enqueued T[1][40] (r-560, dd-574, plau-573.000000)
+Enqueued T[1][41] (r-574, dd-588, plau-587.000000)
+Enqueued T[1][42] (r-588, dd-602, plau-601.000000)
+Enqueued T[1][43] (r-602, dd-616, plau-615.000000)
+Enqueued T[1][44] (r-616, dd-630, plau-629.000000)
+Enqueued T[1][45] (r-630, dd-644, plau-643.000000)
+Enqueued T[1][46] (r-644, dd-658, plau-657.000000)
+Enqueued T[1][47] (r-658, dd-672, plau-671.000000)
+Enqueued T[1][48] (r-672, dd-686, plau-685.000000)
+Enqueued T[1][49] (r-686, dd-700, plau-699.000000)
+Enqueued T[1][50] (r-700, dd-714, plau-713.000000)
+Enqueued T[1][51] (r-714, dd-728, plau-727.000000)
+Enqueued T[1][52] (r-728, dd-742, plau-741.000000)
+Enqueued T[1][53] (r-742, dd-756, plau-755.000000)
+Enqueued T[1][54] (r-756, dd-770, plau-769.000000)
+Enqueued T[1][55] (r-770, dd-784, plau-783.000000)
+Enqueued T[1][56] (r-784, dd-798, plau-797.000000)
+Enqueued T[1][57] (r-798, dd-812, plau-811.000000)
+Enqueued T[1][58] (r-812, dd-826, plau-825.000000)
+Enqueued T[1][59] (r-826, dd-840, plau-839.000000)
+Enqueued T[1][60] (r-840, dd-854, plau-853.000000)
+Enqueued T[1][61] (r-854, dd-868, plau-867.000000)
+Enqueued T[1][62] (r-868, dd-882, plau-881.000000)
+Enqueued T[1][63] (r-882, dd-896, plau-895.000000)
+Enqueued T[1][64] (r-896, dd-910, plau-909.000000)
+Enqueued T[1][65] (r-910, dd-924, plau-923.000000)
+Enqueued T[1][66] (r-924, dd-938, plau-937.000000)
+Enqueued T[1][67] (r-938, dd-952, plau-951.000000)
+Enqueued T[1][68] (r-952, dd-966, plau-965.000000)
+Enqueued T[1][69] (r-966, dd-980, plau-979.000000)
+Enqueued T[1][70] (r-980, dd-994, plau-993.000000)
+Enqueued T[1][71] (r-994, dd-1008, plau-1007.000000)
+Enqueued T[1][72] (r-1008, dd-1022, plau-1021.000000)
+Enqueued T[1][73] (r-1022, dd-1036, plau-1035.000000)
+Enqueued T[1][74] (r-1036, dd-1050, plau-1049.000000)
+Enqueued T[1][75] (r-1050, dd-1064, plau-1063.000000)
+Enqueued T[1][76] (r-1064, dd-1078, plau-1077.000000)
+Enqueued T[1][77] (r-1078, dd-1092, plau-1091.000000)
+Enqueued T[1][78] (r-1092, dd-1106, plau-1105.000000)
+Enqueued T[1][79] (r-1106, dd-1120, plau-1119.000000)
+Enqueued T[1][80] (r-1120, dd-1134, plau-1133.000000)
+Enqueued T[1][81] (r-1134, dd-1148, plau-1147.000000)
+Enqueued T[1][82] (r-1148, dd-1162, plau-1161.000000)
+Enqueued T[1][83] (r-1162, dd-1176, plau-1175.000000)
+Enqueued T[1][84] (r-1176, dd-1190, plau-1189.000000)
+Enqueued T[1][85] (r-1190, dd-1204, plau-1203.000000)
+Enqueued T[1][86] (r-1204, dd-1218, plau-1217.000000)
+Enqueued T[1][87] (r-1218, dd-1232, plau-1231.000000)
+Enqueued T[1][88] (r-1232, dd-1246, plau-1245.000000)
+Enqueued T[1][89] (r-1246, dd-1260, plau-1259.000000)
+Enqueued T[1][90] (r-1260, dd-1274, plau-1273.000000)
+Enqueued T[1][91] (r-1274, dd-1288, plau-1287.000000)
+Enqueued T[1][92] (r-1288, dd-1302, plau-1301.000000)
+Enqueued T[1][93] (r-1302, dd-1316, plau-1315.000000)
+Enqueued T[1][94] (r-1316, dd-1330, plau-1329.000000)
+Enqueued T[1][95] (r-1330, dd-1344, plau-1343.000000)
+Enqueued T[1][96] (r-1344, dd-1358, plau-1357.000000)
+Enqueued T[1][97] (r-1358, dd-1372, plau-1371.000000)
+Enqueued T[1][98] (r-1372, dd-1386, plau-1385.000000)
+Enqueued T[1][99] (r-1386, dd-1400, plau-1399.000000)
+Enqueued T[1][100] (r-1400, dd-1414, plau-1413.000000)
+Enqueued T[1][101] (r-1414, dd-1428, plau-1427.000000)
+Enqueued T[1][102] (r-1428, dd-1442, plau-1441.000000)
+Enqueued T[1][103] (r-1442, dd-1456, plau-1455.000000)
+Enqueued T[1][104] (r-1456, dd-1470, plau-1469.000000)
+Enqueued T[1][105] (r-1470, dd-1484, plau-1483.000000)
+Enqueued T[1][106] (r-1484, dd-1498, plau-1497.000000)
+Enqueued T[1][107] (r-1498, dd-1512, plau-1511.000000)
+Enqueued T[1][108] (r-1512, dd-1526, plau-1525.000000)
+Enqueued T[1][109] (r-1526, dd-1540, plau-1539.000000)
+Enqueued T[1][110] (r-1540, dd-1554, plau-1553.000000)
+Enqueued T[1][111] (r-1554, dd-1568, plau-1567.000000)
+Enqueued T[1][112] (r-1568, dd-1582, plau-1581.000000)
+Enqueued T[1][113] (r-1582, dd-1596, plau-1595.000000)
+Enqueued T[1][114] (r-1596, dd-1610, plau-1609.000000)
+Enqueued T[1][115] (r-1610, dd-1624, plau-1623.000000)
+Enqueued T[1][116] (r-1624, dd-1638, plau-1637.000000)
+Enqueued T[1][117] (r-1638, dd-1652, plau-1651.000000)
+Enqueued T[1][118] (r-1652, dd-1666, plau-1665.000000)
+Enqueued T[1][119] (r-1666, dd-1680, plau-1679.000000)
+Enqueued T[1][120] (r-1680, dd-1694, plau-1693.000000)
+Enqueued T[1][121] (r-1694, dd-1708, plau-1707.000000)
+Enqueued T[1][122] (r-1708, dd-1722, plau-1721.000000)
+Enqueued T[1][123] (r-1722, dd-1736, plau-1735.000000)
+Enqueued T[1][124] (r-1736, dd-1750, plau-1749.000000)
+Enqueued T[1][125] (r-1750, dd-1764, plau-1763.000000)
+Enqueued T[1][126] (r-1764, dd-1778, plau-1777.000000)
+Enqueued T[1][127] (r-1778, dd-1792, plau-1791.000000)
+Enqueued T[1][128] (r-1792, dd-1806, plau-1805.000000)
+Enqueued T[1][129] (r-1806, dd-1820, plau-1819.000000)
+Enqueued T[1][130] (r-1820, dd-1834, plau-1833.000000)
+Enqueued T[1][131] (r-1834, dd-1848, plau-1847.000000)
+Enqueued T[1][132] (r-1848, dd-1862, plau-1861.000000)
+Enqueued T[1][133] (r-1862, dd-1876, plau-1875.000000)
+Enqueued T[1][134] (r-1876, dd-1890, plau-1889.000000)
+Enqueued T[1][135] (r-1890, dd-1904, plau-1903.000000)
+Enqueued T[1][136] (r-1904, dd-1918, plau-1917.000000)
+Enqueued T[1][137] (r-1918, dd-1932, plau-1931.000000)
+Enqueued T[1][138] (r-1932, dd-1946, plau-1945.000000)
+Enqueued T[1][139] (r-1946, dd-1960, plau-1959.000000)
+Enqueued T[1][140] (r-1960, dd-1974, plau-1973.000000)
+Enqueued T[1][141] (r-1974, dd-1988, plau-1987.000000)
+Enqueued T[1][142] (r-1988, dd-2002, plau-2001.000000)
+Enqueued T[1][143] (r-2002, dd-2016, plau-2015.000000)
+Enqueued T[1][144] (r-2016, dd-2030, plau-2029.000000)
+Enqueued T[1][145] (r-2030, dd-2044, plau-2043.000000)
+Enqueued T[1][146] (r-2044, dd-2058, plau-2057.000000)
+Enqueued T[1][147] (r-2058, dd-2072, plau-2071.000000)
+Enqueued T[1][148] (r-2072, dd-2086, plau-2085.000000)
+Enqueued T[1][149] (r-2086, dd-2100, plau-2099.000000)
+Enqueued T[1][150] (r-2100, dd-2114, plau-2113.000000)
+Enqueued T[1][151] (r-2114, dd-2128, plau-2127.000000)
+Enqueued T[1][152] (r-2128, dd-2142, plau-2141.000000)
+Enqueued T[1][153] (r-2142, dd-2156, plau-2155.000000)
+Enqueued T[1][154] (r-2156, dd-2170, plau-2169.000000)
+Enqueued T[1][155] (r-2170, dd-2184, plau-2183.000000)
+Enqueued T[1][156] (r-2184, dd-2198, plau-2197.000000)
+Enqueued T[1][157] (r-2198, dd-2212, plau-2211.000000)
+Enqueued T[1][158] (r-2212, dd-2226, plau-2225.000000)
+Enqueued T[1][159] (r-2226, dd-2240, plau-2239.000000)
+Enqueued T[1][160] (r-2240, dd-2254, plau-2253.000000)
+Enqueued T[1][161] (r-2254, dd-2268, plau-2267.000000)
+Enqueued T[1][162] (r-2268, dd-2282, plau-2281.000000)
+Enqueued T[1][163] (r-2282, dd-2296, plau-2295.000000)
+Enqueued T[1][164] (r-2296, dd-2310, plau-2309.000000)
+Enqueued T[1][165] (r-2310, dd-2324, plau-2323.000000)
+Enqueued T[1][166] (r-2324, dd-2338, plau-2337.000000)
+Enqueued T[1][167] (r-2338, dd-2352, plau-2351.000000)
+Enqueued T[1][168] (r-2352, dd-2366, plau-2365.000000)
+Enqueued T[1][169] (r-2366, dd-2380, plau-2379.000000)
+Enqueued T[1][170] (r-2380, dd-2394, plau-2393.000000)
+Enqueued T[1][171] (r-2394, dd-2408, plau-2407.000000)
+Enqueued T[1][172] (r-2408, dd-2422, plau-2421.000000)
+Enqueued T[1][173] (r-2422, dd-2436, plau-2435.000000)
+Enqueued T[1][174] (r-2436, dd-2450, plau-2449.000000)
+Enqueued T[1][175] (r-2450, dd-2464, plau-2463.000000)
+Enqueued T[1][176] (r-2464, dd-2478, plau-2477.000000)
+Enqueued T[1][177] (r-2478, dd-2492, plau-2491.000000)
+Enqueued T[1][178] (r-2492, dd-2506, plau-2505.000000)
+Enqueued T[1][179] (r-2506, dd-2520, plau-2519.000000)
+Enqueued T[1][180] (r-2520, dd-2534, plau-2533.000000)
+Enqueued T[1][181] (r-2534, dd-2548, plau-2547.000000)
+Enqueued T[1][182] (r-2548, dd-2562, plau-2561.000000)
+Enqueued T[1][183] (r-2562, dd-2576, plau-2575.000000)
+Enqueued T[1][184] (r-2576, dd-2590, plau-2589.000000)
+Enqueued T[1][185] (r-2590, dd-2604, plau-2603.000000)
+Enqueued T[1][186] (r-2604, dd-2618, plau-2617.000000)
+Enqueued T[1][187] (r-2618, dd-2632, plau-2631.000000)
+Enqueued T[1][188] (r-2632, dd-2646, plau-2645.000000)
+Enqueued T[1][189] (r-2646, dd-2660, plau-2659.000000)
+Enqueued T[1][190] (r-2660, dd-2674, plau-2673.000000)
+Enqueued T[1][191] (r-2674, dd-2688, plau-2687.000000)
+Enqueued T[1][192] (r-2688, dd-2702, plau-2701.000000)
+Enqueued T[1][193] (r-2702, dd-2716, plau-2715.000000)
+Enqueued T[1][194] (r-2716, dd-2730, plau-2729.000000)
+Enqueued T[1][195] (r-2730, dd-2744, plau-2743.000000)
+Enqueued T[1][196] (r-2744, dd-2758, plau-2757.000000)
+Enqueued T[1][197] (r-2758, dd-2772, plau-2771.000000)
+Enqueued T[1][198] (r-2772, dd-2786, plau-2785.000000)
+Enqueued T[1][199] (r-2786, dd-2800, plau-2799.000000)
+Enqueued T[1][200] (r-2800, dd-2814, plau-2813.000000)
+Enqueued T[1][201] (r-2814, dd-2828, plau-2827.000000)
+Enqueued T[1][202] (r-2828, dd-2842, plau-2841.000000)
+Enqueued T[1][203] (r-2842, dd-2856, plau-2855.000000)
+Enqueued T[1][204] (r-2856, dd-2870, plau-2869.000000)
+Enqueued T[1][205] (r-2870, dd-2884, plau-2883.000000)
+Enqueued T[1][206] (r-2884, dd-2898, plau-2897.000000)
+Enqueued T[1][207] (r-2898, dd-2912, plau-2911.000000)
+Enqueued T[1][208] (r-2912, dd-2926, plau-2925.000000)
+Enqueued T[1][209] (r-2926, dd-2940, plau-2939.000000)
+Enqueued T[1][210] (r-2940, dd-2954, plau-2953.000000)
+Enqueued T[1][211] (r-2954, dd-2968, plau-2967.000000)
+Enqueued T[1][212] (r-2968, dd-2982, plau-2981.000000)
+Enqueued T[1][213] (r-2982, dd-2996, plau-2995.000000)
+Enqueued T[1][214] (r-2996, dd-3010, plau-3009.000000)
+Enqueued T[1][215] (r-3010, dd-3024, plau-3023.000000)
+Enqueued T[1][216] (r-3024, dd-3038, plau-3037.000000)
+Enqueued T[1][217] (r-3038, dd-3052, plau-3051.000000)
+Enqueued T[1][218] (r-3052, dd-3066, plau-3065.000000)
+Enqueued T[1][219] (r-3066, dd-3080, plau-3079.000000)
+Enqueued T[1][220] (r-3080, dd-3094, plau-3093.000000)
+Enqueued T[1][221] (r-3094, dd-3108, plau-3107.000000)
+Enqueued T[1][222] (r-3108, dd-3122, plau-3121.000000)
+Enqueued T[1][223] (r-3122, dd-3136, plau-3135.000000)
+Enqueued T[1][224] (r-3136, dd-3150, plau-3149.000000)
+Enqueued T[1][225] (r-3150, dd-3164, plau-3163.000000)
+Enqueued T[1][226] (r-3164, dd-3178, plau-3177.000000)
+Enqueued T[1][227] (r-3178, dd-3192, plau-3191.000000)
+Enqueued T[1][228] (r-3192, dd-3206, plau-3205.000000)
+Enqueued T[1][229] (r-3206, dd-3220, plau-3219.000000)
+Enqueued T[1][230] (r-3220, dd-3234, plau-3233.000000)
+Enqueued T[1][231] (r-3234, dd-3248, plau-3247.000000)
+Enqueued T[1][232] (r-3248, dd-3262, plau-3261.000000)
+Enqueued T[1][233] (r-3262, dd-3276, plau-3275.000000)
+Enqueued T[1][234] (r-3276, dd-3290, plau-3289.000000)
+Enqueued T[1][235] (r-3290, dd-3304, plau-3303.000000)
+Enqueued T[1][236] (r-3304, dd-3318, plau-3317.000000)
+Enqueued T[1][237] (r-3318, dd-3332, plau-3331.000000)
+Enqueued T[1][238] (r-3332, dd-3346, plau-3345.000000)
+Enqueued T[1][239] (r-3346, dd-3360, plau-3359.000000)
+Enqueued T[1][240] (r-3360, dd-3374, plau-3373.000000)
+Enqueued T[1][241] (r-3374, dd-3388, plau-3387.000000)
+Enqueued T[1][242] (r-3388, dd-3402, plau-3401.000000)
+Enqueued T[1][243] (r-3402, dd-3416, plau-3415.000000)
+Enqueued T[1][244] (r-3416, dd-3430, plau-3429.000000)
+Enqueued T[1][245] (r-3430, dd-3444, plau-3443.000000)
+Enqueued T[1][246] (r-3444, dd-3458, plau-3457.000000)
+Enqueued T[1][247] (r-3458, dd-3472, plau-3471.000000)
+Enqueued T[1][248] (r-3472, dd-3486, plau-3485.000000)
+Enqueued T[1][249] (r-3486, dd-3500, plau-3499.000000)
+Enqueued T[1][250] (r-3500, dd-3514, plau-3513.000000)
+Enqueued T[1][251] (r-3514, dd-3528, plau-3527.000000)
+Enqueued T[1][252] (r-3528, dd-3542, plau-3541.000000)
+Enqueued T[1][253] (r-3542, dd-3556, plau-3555.000000)
+Enqueued T[1][254] (r-3556, dd-3570, plau-3569.000000)
+Enqueued T[1][255] (r-3570, dd-3584, plau-3583.000000)
+Enqueued T[1][256] (r-3584, dd-3598, plau-3597.000000)
+Enqueued T[1][257] (r-3598, dd-3612, plau-3611.000000)
+Enqueued T[1][258] (r-3612, dd-3626, plau-3625.000000)
+Enqueued T[1][259] (r-3626, dd-3640, plau-3639.000000)
+Enqueued T[1][260] (r-3640, dd-3654, plau-3653.000000)
+Enqueued T[1][261] (r-3654, dd-3668, plau-3667.000000)
+Enqueued T[1][262] (r-3668, dd-3682, plau-3681.000000)
+Enqueued T[1][263] (r-3682, dd-3696, plau-3695.000000)
+Enqueued T[1][264] (r-3696, dd-3710, plau-3709.000000)
+Enqueued T[1][265] (r-3710, dd-3724, plau-3723.000000)
+Enqueued T[1][266] (r-3724, dd-3738, plau-3737.000000)
+Enqueued T[1][267] (r-3738, dd-3752, plau-3751.000000)
+Enqueued T[1][268] (r-3752, dd-3766, plau-3765.000000)
+Enqueued T[1][269] (r-3766, dd-3780, plau-3779.000000)
+Enqueued T[1][270] (r-3780, dd-3794, plau-3793.000000)
+Enqueued T[1][271] (r-3794, dd-3808, plau-3807.000000)
+Enqueued T[1][272] (r-3808, dd-3822, plau-3821.000000)
+Enqueued T[1][273] (r-3822, dd-3836, plau-3835.000000)
+Enqueued T[1][274] (r-3836, dd-3850, plau-3849.000000)
+Enqueued T[1][275] (r-3850, dd-3864, plau-3863.000000)
+Enqueued T[1][276] (r-3864, dd-3878, plau-3877.000000)
+Enqueued T[1][277] (r-3878, dd-3892, plau-3891.000000)
+Enqueued T[1][278] (r-3892, dd-3906, plau-3905.000000)
+Enqueued T[1][279] (r-3906, dd-3920, plau-3919.000000)
+Enqueued T[1][280] (r-3920, dd-3934, plau-3933.000000)
+Enqueued T[1][281] (r-3934, dd-3948, plau-3947.000000)
+Enqueued T[1][282] (r-3948, dd-3962, plau-3961.000000)
+Enqueued T[1][283] (r-3962, dd-3976, plau-3975.000000)
+Enqueued T[1][284] (r-3976, dd-3990, plau-3989.000000)
+Enqueued T[1][285] (r-3990, dd-4004, plau-4003.000000)
+Enqueued T[1][286] (r-4004, dd-4018, plau-4017.000000)
+Enqueued T[1][287] (r-4018, dd-4032, plau-4031.000000)
+Enqueued T[1][288] (r-4032, dd-4046, plau-4045.000000)
+Enqueued T[1][289] (r-4046, dd-4060, plau-4059.000000)
+Enqueued T[1][290] (r-4060, dd-4074, plau-4073.000000)
+Enqueued T[1][291] (r-4074, dd-4088, plau-4087.000000)
+Enqueued T[1][292] (r-4088, dd-4102, plau-4101.000000)
+Enqueued T[1][293] (r-4102, dd-4116, plau-4115.000000)
+Enqueued T[1][294] (r-4116, dd-4130, plau-4129.000000)
+Enqueued T[1][295] (r-4130, dd-4144, plau-4143.000000)
+Enqueued T[1][296] (r-4144, dd-4158, plau-4157.000000)
+Enqueued T[1][297] (r-4158, dd-4172, plau-4171.000000)
+Enqueued T[1][298] (r-4172, dd-4186, plau-4185.000000)
+Enqueued T[1][299] (r-4186, dd-4200, plau-4199.000000)
+Enqueued T[1][300] (r-4200, dd-4214, plau-4213.000000)
+Enqueued T[1][301] (r-4214, dd-4228, plau-4227.000000)
+Enqueued T[1][302] (r-4228, dd-4242, plau-4241.000000)
+Enqueued T[1][303] (r-4242, dd-4256, plau-4255.000000)
+Enqueued T[1][304] (r-4256, dd-4270, plau-4269.000000)
+Enqueued T[1][305] (r-4270, dd-4284, plau-4283.000000)
+Enqueued T[1][306] (r-4284, dd-4298, plau-4297.000000)
+Enqueued T[1][307] (r-4298, dd-4312, plau-4311.000000)
+Enqueued T[1][308] (r-4312, dd-4326, plau-4325.000000)
+Enqueued T[1][309] (r-4326, dd-4340, plau-4339.000000)
+Enqueued T[1][310] (r-4340, dd-4354, plau-4353.000000)
+Enqueued T[1][311] (r-4354, dd-4368, plau-4367.000000)
+Enqueued T[1][312] (r-4368, dd-4382, plau-4381.000000)
+Enqueued T[1][313] (r-4382, dd-4396, plau-4395.000000)
+Enqueued T[1][314] (r-4396, dd-4410, plau-4409.000000)
+Enqueued T[1][315] (r-4410, dd-4424, plau-4423.000000)
+Enqueued T[1][316] (r-4424, dd-4438, plau-4437.000000)
+Enqueued T[1][317] (r-4438, dd-4452, plau-4451.000000)
+Enqueued T[1][318] (r-4452, dd-4466, plau-4465.000000)
+Enqueued T[1][319] (r-4466, dd-4480, plau-4479.000000)
+Enqueued T[1][320] (r-4480, dd-4494, plau-4493.000000)
+Enqueued T[1][321] (r-4494, dd-4508, plau-4507.000000)
+Enqueued T[1][322] (r-4508, dd-4522, plau-4521.000000)
+Enqueued T[1][323] (r-4522, dd-4536, plau-4535.000000)
+Enqueued T[1][324] (r-4536, dd-4550, plau-4549.000000)
+Enqueued T[1][325] (r-4550, dd-4564, plau-4563.000000)
+Enqueued T[1][326] (r-4564, dd-4578, plau-4577.000000)
+Enqueued T[1][327] (r-4578, dd-4592, plau-4591.000000)
+Enqueued T[1][328] (r-4592, dd-4606, plau-4605.000000)
+Enqueued T[1][329] (r-4606, dd-4620, plau-4619.000000)
+Enqueued T[1][330] (r-4620, dd-4634, plau-4633.000000)
+Enqueued T[1][331] (r-4634, dd-4648, plau-4647.000000)
+Enqueued T[1][332] (r-4648, dd-4662, plau-4661.000000)
+Enqueued T[1][333] (r-4662, dd-4676, plau-4675.000000)
+Enqueued T[1][334] (r-4676, dd-4690, plau-4689.000000)
+Enqueued T[1][335] (r-4690, dd-4704, plau-4703.000000)
+Enqueued T[1][336] (r-4704, dd-4718, plau-4717.000000)
+Enqueued T[1][337] (r-4718, dd-4732, plau-4731.000000)
+Enqueued T[1][338] (r-4732, dd-4746, plau-4745.000000)
+Enqueued T[1][339] (r-4746, dd-4760, plau-4759.000000)
+Enqueued T[1][340] (r-4760, dd-4774, plau-4773.000000)
+Enqueued T[1][341] (r-4774, dd-4788, plau-4787.000000)
+Enqueued T[1][342] (r-4788, dd-4802, plau-4801.000000)
+Enqueued T[1][343] (r-4802, dd-4816, plau-4815.000000)
+Enqueued T[1][344] (r-4816, dd-4830, plau-4829.000000)
+Enqueued T[1][345] (r-4830, dd-4844, plau-4843.000000)
+Enqueued T[1][346] (r-4844, dd-4858, plau-4857.000000)
+Enqueued T[1][347] (r-4858, dd-4872, plau-4871.000000)
+Enqueued T[1][348] (r-4872, dd-4886, plau-4885.000000)
+Enqueued T[1][349] (r-4886, dd-4900, plau-4899.000000)
+Enqueued T[1][350] (r-4900, dd-4914, plau-4913.000000)
+Enqueued T[1][351] (r-4914, dd-4928, plau-4927.000000)
+Enqueued T[1][352] (r-4928, dd-4942, plau-4941.000000)
+Enqueued T[1][353] (r-4942, dd-4956, plau-4955.000000)
+Enqueued T[1][354] (r-4956, dd-4970, plau-4969.000000)
+Enqueued T[1][355] (r-4970, dd-4984, plau-4983.000000)
+Enqueued T[1][356] (r-4984, dd-4998, plau-4997.000000)
+Enqueued T[1][357] (r-4998, dd-5012, plau-5011.000000)
+Enqueued T[1][358] (r-5012, dd-5026, plau-5025.000000)
+Enqueued T[1][359] (r-5026, dd-5040, plau-5039.000000)
+Enqueued T[1][360] (r-5040, dd-5054, plau-5053.000000)
+Enqueued T[1][361] (r-5054, dd-5068, plau-5067.000000)
+Enqueued T[1][362] (r-5068, dd-5082, plau-5081.000000)
+Enqueued T[1][363] (r-5082, dd-5096, plau-5095.000000)
+Enqueued T[1][364] (r-5096, dd-5110, plau-5109.000000)
+Enqueued T[1][365] (r-5110, dd-5124, plau-5123.000000)
+Enqueued T[1][366] (r-5124, dd-5138, plau-5137.000000)
+Enqueued T[1][367] (r-5138, dd-5152, plau-5151.000000)
+Enqueued T[1][368] (r-5152, dd-5166, plau-5165.000000)
+Enqueued T[1][369] (r-5166, dd-5180, plau-5179.000000)
+Enqueued T[1][370] (r-5180, dd-5194, plau-5193.000000)
+Enqueued T[1][371] (r-5194, dd-5208, plau-5207.000000)
+Enqueued T[1][372] (r-5208, dd-5222, plau-5221.000000)
+Enqueued T[1][373] (r-5222, dd-5236, plau-5235.000000)
+Enqueued T[1][374] (r-5236, dd-5250, plau-5249.000000)
+Enqueued T[1][375] (r-5250, dd-5264, plau-5263.000000)
+Enqueued T[1][376] (r-5264, dd-5278, plau-5277.000000)
+Enqueued T[1][377] (r-5278, dd-5292, plau-5291.000000)
+Enqueued T[1][378] (r-5292, dd-5306, plau-5305.000000)
+Enqueued T[1][379] (r-5306, dd-5320, plau-5319.000000)
+Enqueued T[1][380] (r-5320, dd-5334, plau-5333.000000)
+Enqueued T[1][381] (r-5334, dd-5348, plau-5347.000000)
+Enqueued T[1][382] (r-5348, dd-5362, plau-5361.000000)
+Enqueued T[1][383] (r-5362, dd-5376, plau-5375.000000)
+Enqueued T[1][384] (r-5376, dd-5390, plau-5389.000000)
+Enqueued T[1][385] (r-5390, dd-5404, plau-5403.000000)
+Enqueued T[1][386] (r-5404, dd-5418, plau-5417.000000)
+Enqueued T[1][387] (r-5418, dd-5432, plau-5431.000000)
+Enqueued T[1][388] (r-5432, dd-5446, plau-5445.000000)
+Enqueued T[1][389] (r-5446, dd-5460, plau-5459.000000)
+Enqueued T[1][390] (r-5460, dd-5474, plau-5473.000000)
+Enqueued T[1][391] (r-5474, dd-5488, plau-5487.000000)
+Enqueued T[1][392] (r-5488, dd-5502, plau-5501.000000)
+Enqueued T[1][393] (r-5502, dd-5516, plau-5515.000000)
+Enqueued T[1][394] (r-5516, dd-5530, plau-5529.000000)
+Enqueued T[1][395] (r-5530, dd-5544, plau-5543.000000)
+Enqueued T[1][396] (r-5544, dd-5558, plau-5557.000000)
+Enqueued T[1][397] (r-5558, dd-5572, plau-5571.000000)
+Enqueued T[1][398] (r-5572, dd-5586, plau-5585.000000)
+Enqueued T[1][399] (r-5586, dd-5600, plau-5599.000000)
+Enqueued T[1][400] (r-5600, dd-5614, plau-5613.000000)
+Enqueued T[1][401] (r-5614, dd-5628, plau-5627.000000)
+Enqueued T[1][402] (r-5628, dd-5642, plau-5641.000000)
+Enqueued T[1][403] (r-5642, dd-5656, plau-5655.000000)
+Enqueued T[1][404] (r-5656, dd-5670, plau-5669.000000)
+Enqueued T[1][405] (r-5670, dd-5684, plau-5683.000000)
+Enqueued T[1][406] (r-5684, dd-5698, plau-5697.000000)
+Enqueued T[1][407] (r-5698, dd-5712, plau-5711.000000)
+Enqueued T[1][408] (r-5712, dd-5726, plau-5725.000000)
+Enqueued T[1][409] (r-5726, dd-5740, plau-5739.000000)
+Enqueued T[1][410] (r-5740, dd-5754, plau-5753.000000)
+Enqueued T[1][411] (r-5754, dd-5768, plau-5767.000000)
+Enqueued T[1][412] (r-5768, dd-5782, plau-5781.000000)
+Enqueued T[1][413] (r-5782, dd-5796, plau-5795.000000)
+Enqueued T[1][414] (r-5796, dd-5810, plau-5809.000000)
+Enqueued T[1][415] (r-5810, dd-5824, plau-5823.000000)
+Enqueued T[1][416] (r-5824, dd-5838, plau-5837.000000)
+Enqueued T[1][417] (r-5838, dd-5852, plau-5851.000000)
+Enqueued T[1][418] (r-5852, dd-5866, plau-5865.000000)
+Enqueued T[1][419] (r-5866, dd-5880, plau-5879.000000)
+Enqueued T[2][0] (r-0, dd-245, plau-222.000000)
+Enqueued T[2][1] (r-245, dd-490, plau-467.000000)
+Enqueued T[2][2] (r-490, dd-735, plau-712.000000)
+Enqueued T[2][3] (r-735, dd-980, plau-957.000000)
+Enqueued T[2][4] (r-980, dd-1225, plau-1202.000000)
+Enqueued T[2][5] (r-1225, dd-1470, plau-1447.000000)
+Enqueued T[2][6] (r-1470, dd-1715, plau-1692.000000)
+Enqueued T[2][7] (r-1715, dd-1960, plau-1937.000000)
+Enqueued T[2][8] (r-1960, dd-2205, plau-2182.000000)
+Enqueued T[2][9] (r-2205, dd-2450, plau-2427.000000)
+Enqueued T[2][10] (r-2450, dd-2695, plau-2672.000000)
+Enqueued T[2][11] (r-2695, dd-2940, plau-2917.000000)
+Enqueued T[2][12] (r-2940, dd-3185, plau-3162.000000)
+Enqueued T[2][13] (r-3185, dd-3430, plau-3407.000000)
+Enqueued T[2][14] (r-3430, dd-3675, plau-3652.000000)
+Enqueued T[2][15] (r-3675, dd-3920, plau-3897.000000)
+Enqueued T[2][16] (r-3920, dd-4165, plau-4142.000000)
+Enqueued T[2][17] (r-4165, dd-4410, plau-4387.000000)
+Enqueued T[2][18] (r-4410, dd-4655, plau-4632.000000)
+Enqueued T[2][19] (r-4655, dd-4900, plau-4877.000000)
+Enqueued T[2][20] (r-4900, dd-5145, plau-5122.000000)
+Enqueued T[2][21] (r-5145, dd-5390, plau-5367.000000)
+Enqueued T[2][22] (r-5390, dd-5635, plau-5612.000000)
+Enqueued T[2][23] (r-5635, dd-5880, plau-5857.000000)
+Enqueued T[3][0] (r-0, dd-420, plau-385.000000)
+Enqueued T[3][1] (r-420, dd-840, plau-805.000000)
+Enqueued T[3][2] (r-840, dd-1260, plau-1225.000000)
+Enqueued T[3][3] (r-1260, dd-1680, plau-1645.000000)
+Enqueued T[3][4] (r-1680, dd-2100, plau-2065.000000)
+Enqueued T[3][5] (r-2100, dd-2520, plau-2485.000000)
+Enqueued T[3][6] (r-2520, dd-2940, plau-2905.000000)
+Enqueued T[3][7] (r-2940, dd-3360, plau-3325.000000)
+Enqueued T[3][8] (r-3360, dd-3780, plau-3745.000000)
+Enqueued T[3][9] (r-3780, dd-4200, plau-4165.000000)
+Enqueued T[3][10] (r-4200, dd-4620, plau-4585.000000)
+Enqueued T[3][11] (r-4620, dd-5040, plau-5005.000000)
+Enqueued T[3][12] (r-5040, dd-5460, plau-5425.000000)
+Enqueued T[3][13] (r-5460, dd-5880, plau-5845.000000)
+Updated plau T[1][419] from 5879.000000 to 5877.000000
+Updated plau T[2][23] from 5857.000000 to 5854.000000
+Updated plau T[3][13] from 5845.000000 to 5819.000000
+Updated plau T[0][733] from 5870.000000 to 5817.000000
+Updated plau T[1][418] from 5865.000000 to 5816.000000
+Updated plau T[0][732] from 5862.000000 to 5814.000000
+Updated plau T[0][731] from 5854.000000 to 5812.000000
+Updated plau T[1][417] from 5851.000000 to 5811.000000
+Updated plau T[0][730] from 5846.000000 to 5809.000000
+Updated plau T[0][729] from 5838.000000 to 5807.000000
+Updated plau T[1][416] from 5837.000000 to 5806.000000
+Updated plau T[0][728] from 5830.000000 to 5804.000000
+Updated plau T[0][727] from 5822.000000 to 5802.000000
+Updated plau T[1][415] from 5823.000000 to 5801.000000
+Updated plau T[0][726] from 5814.000000 to 5799.000000
+Updated plau T[1][414] from 5809.000000 to 5798.000000
+Updated plau T[0][725] from 5806.000000 to 5796.000000
+Updated plau T[0][724] from 5798.000000 to 5794.000000
+Updated plau T[1][413] from 5795.000000 to 5793.000000
+Updated plau T[0][723] from 5790.000000 to 5790.000000
+Updated plau T[0][722] from 5782.000000 to 5782.000000
+Updated plau T[1][412] from 5781.000000 to 5781.000000
+Updated plau T[0][721] from 5774.000000 to 5774.000000
+Updated plau T[0][720] from 5766.000000 to 5766.000000
+Updated plau T[1][411] from 5767.000000 to 5765.000000
+Updated plau T[0][719] from 5758.000000 to 5758.000000
+Updated plau T[1][410] from 5753.000000 to 5753.000000
+Updated plau T[0][718] from 5750.000000 to 5750.000000
+Updated plau T[0][717] from 5742.000000 to 5742.000000
+Updated plau T[1][409] from 5739.000000 to 5739.000000
+Updated plau T[0][716] from 5734.000000 to 5734.000000
+Updated plau T[0][715] from 5726.000000 to 5726.000000
+Updated plau T[1][408] from 5725.000000 to 5725.000000
+Updated plau T[0][714] from 5718.000000 to 5718.000000
+Updated plau T[0][713] from 5710.000000 to 5710.000000
+Updated plau T[1][407] from 5711.000000 to 5709.000000
+Updated plau T[0][712] from 5702.000000 to 5702.000000
+Updated plau T[1][406] from 5697.000000 to 5697.000000
+Updated plau T[0][711] from 5694.000000 to 5694.000000
+Updated plau T[0][710] from 5686.000000 to 5686.000000
+Updated plau T[1][405] from 5683.000000 to 5683.000000
+Updated plau T[0][709] from 5678.000000 to 5678.000000
+Updated plau T[0][708] from 5670.000000 to 5670.000000
+Updated plau T[1][404] from 5669.000000 to 5669.000000
+Updated plau T[0][707] from 5662.000000 to 5662.000000
+Updated plau T[0][706] from 5654.000000 to 5654.000000
+Updated plau T[1][403] from 5655.000000 to 5653.000000
+Updated plau T[0][705] from 5646.000000 to 5646.000000
+Updated plau T[1][402] from 5641.000000 to 5641.000000
+Updated plau T[0][704] from 5638.000000 to 5638.000000
+Updated plau T[2][22] from 5612.000000 to 5612.000000
+Updated plau T[0][703] from 5630.000000 to 5610.000000
+Updated plau T[1][401] from 5627.000000 to 5609.000000
+Updated plau T[0][702] from 5622.000000 to 5607.000000
+Updated plau T[0][701] from 5614.000000 to 5605.000000
+Updated plau T[1][400] from 5613.000000 to 5604.000000
+Updated plau T[0][700] from 5606.000000 to 5602.000000
+Updated plau T[0][699] from 5598.000000 to 5598.000000
+Updated plau T[1][399] from 5599.000000 to 5597.000000
+Updated plau T[0][698] from 5590.000000 to 5590.000000
+Updated plau T[1][398] from 5585.000000 to 5585.000000
+Updated plau T[0][697] from 5582.000000 to 5582.000000
+Updated plau T[0][696] from 5574.000000 to 5574.000000
+Updated plau T[1][397] from 5571.000000 to 5571.000000
+Updated plau T[0][695] from 5566.000000 to 5566.000000
+Updated plau T[0][694] from 5558.000000 to 5558.000000
+Updated plau T[1][396] from 5557.000000 to 5557.000000
+Updated plau T[0][693] from 5550.000000 to 5550.000000
+Updated plau T[0][692] from 5542.000000 to 5542.000000
+Updated plau T[1][395] from 5543.000000 to 5541.000000
+Updated plau T[0][691] from 5534.000000 to 5534.000000
+Updated plau T[1][394] from 5529.000000 to 5529.000000
+Updated plau T[0][690] from 5526.000000 to 5526.000000
+Updated plau T[0][689] from 5518.000000 to 5518.000000
+Updated plau T[1][393] from 5515.000000 to 5515.000000
+Updated plau T[0][688] from 5510.000000 to 5510.000000
+Updated plau T[0][687] from 5502.000000 to 5502.000000
+Updated plau T[1][392] from 5501.000000 to 5501.000000
+Updated plau T[0][686] from 5494.000000 to 5494.000000
+Updated plau T[0][685] from 5486.000000 to 5486.000000
+Updated plau T[1][391] from 5487.000000 to 5485.000000
+Updated plau T[0][684] from 5478.000000 to 5478.000000
+Updated plau T[1][390] from 5473.000000 to 5473.000000
+Updated plau T[0][683] from 5470.000000 to 5470.000000
+Updated plau T[0][682] from 5462.000000 to 5462.000000
+Updated plau T[1][389] from 5459.000000 to 5459.000000
+Updated plau T[3][12] from 5425.000000 to 5424.000000
+Updated plau T[0][681] from 5454.000000 to 5422.000000
+Updated plau T[0][680] from 5446.000000 to 5420.000000
+Updated plau T[1][388] from 5445.000000 to 5419.000000
+Updated plau T[0][679] from 5438.000000 to 5417.000000
+Updated plau T[0][678] from 5430.000000 to 5415.000000
+Updated plau T[1][387] from 5431.000000 to 5414.000000
+Updated plau T[0][677] from 5422.000000 to 5412.000000
+Updated plau T[1][386] from 5417.000000 to 5411.000000
+Updated plau T[0][676] from 5414.000000 to 5409.000000
+Updated plau T[0][675] from 5406.000000 to 5406.000000
+Updated plau T[1][385] from 5403.000000 to 5403.000000
+Updated plau T[0][674] from 5398.000000 to 5398.000000
+Updated plau T[0][673] from 5390.000000 to 5390.000000
+Updated plau T[1][384] from 5389.000000 to 5389.000000
+Updated plau T[2][21] from 5367.000000 to 5366.000000
+Updated plau T[0][672] from 5382.000000 to 5364.000000
+Updated plau T[0][671] from 5374.000000 to 5362.000000
+Updated plau T[1][383] from 5375.000000 to 5361.000000
+Updated plau T[0][670] from 5366.000000 to 5359.000000
+Updated plau T[1][382] from 5361.000000 to 5358.000000
+Updated plau T[0][669] from 5358.000000 to 5356.000000
+Updated plau T[0][668] from 5350.000000 to 5350.000000
+Updated plau T[1][381] from 5347.000000 to 5347.000000
+Updated plau T[0][667] from 5342.000000 to 5342.000000
+Updated plau T[0][666] from 5334.000000 to 5334.000000
+Updated plau T[1][380] from 5333.000000 to 5333.000000
+Updated plau T[0][665] from 5326.000000 to 5326.000000
+Updated plau T[0][664] from 5318.000000 to 5318.000000
+Updated plau T[1][379] from 5319.000000 to 5317.000000
+Updated plau T[0][663] from 5310.000000 to 5310.000000
+Updated plau T[1][378] from 5305.000000 to 5305.000000
+Updated plau T[0][662] from 5302.000000 to 5302.000000
+Updated plau T[0][661] from 5294.000000 to 5294.000000
+Updated plau T[1][377] from 5291.000000 to 5291.000000
+Updated plau T[0][660] from 5286.000000 to 5286.000000
+Updated plau T[0][659] from 5278.000000 to 5278.000000
+Updated plau T[1][376] from 5277.000000 to 5277.000000
+Updated plau T[0][658] from 5270.000000 to 5270.000000
+Updated plau T[0][657] from 5262.000000 to 5262.000000
+Updated plau T[1][375] from 5263.000000 to 5261.000000
+Updated plau T[0][656] from 5254.000000 to 5254.000000
+Updated plau T[1][374] from 5249.000000 to 5249.000000
+Updated plau T[0][655] from 5246.000000 to 5246.000000
+Updated plau T[0][654] from 5238.000000 to 5238.000000
+Updated plau T[1][373] from 5235.000000 to 5235.000000
+Updated plau T[0][653] from 5230.000000 to 5230.000000
+Updated plau T[0][652] from 5222.000000 to 5222.000000
+Updated plau T[1][372] from 5221.000000 to 5221.000000
+Updated plau T[0][651] from 5214.000000 to 5214.000000
+Updated plau T[0][650] from 5206.000000 to 5206.000000
+Updated plau T[1][371] from 5207.000000 to 5205.000000
+Updated plau T[0][649] from 5198.000000 to 5198.000000
+Updated plau T[1][370] from 5193.000000 to 5193.000000
+Updated plau T[0][648] from 5190.000000 to 5190.000000
+Updated plau T[0][647] from 5182.000000 to 5182.000000
+Updated plau T[1][369] from 5179.000000 to 5179.000000
+Updated plau T[0][646] from 5174.000000 to 5174.000000
+Updated plau T[0][645] from 5166.000000 to 5166.000000
+Updated plau T[1][368] from 5165.000000 to 5165.000000
+Updated plau T[0][644] from 5158.000000 to 5158.000000
+Updated plau T[0][643] from 5150.000000 to 5150.000000
+Updated plau T[1][367] from 5151.000000 to 5149.000000
+Updated plau T[2][20] from 5122.000000 to 5122.000000
+Updated plau T[0][642] from 5142.000000 to 5120.000000
+Updated plau T[1][366] from 5137.000000 to 5119.000000
+Updated plau T[0][641] from 5134.000000 to 5117.000000
+Updated plau T[0][640] from 5126.000000 to 5115.000000
+Updated plau T[1][365] from 5123.000000 to 5114.000000
+Updated plau T[0][639] from 5118.000000 to 5112.000000
+Updated plau T[0][638] from 5110.000000 to 5110.000000
+Updated plau T[1][364] from 5109.000000 to 5109.000000
+Updated plau T[0][637] from 5102.000000 to 5102.000000
+Updated plau T[0][636] from 5094.000000 to 5094.000000
+Updated plau T[1][363] from 5095.000000 to 5093.000000
+Updated plau T[0][635] from 5086.000000 to 5086.000000
+Updated plau T[1][362] from 5081.000000 to 5081.000000
+Updated plau T[0][634] from 5078.000000 to 5078.000000
+Updated plau T[0][633] from 5070.000000 to 5070.000000
+Updated plau T[1][361] from 5067.000000 to 5067.000000
+Updated plau T[0][632] from 5062.000000 to 5062.000000
+Updated plau T[0][631] from 5054.000000 to 5054.000000
+Updated plau T[1][360] from 5053.000000 to 5053.000000
+Updated plau T[0][630] from 5046.000000 to 5046.000000
+Updated plau T[0][629] from 5038.000000 to 5038.000000
+Updated plau T[1][359] from 5039.000000 to 5037.000000
+Updated plau T[3][11] from 5005.000000 to 5002.000000
+Updated plau T[0][628] from 5030.000000 to 5000.000000
+Updated plau T[1][358] from 5025.000000 to 4999.000000
+Updated plau T[0][627] from 5022.000000 to 4997.000000
+Updated plau T[0][626] from 5014.000000 to 4995.000000
+Updated plau T[1][357] from 5011.000000 to 4994.000000
+Updated plau T[0][625] from 5006.000000 to 4992.000000
+Updated plau T[0][624] from 4998.000000 to 4990.000000
+Updated plau T[1][356] from 4997.000000 to 4989.000000
+Updated plau T[0][623] from 4990.000000 to 4987.000000
+Updated plau T[0][622] from 4982.000000 to 4982.000000
+Updated plau T[1][355] from 4983.000000 to 4981.000000
+Updated plau T[0][621] from 4974.000000 to 4974.000000
+Updated plau T[1][354] from 4969.000000 to 4969.000000
+Updated plau T[0][620] from 4966.000000 to 4966.000000
+Updated plau T[0][619] from 4958.000000 to 4958.000000
+Updated plau T[1][353] from 4955.000000 to 4955.000000
+Updated plau T[0][618] from 4950.000000 to 4950.000000
+Updated plau T[0][617] from 4942.000000 to 4942.000000
+Updated plau T[1][352] from 4941.000000 to 4941.000000
+Updated plau T[0][616] from 4934.000000 to 4934.000000
+Updated plau T[0][615] from 4926.000000 to 4926.000000
+Updated plau T[1][351] from 4927.000000 to 4925.000000
+Updated plau T[0][614] from 4918.000000 to 4918.000000
+Updated plau T[1][350] from 4913.000000 to 4913.000000
+Updated plau T[0][613] from 4910.000000 to 4910.000000
+Updated plau T[0][612] from 4902.000000 to 4902.000000
+Updated plau T[1][349] from 4899.000000 to 4899.000000
+Updated plau T[2][19] from 4877.000000 to 4876.000000
+Updated plau T[0][611] from 4894.000000 to 4874.000000
+Updated plau T[0][610] from 4886.000000 to 4872.000000
+Updated plau T[1][348] from 4885.000000 to 4871.000000
+Updated plau T[0][609] from 4878.000000 to 4869.000000
+Updated plau T[0][608] from 4870.000000 to 4867.000000
+Updated plau T[1][347] from 4871.000000 to 4866.000000
+Updated plau T[0][607] from 4862.000000 to 4862.000000
+Updated plau T[1][346] from 4857.000000 to 4857.000000
+Updated plau T[0][606] from 4854.000000 to 4854.000000
+Updated plau T[0][605] from 4846.000000 to 4846.000000
+Updated plau T[1][345] from 4843.000000 to 4843.000000
+Updated plau T[0][604] from 4838.000000 to 4838.000000
+Updated plau T[0][603] from 4830.000000 to 4830.000000
+Updated plau T[1][344] from 4829.000000 to 4829.000000
+Updated plau T[0][602] from 4822.000000 to 4822.000000
+Updated plau T[0][601] from 4814.000000 to 4814.000000
+Updated plau T[1][343] from 4815.000000 to 4813.000000
+Updated plau T[0][600] from 4806.000000 to 4806.000000
+Updated plau T[1][342] from 4801.000000 to 4801.000000
+Updated plau T[0][599] from 4798.000000 to 4798.000000
+Updated plau T[0][598] from 4790.000000 to 4790.000000
+Updated plau T[1][341] from 4787.000000 to 4787.000000
+Updated plau T[0][597] from 4782.000000 to 4782.000000
+Updated plau T[0][596] from 4774.000000 to 4774.000000
+Updated plau T[1][340] from 4773.000000 to 4773.000000
+Updated plau T[0][595] from 4766.000000 to 4766.000000
+Updated plau T[0][594] from 4758.000000 to 4758.000000
+Updated plau T[1][339] from 4759.000000 to 4757.000000
+Updated plau T[0][593] from 4750.000000 to 4750.000000
+Updated plau T[1][338] from 4745.000000 to 4745.000000
+Updated plau T[0][592] from 4742.000000 to 4742.000000
+Updated plau T[0][591] from 4734.000000 to 4734.000000
+Updated plau T[1][337] from 4731.000000 to 4731.000000
+Updated plau T[0][590] from 4726.000000 to 4726.000000
+Updated plau T[0][589] from 4718.000000 to 4718.000000
+Updated plau T[1][336] from 4717.000000 to 4717.000000
+Updated plau T[0][588] from 4710.000000 to 4710.000000
+Updated plau T[0][587] from 4702.000000 to 4702.000000
+Updated plau T[1][335] from 4703.000000 to 4701.000000
+Updated plau T[0][586] from 4694.000000 to 4694.000000
+Updated plau T[1][334] from 4689.000000 to 4689.000000
+Updated plau T[0][585] from 4686.000000 to 4686.000000
+Updated plau T[0][584] from 4678.000000 to 4678.000000
+Updated plau T[1][333] from 4675.000000 to 4675.000000
+Updated plau T[0][583] from 4670.000000 to 4670.000000
+Updated plau T[0][582] from 4662.000000 to 4662.000000
+Updated plau T[1][332] from 4661.000000 to 4661.000000
+Updated plau T[0][581] from 4654.000000 to 4654.000000
+Updated plau T[2][18] from 4632.000000 to 4631.000000
+Updated plau T[0][580] from 4646.000000 to 4629.000000
+Updated plau T[1][331] from 4647.000000 to 4628.000000
+Updated plau T[0][579] from 4638.000000 to 4626.000000
+Updated plau T[1][330] from 4633.000000 to 4625.000000
+Updated plau T[0][578] from 4630.000000 to 4623.000000
+Updated plau T[0][577] from 4622.000000 to 4621.000000
+Updated plau T[1][329] from 4619.000000 to 4619.000000
+Updated plau T[3][10] from 4585.000000 to 4584.000000
+Updated plau T[0][576] from 4614.000000 to 4582.000000
+Updated plau T[0][575] from 4606.000000 to 4580.000000
+Updated plau T[1][328] from 4605.000000 to 4579.000000
+Updated plau T[0][574] from 4598.000000 to 4577.000000
+Updated plau T[0][573] from 4590.000000 to 4575.000000
+Updated plau T[1][327] from 4591.000000 to 4574.000000
+Updated plau T[0][572] from 4582.000000 to 4572.000000
+Updated plau T[1][326] from 4577.000000 to 4571.000000
+Updated plau T[0][571] from 4574.000000 to 4569.000000
+Updated plau T[0][570] from 4566.000000 to 4566.000000
+Updated plau T[1][325] from 4563.000000 to 4563.000000
+Updated plau T[0][569] from 4558.000000 to 4558.000000
+Updated plau T[0][568] from 4550.000000 to 4550.000000
+Updated plau T[1][324] from 4549.000000 to 4549.000000
+Updated plau T[0][567] from 4542.000000 to 4542.000000
+Updated plau T[0][566] from 4534.000000 to 4534.000000
+Updated plau T[1][323] from 4535.000000 to 4533.000000
+Updated plau T[0][565] from 4526.000000 to 4526.000000
+Updated plau T[1][322] from 4521.000000 to 4521.000000
+Updated plau T[0][564] from 4518.000000 to 4518.000000
+Updated plau T[0][563] from 4510.000000 to 4510.000000
+Updated plau T[1][321] from 4507.000000 to 4507.000000
+Updated plau T[0][562] from 4502.000000 to 4502.000000
+Updated plau T[0][561] from 4494.000000 to 4494.000000
+Updated plau T[1][320] from 4493.000000 to 4493.000000
+Updated plau T[0][560] from 4486.000000 to 4486.000000
+Updated plau T[0][559] from 4478.000000 to 4478.000000
+Updated plau T[1][319] from 4479.000000 to 4477.000000
+Updated plau T[0][558] from 4470.000000 to 4470.000000
+Updated plau T[1][318] from 4465.000000 to 4465.000000
+Updated plau T[0][557] from 4462.000000 to 4462.000000
+Updated plau T[0][556] from 4454.000000 to 4454.000000
+Updated plau T[1][317] from 4451.000000 to 4451.000000
+Updated plau T[0][555] from 4446.000000 to 4446.000000
+Updated plau T[0][554] from 4438.000000 to 4438.000000
+Updated plau T[1][316] from 4437.000000 to 4437.000000
+Updated plau T[0][553] from 4430.000000 to 4430.000000
+Updated plau T[0][552] from 4422.000000 to 4422.000000
+Updated plau T[1][315] from 4423.000000 to 4421.000000
+Updated plau T[0][551] from 4414.000000 to 4414.000000
+Updated plau T[1][314] from 4409.000000 to 4409.000000
+Updated plau T[2][17] from 4387.000000 to 4386.000000
+Updated plau T[0][550] from 4406.000000 to 4384.000000
+Updated plau T[0][549] from 4398.000000 to 4382.000000
+Updated plau T[1][313] from 4395.000000 to 4381.000000
+Updated plau T[0][548] from 4390.000000 to 4379.000000
+Updated plau T[0][547] from 4382.000000 to 4377.000000
+Updated plau T[1][312] from 4381.000000 to 4376.000000
+Updated plau T[0][546] from 4374.000000 to 4374.000000
+Updated plau T[0][545] from 4366.000000 to 4366.000000
+Updated plau T[1][311] from 4367.000000 to 4365.000000
+Updated plau T[0][544] from 4358.000000 to 4358.000000
+Updated plau T[1][310] from 4353.000000 to 4353.000000
+Updated plau T[0][543] from 4350.000000 to 4350.000000
+Updated plau T[0][542] from 4342.000000 to 4342.000000
+Updated plau T[1][309] from 4339.000000 to 4339.000000
+Updated plau T[0][541] from 4334.000000 to 4334.000000
+Updated plau T[0][540] from 4326.000000 to 4326.000000
+Updated plau T[1][308] from 4325.000000 to 4325.000000
+Updated plau T[0][539] from 4318.000000 to 4318.000000
+Updated plau T[0][538] from 4310.000000 to 4310.000000
+Updated plau T[1][307] from 4311.000000 to 4309.000000
+Updated plau T[0][537] from 4302.000000 to 4302.000000
+Updated plau T[1][306] from 4297.000000 to 4297.000000
+Updated plau T[0][536] from 4294.000000 to 4294.000000
+Updated plau T[0][535] from 4286.000000 to 4286.000000
+Updated plau T[1][305] from 4283.000000 to 4283.000000
+Updated plau T[0][534] from 4278.000000 to 4278.000000
+Updated plau T[0][533] from 4270.000000 to 4270.000000
+Updated plau T[1][304] from 4269.000000 to 4269.000000
+Updated plau T[0][532] from 4262.000000 to 4262.000000
+Updated plau T[0][531] from 4254.000000 to 4254.000000
+Updated plau T[1][303] from 4255.000000 to 4253.000000
+Updated plau T[0][530] from 4246.000000 to 4246.000000
+Updated plau T[1][302] from 4241.000000 to 4241.000000
+Updated plau T[0][529] from 4238.000000 to 4238.000000
+Updated plau T[0][528] from 4230.000000 to 4230.000000
+Updated plau T[1][301] from 4227.000000 to 4227.000000
+Updated plau T[0][527] from 4222.000000 to 4222.000000
+Updated plau T[0][526] from 4214.000000 to 4214.000000
+Updated plau T[1][300] from 4213.000000 to 4213.000000
+Updated plau T[0][525] from 4206.000000 to 4206.000000
+Updated plau T[0][524] from 4198.000000 to 4198.000000
+Updated plau T[1][299] from 4199.000000 to 4197.000000
+Updated plau T[3][9] from 4165.000000 to 4162.000000
+Updated plau T[0][523] from 4190.000000 to 4160.000000
+Updated plau T[1][298] from 4185.000000 to 4159.000000
+Updated plau T[0][522] from 4182.000000 to 4157.000000
+Updated plau T[0][521] from 4174.000000 to 4155.000000
+Updated plau T[1][297] from 4171.000000 to 4154.000000
+Updated plau T[0][520] from 4166.000000 to 4152.000000
+Updated plau T[2][16] from 4142.000000 to 4129.000000
+Updated plau T[0][519] from 4158.000000 to 4127.000000
+Updated plau T[1][296] from 4157.000000 to 4126.000000
+Updated plau T[0][518] from 4150.000000 to 4124.000000
+Updated plau T[0][517] from 4142.000000 to 4122.000000
+Updated plau T[1][295] from 4143.000000 to 4121.000000
+Updated plau T[0][516] from 4134.000000 to 4119.000000
+Updated plau T[1][294] from 4129.000000 to 4118.000000
+Updated plau T[0][515] from 4126.000000 to 4116.000000
+Updated plau T[0][514] from 4118.000000 to 4114.000000
+Updated plau T[1][293] from 4115.000000 to 4113.000000
+Updated plau T[0][513] from 4110.000000 to 4110.000000
+Updated plau T[0][512] from 4102.000000 to 4102.000000
+Updated plau T[1][292] from 4101.000000 to 4101.000000
+Updated plau T[0][511] from 4094.000000 to 4094.000000
+Updated plau T[0][510] from 4086.000000 to 4086.000000
+Updated plau T[1][291] from 4087.000000 to 4085.000000
+Updated plau T[0][509] from 4078.000000 to 4078.000000
+Updated plau T[1][290] from 4073.000000 to 4073.000000
+Updated plau T[0][508] from 4070.000000 to 4070.000000
+Updated plau T[0][507] from 4062.000000 to 4062.000000
+Updated plau T[1][289] from 4059.000000 to 4059.000000
+Updated plau T[0][506] from 4054.000000 to 4054.000000
+Updated plau T[0][505] from 4046.000000 to 4046.000000
+Updated plau T[1][288] from 4045.000000 to 4045.000000
+Updated plau T[0][504] from 4038.000000 to 4038.000000
+Updated plau T[0][503] from 4030.000000 to 4030.000000
+Updated plau T[1][287] from 4031.000000 to 4029.000000
+Updated plau T[0][502] from 4022.000000 to 4022.000000
+Updated plau T[1][286] from 4017.000000 to 4017.000000
+Updated plau T[0][501] from 4014.000000 to 4014.000000
+Updated plau T[0][500] from 4006.000000 to 4006.000000
+Updated plau T[1][285] from 4003.000000 to 4003.000000
+Updated plau T[0][499] from 3998.000000 to 3998.000000
+Updated plau T[0][498] from 3990.000000 to 3990.000000
+Updated plau T[1][284] from 3989.000000 to 3989.000000
+Updated plau T[0][497] from 3982.000000 to 3982.000000
+Updated plau T[0][496] from 3974.000000 to 3974.000000
+Updated plau T[1][283] from 3975.000000 to 3973.000000
+Updated plau T[0][495] from 3966.000000 to 3966.000000
+Updated plau T[1][282] from 3961.000000 to 3961.000000
+Updated plau T[0][494] from 3958.000000 to 3958.000000
+Updated plau T[0][493] from 3950.000000 to 3950.000000
+Updated plau T[1][281] from 3947.000000 to 3947.000000
+Updated plau T[0][492] from 3942.000000 to 3942.000000
+Updated plau T[0][491] from 3934.000000 to 3934.000000
+Updated plau T[1][280] from 3933.000000 to 3933.000000
+Updated plau T[0][490] from 3926.000000 to 3926.000000
+Updated plau T[0][489] from 3918.000000 to 3918.000000
+Updated plau T[1][279] from 3919.000000 to 3917.000000
+Updated plau T[2][15] from 3897.000000 to 3894.000000
+Updated plau T[0][488] from 3910.000000 to 3892.000000
+Updated plau T[1][278] from 3905.000000 to 3891.000000
+Updated plau T[0][487] from 3902.000000 to 3889.000000
+Updated plau T[0][486] from 3894.000000 to 3887.000000
+Updated plau T[1][277] from 3891.000000 to 3886.000000
+Updated plau T[0][485] from 3886.000000 to 3884.000000
+Updated plau T[0][484] from 3878.000000 to 3878.000000
+Updated plau T[1][276] from 3877.000000 to 3877.000000
+Updated plau T[0][483] from 3870.000000 to 3870.000000
+Updated plau T[0][482] from 3862.000000 to 3862.000000
+Updated plau T[1][275] from 3863.000000 to 3861.000000
+Updated plau T[0][481] from 3854.000000 to 3854.000000
+Updated plau T[1][274] from 3849.000000 to 3849.000000
+Updated plau T[0][480] from 3846.000000 to 3846.000000
+Updated plau T[0][479] from 3838.000000 to 3838.000000
+Updated plau T[1][273] from 3835.000000 to 3835.000000
+Updated plau T[0][478] from 3830.000000 to 3830.000000
+Updated plau T[0][477] from 3822.000000 to 3822.000000
+Updated plau T[1][272] from 3821.000000 to 3821.000000
+Updated plau T[0][476] from 3814.000000 to 3814.000000
+Updated plau T[0][475] from 3806.000000 to 3806.000000
+Updated plau T[1][271] from 3807.000000 to 3805.000000
+Updated plau T[0][474] from 3798.000000 to 3798.000000
+Updated plau T[1][270] from 3793.000000 to 3793.000000
+Updated plau T[0][473] from 3790.000000 to 3790.000000
+Updated plau T[0][472] from 3782.000000 to 3782.000000
+Updated plau T[1][269] from 3779.000000 to 3779.000000
+Updated plau T[3][8] from 3745.000000 to 3744.000000
+Updated plau T[0][471] from 3774.000000 to 3742.000000
+Updated plau T[0][470] from 3766.000000 to 3740.000000
+Updated plau T[1][268] from 3765.000000 to 3739.000000
+Updated plau T[0][469] from 3758.000000 to 3737.000000
+Updated plau T[0][468] from 3750.000000 to 3735.000000
+Updated plau T[1][267] from 3751.000000 to 3734.000000
+Updated plau T[0][467] from 3742.000000 to 3732.000000
+Updated plau T[1][266] from 3737.000000 to 3731.000000
+Updated plau T[0][466] from 3734.000000 to 3729.000000
+Updated plau T[0][465] from 3726.000000 to 3726.000000
+Updated plau T[1][265] from 3723.000000 to 3723.000000
+Updated plau T[0][464] from 3718.000000 to 3718.000000
+Updated plau T[0][463] from 3710.000000 to 3710.000000
+Updated plau T[1][264] from 3709.000000 to 3709.000000
+Updated plau T[0][462] from 3702.000000 to 3702.000000
+Updated plau T[0][461] from 3694.000000 to 3694.000000
+Updated plau T[1][263] from 3695.000000 to 3693.000000
+Updated plau T[0][460] from 3686.000000 to 3686.000000
+Updated plau T[1][262] from 3681.000000 to 3681.000000
+Updated plau T[0][459] from 3678.000000 to 3678.000000
+Updated plau T[2][14] from 3652.000000 to 3652.000000
+Updated plau T[0][458] from 3670.000000 to 3650.000000
+Updated plau T[1][261] from 3667.000000 to 3649.000000
+Updated plau T[0][457] from 3662.000000 to 3647.000000
+Updated plau T[0][456] from 3654.000000 to 3645.000000
+Updated plau T[1][260] from 3653.000000 to 3644.000000
+Updated plau T[0][455] from 3646.000000 to 3642.000000
+Updated plau T[0][454] from 3638.000000 to 3638.000000
+Updated plau T[1][259] from 3639.000000 to 3637.000000
+Updated plau T[0][453] from 3630.000000 to 3630.000000
+Updated plau T[1][258] from 3625.000000 to 3625.000000
+Updated plau T[0][452] from 3622.000000 to 3622.000000
+Updated plau T[0][451] from 3614.000000 to 3614.000000
+Updated plau T[1][257] from 3611.000000 to 3611.000000
+Updated plau T[0][450] from 3606.000000 to 3606.000000
+Updated plau T[0][449] from 3598.000000 to 3598.000000
+Updated plau T[1][256] from 3597.000000 to 3597.000000
+Updated plau T[0][448] from 3590.000000 to 3590.000000
+Updated plau T[0][447] from 3582.000000 to 3582.000000
+Updated plau T[1][255] from 3583.000000 to 3581.000000
+Updated plau T[0][446] from 3574.000000 to 3574.000000
+Updated plau T[1][254] from 3569.000000 to 3569.000000
+Updated plau T[0][445] from 3566.000000 to 3566.000000
+Updated plau T[0][444] from 3558.000000 to 3558.000000
+Updated plau T[1][253] from 3555.000000 to 3555.000000
+Updated plau T[0][443] from 3550.000000 to 3550.000000
+Updated plau T[0][442] from 3542.000000 to 3542.000000
+Updated plau T[1][252] from 3541.000000 to 3541.000000
+Updated plau T[0][441] from 3534.000000 to 3534.000000
+Updated plau T[0][440] from 3526.000000 to 3526.000000
+Updated plau T[1][251] from 3527.000000 to 3525.000000
+Updated plau T[0][439] from 3518.000000 to 3518.000000
+Updated plau T[1][250] from 3513.000000 to 3513.000000
+Updated plau T[0][438] from 3510.000000 to 3510.000000
+Updated plau T[0][437] from 3502.000000 to 3502.000000
+Updated plau T[1][249] from 3499.000000 to 3499.000000
+Updated plau T[0][436] from 3494.000000 to 3494.000000
+Updated plau T[0][435] from 3486.000000 to 3486.000000
+Updated plau T[1][248] from 3485.000000 to 3485.000000
+Updated plau T[0][434] from 3478.000000 to 3478.000000
+Updated plau T[0][433] from 3470.000000 to 3470.000000
+Updated plau T[1][247] from 3471.000000 to 3469.000000
+Updated plau T[0][432] from 3462.000000 to 3462.000000
+Updated plau T[1][246] from 3457.000000 to 3457.000000
+Updated plau T[0][431] from 3454.000000 to 3454.000000
+Updated plau T[0][430] from 3446.000000 to 3446.000000
+Updated plau T[1][245] from 3443.000000 to 3443.000000
+Updated plau T[0][429] from 3438.000000 to 3438.000000
+Updated plau T[0][428] from 3430.000000 to 3430.000000
+Updated plau T[1][244] from 3429.000000 to 3429.000000
+Updated plau T[2][13] from 3407.000000 to 3406.000000
+Updated plau T[0][427] from 3422.000000 to 3404.000000
+Updated plau T[0][426] from 3414.000000 to 3402.000000
+Updated plau T[1][243] from 3415.000000 to 3401.000000
+Updated plau T[0][425] from 3406.000000 to 3399.000000
+Updated plau T[1][242] from 3401.000000 to 3398.000000
+Updated plau T[0][424] from 3398.000000 to 3396.000000
+Updated plau T[0][423] from 3390.000000 to 3390.000000
+Updated plau T[1][241] from 3387.000000 to 3387.000000
+Updated plau T[0][422] from 3382.000000 to 3382.000000
+Updated plau T[0][421] from 3374.000000 to 3374.000000
+Updated plau T[1][240] from 3373.000000 to 3373.000000
+Updated plau T[0][420] from 3366.000000 to 3366.000000
+Updated plau T[0][419] from 3358.000000 to 3358.000000
+Updated plau T[1][239] from 3359.000000 to 3357.000000
+Updated plau T[3][7] from 3325.000000 to 3322.000000
+Updated plau T[0][418] from 3350.000000 to 3320.000000
+Updated plau T[1][238] from 3345.000000 to 3319.000000
+Updated plau T[0][417] from 3342.000000 to 3317.000000
+Updated plau T[0][416] from 3334.000000 to 3315.000000
+Updated plau T[1][237] from 3331.000000 to 3314.000000
+Updated plau T[0][415] from 3326.000000 to 3312.000000
+Updated plau T[0][414] from 3318.000000 to 3310.000000
+Updated plau T[1][236] from 3317.000000 to 3309.000000
+Updated plau T[0][413] from 3310.000000 to 3307.000000
+Updated plau T[0][412] from 3302.000000 to 3302.000000
+Updated plau T[1][235] from 3303.000000 to 3301.000000
+Updated plau T[0][411] from 3294.000000 to 3294.000000
+Updated plau T[1][234] from 3289.000000 to 3289.000000
+Updated plau T[0][410] from 3286.000000 to 3286.000000
+Updated plau T[0][409] from 3278.000000 to 3278.000000
+Updated plau T[1][233] from 3275.000000 to 3275.000000
+Updated plau T[0][408] from 3270.000000 to 3270.000000
+Updated plau T[0][407] from 3262.000000 to 3262.000000
+Updated plau T[1][232] from 3261.000000 to 3261.000000
+Updated plau T[0][406] from 3254.000000 to 3254.000000
+Updated plau T[0][405] from 3246.000000 to 3246.000000
+Updated plau T[1][231] from 3247.000000 to 3245.000000
+Updated plau T[0][404] from 3238.000000 to 3238.000000
+Updated plau T[1][230] from 3233.000000 to 3233.000000
+Updated plau T[0][403] from 3230.000000 to 3230.000000
+Updated plau T[0][402] from 3222.000000 to 3222.000000
+Updated plau T[1][229] from 3219.000000 to 3219.000000
+Updated plau T[0][401] from 3214.000000 to 3214.000000
+Updated plau T[0][400] from 3206.000000 to 3206.000000
+Updated plau T[1][228] from 3205.000000 to 3205.000000
+Updated plau T[0][399] from 3198.000000 to 3198.000000
+Updated plau T[0][398] from 3190.000000 to 3190.000000
+Updated plau T[1][227] from 3191.000000 to 3189.000000
+Updated plau T[2][12] from 3162.000000 to 3162.000000
+Updated plau T[0][397] from 3182.000000 to 3160.000000
+Updated plau T[1][226] from 3177.000000 to 3159.000000
+Updated plau T[0][396] from 3174.000000 to 3157.000000
+Updated plau T[0][395] from 3166.000000 to 3155.000000
+Updated plau T[1][225] from 3163.000000 to 3154.000000
+Updated plau T[0][394] from 3158.000000 to 3152.000000
+Updated plau T[0][393] from 3150.000000 to 3150.000000
+Updated plau T[1][224] from 3149.000000 to 3149.000000
+Updated plau T[0][392] from 3142.000000 to 3142.000000
+Updated plau T[0][391] from 3134.000000 to 3134.000000
+Updated plau T[1][223] from 3135.000000 to 3133.000000
+Updated plau T[0][390] from 3126.000000 to 3126.000000
+Updated plau T[1][222] from 3121.000000 to 3121.000000
+Updated plau T[0][389] from 3118.000000 to 3118.000000
+Updated plau T[0][388] from 3110.000000 to 3110.000000
+Updated plau T[1][221] from 3107.000000 to 3107.000000
+Updated plau T[0][387] from 3102.000000 to 3102.000000
+Updated plau T[0][386] from 3094.000000 to 3094.000000
+Updated plau T[1][220] from 3093.000000 to 3093.000000
+Updated plau T[0][385] from 3086.000000 to 3086.000000
+Updated plau T[0][384] from 3078.000000 to 3078.000000
+Updated plau T[1][219] from 3079.000000 to 3077.000000
+Updated plau T[0][383] from 3070.000000 to 3070.000000
+Updated plau T[1][218] from 3065.000000 to 3065.000000
+Updated plau T[0][382] from 3062.000000 to 3062.000000
+Updated plau T[0][381] from 3054.000000 to 3054.000000
+Updated plau T[1][217] from 3051.000000 to 3051.000000
+Updated plau T[0][380] from 3046.000000 to 3046.000000
+Updated plau T[0][379] from 3038.000000 to 3038.000000
+Updated plau T[1][216] from 3037.000000 to 3037.000000
+Updated plau T[0][378] from 3030.000000 to 3030.000000
+Updated plau T[0][377] from 3022.000000 to 3022.000000
+Updated plau T[1][215] from 3023.000000 to 3021.000000
+Updated plau T[0][376] from 3014.000000 to 3014.000000
+Updated plau T[1][214] from 3009.000000 to 3009.000000
+Updated plau T[0][375] from 3006.000000 to 3006.000000
+Updated plau T[0][374] from 2998.000000 to 2998.000000
+Updated plau T[1][213] from 2995.000000 to 2995.000000
+Updated plau T[0][373] from 2990.000000 to 2990.000000
+Updated plau T[0][372] from 2982.000000 to 2982.000000
+Updated plau T[1][212] from 2981.000000 to 2981.000000
+Updated plau T[0][371] from 2974.000000 to 2974.000000
+Updated plau T[0][370] from 2966.000000 to 2966.000000
+Updated plau T[1][211] from 2967.000000 to 2965.000000
+Updated plau T[0][369] from 2958.000000 to 2958.000000
+Updated plau T[1][210] from 2953.000000 to 2953.000000
+Updated plau T[0][368] from 2950.000000 to 2950.000000
+Updated plau T[0][367] from 2942.000000 to 2942.000000
+Updated plau T[1][209] from 2939.000000 to 2939.000000
+Updated plau T[2][11] from 2917.000000 to 2916.000000
+Updated plau T[3][6] from 2905.000000 to 2881.000000
+Updated plau T[0][366] from 2934.000000 to 2879.000000
+Updated plau T[0][365] from 2926.000000 to 2877.000000
+Updated plau T[1][208] from 2925.000000 to 2876.000000
+Updated plau T[0][364] from 2918.000000 to 2874.000000
+Updated plau T[0][363] from 2910.000000 to 2872.000000
+Updated plau T[1][207] from 2911.000000 to 2871.000000
+Updated plau T[0][362] from 2902.000000 to 2869.000000
+Updated plau T[1][206] from 2897.000000 to 2868.000000
+Updated plau T[0][361] from 2894.000000 to 2866.000000
+Updated plau T[0][360] from 2886.000000 to 2864.000000
+Updated plau T[1][205] from 2883.000000 to 2863.000000
+Updated plau T[0][359] from 2878.000000 to 2861.000000
+Updated plau T[0][358] from 2870.000000 to 2859.000000
+Updated plau T[1][204] from 2869.000000 to 2858.000000
+Updated plau T[0][357] from 2862.000000 to 2856.000000
+Updated plau T[0][356] from 2854.000000 to 2854.000000
+Updated plau T[1][203] from 2855.000000 to 2853.000000
+Updated plau T[0][355] from 2846.000000 to 2846.000000
+Updated plau T[1][202] from 2841.000000 to 2841.000000
+Updated plau T[0][354] from 2838.000000 to 2838.000000
+Updated plau T[0][353] from 2830.000000 to 2830.000000
+Updated plau T[1][201] from 2827.000000 to 2827.000000
+Updated plau T[0][352] from 2822.000000 to 2822.000000
+Updated plau T[0][351] from 2814.000000 to 2814.000000
+Updated plau T[1][200] from 2813.000000 to 2813.000000
+Updated plau T[0][350] from 2806.000000 to 2806.000000
+Updated plau T[0][349] from 2798.000000 to 2798.000000
+Updated plau T[1][199] from 2799.000000 to 2797.000000
+Updated plau T[0][348] from 2790.000000 to 2790.000000
+Updated plau T[1][198] from 2785.000000 to 2785.000000
+Updated plau T[0][347] from 2782.000000 to 2782.000000
+Updated plau T[0][346] from 2774.000000 to 2774.000000
+Updated plau T[1][197] from 2771.000000 to 2771.000000
+Updated plau T[0][345] from 2766.000000 to 2766.000000
+Updated plau T[0][344] from 2758.000000 to 2758.000000
+Updated plau T[1][196] from 2757.000000 to 2757.000000
+Updated plau T[0][343] from 2750.000000 to 2750.000000
+Updated plau T[0][342] from 2742.000000 to 2742.000000
+Updated plau T[1][195] from 2743.000000 to 2741.000000
+Updated plau T[0][341] from 2734.000000 to 2734.000000
+Updated plau T[1][194] from 2729.000000 to 2729.000000
+Updated plau T[0][340] from 2726.000000 to 2726.000000
+Updated plau T[0][339] from 2718.000000 to 2718.000000
+Updated plau T[1][193] from 2715.000000 to 2715.000000
+Updated plau T[0][338] from 2710.000000 to 2710.000000
+Updated plau T[0][337] from 2702.000000 to 2702.000000
+Updated plau T[1][192] from 2701.000000 to 2701.000000
+Updated plau T[0][336] from 2694.000000 to 2694.000000
+Updated plau T[2][10] from 2672.000000 to 2671.000000
+Updated plau T[0][335] from 2686.000000 to 2669.000000
+Updated plau T[1][191] from 2687.000000 to 2668.000000
+Updated plau T[0][334] from 2678.000000 to 2666.000000
+Updated plau T[1][190] from 2673.000000 to 2665.000000
+Updated plau T[0][333] from 2670.000000 to 2663.000000
+Updated plau T[0][332] from 2662.000000 to 2661.000000
+Updated plau T[1][189] from 2659.000000 to 2659.000000
+Updated plau T[0][331] from 2654.000000 to 2654.000000
+Updated plau T[0][330] from 2646.000000 to 2646.000000
+Updated plau T[1][188] from 2645.000000 to 2645.000000
+Updated plau T[0][329] from 2638.000000 to 2638.000000
+Updated plau T[0][328] from 2630.000000 to 2630.000000
+Updated plau T[1][187] from 2631.000000 to 2629.000000
+Updated plau T[0][327] from 2622.000000 to 2622.000000
+Updated plau T[1][186] from 2617.000000 to 2617.000000
+Updated plau T[0][326] from 2614.000000 to 2614.000000
+Updated plau T[0][325] from 2606.000000 to 2606.000000
+Updated plau T[1][185] from 2603.000000 to 2603.000000
+Updated plau T[0][324] from 2598.000000 to 2598.000000
+Updated plau T[0][323] from 2590.000000 to 2590.000000
+Updated plau T[1][184] from 2589.000000 to 2589.000000
+Updated plau T[0][322] from 2582.000000 to 2582.000000
+Updated plau T[0][321] from 2574.000000 to 2574.000000
+Updated plau T[1][183] from 2575.000000 to 2573.000000
+Updated plau T[0][320] from 2566.000000 to 2566.000000
+Updated plau T[1][182] from 2561.000000 to 2561.000000
+Updated plau T[0][319] from 2558.000000 to 2558.000000
+Updated plau T[0][318] from 2550.000000 to 2550.000000
+Updated plau T[1][181] from 2547.000000 to 2547.000000
+Updated plau T[0][317] from 2542.000000 to 2542.000000
+Updated plau T[0][316] from 2534.000000 to 2534.000000
+Updated plau T[1][180] from 2533.000000 to 2533.000000
+Updated plau T[0][315] from 2526.000000 to 2526.000000
+Updated plau T[0][314] from 2518.000000 to 2518.000000
+Updated plau T[1][179] from 2519.000000 to 2517.000000
+Updated plau T[3][5] from 2485.000000 to 2482.000000
+Updated plau T[0][313] from 2510.000000 to 2480.000000
+Updated plau T[1][178] from 2505.000000 to 2479.000000
+Updated plau T[0][312] from 2502.000000 to 2477.000000
+Updated plau T[0][311] from 2494.000000 to 2475.000000
+Updated plau T[1][177] from 2491.000000 to 2474.000000
+Updated plau T[0][310] from 2486.000000 to 2472.000000
+Updated plau T[0][309] from 2478.000000 to 2470.000000
+Updated plau T[1][176] from 2477.000000 to 2469.000000
+Updated plau T[0][308] from 2470.000000 to 2467.000000
+Updated plau T[0][307] from 2462.000000 to 2462.000000
+Updated plau T[1][175] from 2463.000000 to 2461.000000
+Updated plau T[0][306] from 2454.000000 to 2454.000000
+Updated plau T[1][174] from 2449.000000 to 2449.000000
+Updated plau T[2][9] from 2427.000000 to 2426.000000
+Updated plau T[0][305] from 2446.000000 to 2424.000000
+Updated plau T[0][304] from 2438.000000 to 2422.000000
+Updated plau T[1][173] from 2435.000000 to 2421.000000
+Updated plau T[0][303] from 2430.000000 to 2419.000000
+Updated plau T[0][302] from 2422.000000 to 2417.000000
+Updated plau T[1][172] from 2421.000000 to 2416.000000
+Updated plau T[0][301] from 2414.000000 to 2414.000000
+Updated plau T[0][300] from 2406.000000 to 2406.000000
+Updated plau T[1][171] from 2407.000000 to 2405.000000
+Updated plau T[0][299] from 2398.000000 to 2398.000000
+Updated plau T[1][170] from 2393.000000 to 2393.000000
+Updated plau T[0][298] from 2390.000000 to 2390.000000
+Updated plau T[0][297] from 2382.000000 to 2382.000000
+Updated plau T[1][169] from 2379.000000 to 2379.000000
+Updated plau T[0][296] from 2374.000000 to 2374.000000
+Updated plau T[0][295] from 2366.000000 to 2366.000000
+Updated plau T[1][168] from 2365.000000 to 2365.000000
+Updated plau T[0][294] from 2358.000000 to 2358.000000
+Updated plau T[0][293] from 2350.000000 to 2350.000000
+Updated plau T[1][167] from 2351.000000 to 2349.000000
+Updated plau T[0][292] from 2342.000000 to 2342.000000
+Updated plau T[1][166] from 2337.000000 to 2337.000000
+Updated plau T[0][291] from 2334.000000 to 2334.000000
+Updated plau T[0][290] from 2326.000000 to 2326.000000
+Updated plau T[1][165] from 2323.000000 to 2323.000000
+Updated plau T[0][289] from 2318.000000 to 2318.000000
+Updated plau T[0][288] from 2310.000000 to 2310.000000
+Updated plau T[1][164] from 2309.000000 to 2309.000000
+Updated plau T[0][287] from 2302.000000 to 2302.000000
+Updated plau T[0][286] from 2294.000000 to 2294.000000
+Updated plau T[1][163] from 2295.000000 to 2293.000000
+Updated plau T[0][285] from 2286.000000 to 2286.000000
+Updated plau T[1][162] from 2281.000000 to 2281.000000
+Updated plau T[0][284] from 2278.000000 to 2278.000000
+Updated plau T[0][283] from 2270.000000 to 2270.000000
+Updated plau T[1][161] from 2267.000000 to 2267.000000
+Updated plau T[0][282] from 2262.000000 to 2262.000000
+Updated plau T[0][281] from 2254.000000 to 2254.000000
+Updated plau T[1][160] from 2253.000000 to 2253.000000
+Updated plau T[0][280] from 2246.000000 to 2246.000000
+Updated plau T[0][279] from 2238.000000 to 2238.000000
+Updated plau T[1][159] from 2239.000000 to 2237.000000
+Updated plau T[0][278] from 2230.000000 to 2230.000000
+Updated plau T[1][158] from 2225.000000 to 2225.000000
+Updated plau T[0][277] from 2222.000000 to 2222.000000
+Updated plau T[0][276] from 2214.000000 to 2214.000000
+Updated plau T[1][157] from 2211.000000 to 2211.000000
+Updated plau T[0][275] from 2206.000000 to 2206.000000
+Updated plau T[2][8] from 2182.000000 to 2182.000000
+Updated plau T[0][274] from 2198.000000 to 2180.000000
+Updated plau T[1][156] from 2197.000000 to 2179.000000
+Updated plau T[0][273] from 2190.000000 to 2177.000000
+Updated plau T[0][272] from 2182.000000 to 2175.000000
+Updated plau T[1][155] from 2183.000000 to 2174.000000
+Updated plau T[0][271] from 2174.000000 to 2172.000000
+Updated plau T[1][154] from 2169.000000 to 2169.000000
+Updated plau T[0][270] from 2166.000000 to 2166.000000
+Updated plau T[0][269] from 2158.000000 to 2158.000000
+Updated plau T[1][153] from 2155.000000 to 2155.000000
+Updated plau T[0][268] from 2150.000000 to 2150.000000
+Updated plau T[0][267] from 2142.000000 to 2142.000000
+Updated plau T[1][152] from 2141.000000 to 2141.000000
+Updated plau T[0][266] from 2134.000000 to 2134.000000
+Updated plau T[0][265] from 2126.000000 to 2126.000000
+Updated plau T[1][151] from 2127.000000 to 2125.000000
+Updated plau T[0][264] from 2118.000000 to 2118.000000
+Updated plau T[1][150] from 2113.000000 to 2113.000000
+Updated plau T[0][263] from 2110.000000 to 2110.000000
+Updated plau T[0][262] from 2102.000000 to 2102.000000
+Updated plau T[1][149] from 2099.000000 to 2099.000000
+Updated plau T[3][4] from 2065.000000 to 2064.000000
+Updated plau T[0][261] from 2094.000000 to 2062.000000
+Updated plau T[0][260] from 2086.000000 to 2060.000000
+Updated plau T[1][148] from 2085.000000 to 2059.000000
+Updated plau T[0][259] from 2078.000000 to 2057.000000
+Updated plau T[0][258] from 2070.000000 to 2055.000000
+Updated plau T[1][147] from 2071.000000 to 2054.000000
+Updated plau T[0][257] from 2062.000000 to 2052.000000
+Updated plau T[1][146] from 2057.000000 to 2051.000000
+Updated plau T[0][256] from 2054.000000 to 2049.000000
+Updated plau T[0][255] from 2046.000000 to 2046.000000
+Updated plau T[1][145] from 2043.000000 to 2043.000000
+Updated plau T[0][254] from 2038.000000 to 2038.000000
+Updated plau T[0][253] from 2030.000000 to 2030.000000
+Updated plau T[1][144] from 2029.000000 to 2029.000000
+Updated plau T[0][252] from 2022.000000 to 2022.000000
+Updated plau T[0][251] from 2014.000000 to 2014.000000
+Updated plau T[1][143] from 2015.000000 to 2013.000000
+Updated plau T[0][250] from 2006.000000 to 2006.000000
+Updated plau T[1][142] from 2001.000000 to 2001.000000
+Updated plau T[0][249] from 1998.000000 to 1998.000000
+Updated plau T[0][248] from 1990.000000 to 1990.000000
+Updated plau T[1][141] from 1987.000000 to 1987.000000
+Updated plau T[0][247] from 1982.000000 to 1982.000000
+Updated plau T[0][246] from 1974.000000 to 1974.000000
+Updated plau T[1][140] from 1973.000000 to 1973.000000
+Updated plau T[0][245] from 1966.000000 to 1966.000000
+Updated plau T[0][244] from 1958.000000 to 1958.000000
+Updated plau T[1][139] from 1959.000000 to 1957.000000
+Updated plau T[2][7] from 1937.000000 to 1934.000000
+Updated plau T[0][243] from 1950.000000 to 1932.000000
+Updated plau T[1][138] from 1945.000000 to 1931.000000
+Updated plau T[0][242] from 1942.000000 to 1929.000000
+Updated plau T[0][241] from 1934.000000 to 1927.000000
+Updated plau T[1][137] from 1931.000000 to 1926.000000
+Updated plau T[0][240] from 1926.000000 to 1924.000000
+Updated plau T[0][239] from 1918.000000 to 1918.000000
+Updated plau T[1][136] from 1917.000000 to 1917.000000
+Updated plau T[0][238] from 1910.000000 to 1910.000000
+Updated plau T[0][237] from 1902.000000 to 1902.000000
+Updated plau T[1][135] from 1903.000000 to 1901.000000
+Updated plau T[0][236] from 1894.000000 to 1894.000000
+Updated plau T[1][134] from 1889.000000 to 1889.000000
+Updated plau T[0][235] from 1886.000000 to 1886.000000
+Updated plau T[0][234] from 1878.000000 to 1878.000000
+Updated plau T[1][133] from 1875.000000 to 1875.000000
+Updated plau T[0][233] from 1870.000000 to 1870.000000
+Updated plau T[0][232] from 1862.000000 to 1862.000000
+Updated plau T[1][132] from 1861.000000 to 1861.000000
+Updated plau T[0][231] from 1854.000000 to 1854.000000
+Updated plau T[0][230] from 1846.000000 to 1846.000000
+Updated plau T[1][131] from 1847.000000 to 1845.000000
+Updated plau T[0][229] from 1838.000000 to 1838.000000
+Updated plau T[1][130] from 1833.000000 to 1833.000000
+Updated plau T[0][228] from 1830.000000 to 1830.000000
+Updated plau T[0][227] from 1822.000000 to 1822.000000
+Updated plau T[1][129] from 1819.000000 to 1819.000000
+Updated plau T[0][226] from 1814.000000 to 1814.000000
+Updated plau T[0][225] from 1806.000000 to 1806.000000
+Updated plau T[1][128] from 1805.000000 to 1805.000000
+Updated plau T[0][224] from 1798.000000 to 1798.000000
+Updated plau T[0][223] from 1790.000000 to 1790.000000
+Updated plau T[1][127] from 1791.000000 to 1789.000000
+Updated plau T[0][222] from 1782.000000 to 1782.000000
+Updated plau T[1][126] from 1777.000000 to 1777.000000
+Updated plau T[0][221] from 1774.000000 to 1774.000000
+Updated plau T[0][220] from 1766.000000 to 1766.000000
+Updated plau T[1][125] from 1763.000000 to 1763.000000
+Updated plau T[0][219] from 1758.000000 to 1758.000000
+Updated plau T[0][218] from 1750.000000 to 1750.000000
+Updated plau T[1][124] from 1749.000000 to 1749.000000
+Updated plau T[0][217] from 1742.000000 to 1742.000000
+Updated plau T[0][216] from 1734.000000 to 1734.000000
+Updated plau T[1][123] from 1735.000000 to 1733.000000
+Updated plau T[0][215] from 1726.000000 to 1726.000000
+Updated plau T[1][122] from 1721.000000 to 1721.000000
+Updated plau T[0][214] from 1718.000000 to 1718.000000
+Updated plau T[2][6] from 1692.000000 to 1692.000000
+Updated plau T[0][213] from 1710.000000 to 1690.000000
+Updated plau T[1][121] from 1707.000000 to 1689.000000
+Updated plau T[0][212] from 1702.000000 to 1687.000000
+Updated plau T[0][211] from 1694.000000 to 1685.000000
+Updated plau T[1][120] from 1693.000000 to 1684.000000
+Updated plau T[0][210] from 1686.000000 to 1682.000000
+Updated plau T[0][209] from 1678.000000 to 1678.000000
+Updated plau T[1][119] from 1679.000000 to 1677.000000
+Updated plau T[3][3] from 1645.000000 to 1642.000000
+Updated plau T[0][208] from 1670.000000 to 1640.000000
+Updated plau T[1][118] from 1665.000000 to 1639.000000
+Updated plau T[0][207] from 1662.000000 to 1637.000000
+Updated plau T[0][206] from 1654.000000 to 1635.000000
+Updated plau T[1][117] from 1651.000000 to 1634.000000
+Updated plau T[0][205] from 1646.000000 to 1632.000000
+Updated plau T[0][204] from 1638.000000 to 1630.000000
+Updated plau T[1][116] from 1637.000000 to 1629.000000
+Updated plau T[0][203] from 1630.000000 to 1627.000000
+Updated plau T[0][202] from 1622.000000 to 1622.000000
+Updated plau T[1][115] from 1623.000000 to 1621.000000
+Updated plau T[0][201] from 1614.000000 to 1614.000000
+Updated plau T[1][114] from 1609.000000 to 1609.000000
+Updated plau T[0][200] from 1606.000000 to 1606.000000
+Updated plau T[0][199] from 1598.000000 to 1598.000000
+Updated plau T[1][113] from 1595.000000 to 1595.000000
+Updated plau T[0][198] from 1590.000000 to 1590.000000
+Updated plau T[0][197] from 1582.000000 to 1582.000000
+Updated plau T[1][112] from 1581.000000 to 1581.000000
+Updated plau T[0][196] from 1574.000000 to 1574.000000
+Updated plau T[0][195] from 1566.000000 to 1566.000000
+Updated plau T[1][111] from 1567.000000 to 1565.000000
+Updated plau T[0][194] from 1558.000000 to 1558.000000
+Updated plau T[1][110] from 1553.000000 to 1553.000000
+Updated plau T[0][193] from 1550.000000 to 1550.000000
+Updated plau T[0][192] from 1542.000000 to 1542.000000
+Updated plau T[1][109] from 1539.000000 to 1539.000000
+Updated plau T[0][191] from 1534.000000 to 1534.000000
+Updated plau T[0][190] from 1526.000000 to 1526.000000
+Updated plau T[1][108] from 1525.000000 to 1525.000000
+Updated plau T[0][189] from 1518.000000 to 1518.000000
+Updated plau T[0][188] from 1510.000000 to 1510.000000
+Updated plau T[1][107] from 1511.000000 to 1509.000000
+Updated plau T[0][187] from 1502.000000 to 1502.000000
+Updated plau T[1][106] from 1497.000000 to 1497.000000
+Updated plau T[0][186] from 1494.000000 to 1494.000000
+Updated plau T[0][185] from 1486.000000 to 1486.000000
+Updated plau T[1][105] from 1483.000000 to 1483.000000
+Updated plau T[0][184] from 1478.000000 to 1478.000000
+Updated plau T[0][183] from 1470.000000 to 1470.000000
+Updated plau T[1][104] from 1469.000000 to 1469.000000
+Updated plau T[2][5] from 1447.000000 to 1446.000000
+Updated plau T[0][182] from 1462.000000 to 1444.000000
+Updated plau T[0][181] from 1454.000000 to 1442.000000
+Updated plau T[1][103] from 1455.000000 to 1441.000000
+Updated plau T[0][180] from 1446.000000 to 1439.000000
+Updated plau T[1][102] from 1441.000000 to 1438.000000
+Updated plau T[0][179] from 1438.000000 to 1436.000000
+Updated plau T[0][178] from 1430.000000 to 1430.000000
+Updated plau T[1][101] from 1427.000000 to 1427.000000
+Updated plau T[0][177] from 1422.000000 to 1422.000000
+Updated plau T[0][176] from 1414.000000 to 1414.000000
+Updated plau T[1][100] from 1413.000000 to 1413.000000
+Updated plau T[0][175] from 1406.000000 to 1406.000000
+Updated plau T[0][174] from 1398.000000 to 1398.000000
+Updated plau T[1][99] from 1399.000000 to 1397.000000
+Updated plau T[0][173] from 1390.000000 to 1390.000000
+Updated plau T[1][98] from 1385.000000 to 1385.000000
+Updated plau T[0][172] from 1382.000000 to 1382.000000
+Updated plau T[0][171] from 1374.000000 to 1374.000000
+Updated plau T[1][97] from 1371.000000 to 1371.000000
+Updated plau T[0][170] from 1366.000000 to 1366.000000
+Updated plau T[0][169] from 1358.000000 to 1358.000000
+Updated plau T[1][96] from 1357.000000 to 1357.000000
+Updated plau T[0][168] from 1350.000000 to 1350.000000
+Updated plau T[0][167] from 1342.000000 to 1342.000000
+Updated plau T[1][95] from 1343.000000 to 1341.000000
+Updated plau T[0][166] from 1334.000000 to 1334.000000
+Updated plau T[1][94] from 1329.000000 to 1329.000000
+Updated plau T[0][165] from 1326.000000 to 1326.000000
+Updated plau T[0][164] from 1318.000000 to 1318.000000
+Updated plau T[1][93] from 1315.000000 to 1315.000000
+Updated plau T[0][163] from 1310.000000 to 1310.000000
+Updated plau T[0][162] from 1302.000000 to 1302.000000
+Updated plau T[1][92] from 1301.000000 to 1301.000000
+Updated plau T[0][161] from 1294.000000 to 1294.000000
+Updated plau T[0][160] from 1286.000000 to 1286.000000
+Updated plau T[1][91] from 1287.000000 to 1285.000000
+Updated plau T[0][159] from 1278.000000 to 1278.000000
+Updated plau T[1][90] from 1273.000000 to 1273.000000
+Updated plau T[0][158] from 1270.000000 to 1270.000000
+Updated plau T[0][157] from 1262.000000 to 1262.000000
+Updated plau T[1][89] from 1259.000000 to 1259.000000
+Updated plau T[3][2] from 1225.000000 to 1224.000000
+Updated plau T[0][156] from 1254.000000 to 1222.000000
+Updated plau T[0][155] from 1246.000000 to 1220.000000
+Updated plau T[1][88] from 1245.000000 to 1219.000000
+Updated plau T[0][154] from 1238.000000 to 1217.000000
+Updated plau T[0][153] from 1230.000000 to 1215.000000
+Updated plau T[1][87] from 1231.000000 to 1214.000000
+Updated plau T[2][4] from 1202.000000 to 1191.000000
+Updated plau T[0][152] from 1222.000000 to 1189.000000
+Updated plau T[1][86] from 1217.000000 to 1188.000000
+Updated plau T[0][151] from 1214.000000 to 1186.000000
+Updated plau T[0][150] from 1206.000000 to 1184.000000
+Updated plau T[1][85] from 1203.000000 to 1183.000000
+Updated plau T[0][149] from 1198.000000 to 1181.000000
+Updated plau T[0][148] from 1190.000000 to 1179.000000
+Updated plau T[1][84] from 1189.000000 to 1178.000000
+Updated plau T[0][147] from 1182.000000 to 1176.000000
+Updated plau T[0][146] from 1174.000000 to 1174.000000
+Updated plau T[1][83] from 1175.000000 to 1173.000000
+Updated plau T[0][145] from 1166.000000 to 1166.000000
+Updated plau T[1][82] from 1161.000000 to 1161.000000
+Updated plau T[0][144] from 1158.000000 to 1158.000000
+Updated plau T[0][143] from 1150.000000 to 1150.000000
+Updated plau T[1][81] from 1147.000000 to 1147.000000
+Updated plau T[0][142] from 1142.000000 to 1142.000000
+Updated plau T[0][141] from 1134.000000 to 1134.000000
+Updated plau T[1][80] from 1133.000000 to 1133.000000
+Updated plau T[0][140] from 1126.000000 to 1126.000000
+Updated plau T[0][139] from 1118.000000 to 1118.000000
+Updated plau T[1][79] from 1119.000000 to 1117.000000
+Updated plau T[0][138] from 1110.000000 to 1110.000000
+Updated plau T[1][78] from 1105.000000 to 1105.000000
+Updated plau T[0][137] from 1102.000000 to 1102.000000
+Updated plau T[0][136] from 1094.000000 to 1094.000000
+Updated plau T[1][77] from 1091.000000 to 1091.000000
+Updated plau T[0][135] from 1086.000000 to 1086.000000
+Updated plau T[0][134] from 1078.000000 to 1078.000000
+Updated plau T[1][76] from 1077.000000 to 1077.000000
+Updated plau T[0][133] from 1070.000000 to 1070.000000
+Updated plau T[0][132] from 1062.000000 to 1062.000000
+Updated plau T[1][75] from 1063.000000 to 1061.000000
+Updated plau T[0][131] from 1054.000000 to 1054.000000
+Updated plau T[1][74] from 1049.000000 to 1049.000000
+Updated plau T[0][130] from 1046.000000 to 1046.000000
+Updated plau T[0][129] from 1038.000000 to 1038.000000
+Updated plau T[1][73] from 1035.000000 to 1035.000000
+Updated plau T[0][128] from 1030.000000 to 1030.000000
+Updated plau T[0][127] from 1022.000000 to 1022.000000
+Updated plau T[1][72] from 1021.000000 to 1021.000000
+Updated plau T[0][126] from 1014.000000 to 1014.000000
+Updated plau T[0][125] from 1006.000000 to 1006.000000
+Updated plau T[1][71] from 1007.000000 to 1005.000000
+Updated plau T[0][124] from 998.000000 to 998.000000
+Updated plau T[1][70] from 993.000000 to 993.000000
+Updated plau T[0][123] from 990.000000 to 990.000000
+Updated plau T[0][122] from 982.000000 to 982.000000
+Updated plau T[1][69] from 979.000000 to 979.000000
+Updated plau T[2][3] from 957.000000 to 956.000000
+Updated plau T[0][121] from 974.000000 to 954.000000
+Updated plau T[0][120] from 966.000000 to 952.000000
+Updated plau T[1][68] from 965.000000 to 951.000000
+Updated plau T[0][119] from 958.000000 to 949.000000
+Updated plau T[0][118] from 950.000000 to 947.000000
+Updated plau T[1][67] from 951.000000 to 946.000000
+Updated plau T[0][117] from 942.000000 to 942.000000
+Updated plau T[1][66] from 937.000000 to 937.000000
+Updated plau T[0][116] from 934.000000 to 934.000000
+Updated plau T[0][115] from 926.000000 to 926.000000
+Updated plau T[1][65] from 923.000000 to 923.000000
+Updated plau T[0][114] from 918.000000 to 918.000000
+Updated plau T[0][113] from 910.000000 to 910.000000
+Updated plau T[1][64] from 909.000000 to 909.000000
+Updated plau T[0][112] from 902.000000 to 902.000000
+Updated plau T[0][111] from 894.000000 to 894.000000
+Updated plau T[1][63] from 895.000000 to 893.000000
+Updated plau T[0][110] from 886.000000 to 886.000000
+Updated plau T[1][62] from 881.000000 to 881.000000
+Updated plau T[0][109] from 878.000000 to 878.000000
+Updated plau T[0][108] from 870.000000 to 870.000000
+Updated plau T[1][61] from 867.000000 to 867.000000
+Updated plau T[0][107] from 862.000000 to 862.000000
+Updated plau T[0][106] from 854.000000 to 854.000000
+Updated plau T[1][60] from 853.000000 to 853.000000
+Updated plau T[0][105] from 846.000000 to 846.000000
+Updated plau T[0][104] from 838.000000 to 838.000000
+Updated plau T[1][59] from 839.000000 to 837.000000
+Updated plau T[3][1] from 805.000000 to 802.000000
+Updated plau T[0][103] from 830.000000 to 800.000000
+Updated plau T[1][58] from 825.000000 to 799.000000
+Updated plau T[0][102] from 822.000000 to 797.000000
+Updated plau T[0][101] from 814.000000 to 795.000000
+Updated plau T[1][57] from 811.000000 to 794.000000
+Updated plau T[0][100] from 806.000000 to 792.000000
+Updated plau T[0][99] from 798.000000 to 790.000000
+Updated plau T[1][56] from 797.000000 to 789.000000
+Updated plau T[0][98] from 790.000000 to 787.000000
+Updated plau T[0][97] from 782.000000 to 782.000000
+Updated plau T[1][55] from 783.000000 to 781.000000
+Updated plau T[0][96] from 774.000000 to 774.000000
+Updated plau T[1][54] from 769.000000 to 769.000000
+Updated plau T[0][95] from 766.000000 to 766.000000
+Updated plau T[0][94] from 758.000000 to 758.000000
+Updated plau T[1][53] from 755.000000 to 755.000000
+Updated plau T[0][93] from 750.000000 to 750.000000
+Updated plau T[0][92] from 742.000000 to 742.000000
+Updated plau T[1][52] from 741.000000 to 741.000000
+Updated plau T[0][91] from 734.000000 to 734.000000
+Updated plau T[2][2] from 712.000000 to 711.000000
+Updated plau T[0][90] from 726.000000 to 709.000000
+Updated plau T[1][51] from 727.000000 to 708.000000
+Updated plau T[0][89] from 718.000000 to 706.000000
+Updated plau T[1][50] from 713.000000 to 705.000000
+Updated plau T[0][88] from 710.000000 to 703.000000
+Updated plau T[0][87] from 702.000000 to 701.000000
+Updated plau T[1][49] from 699.000000 to 699.000000
+Updated plau T[0][86] from 694.000000 to 694.000000
+Updated plau T[0][85] from 686.000000 to 686.000000
+Updated plau T[1][48] from 685.000000 to 685.000000
+Updated plau T[0][84] from 678.000000 to 678.000000
+Updated plau T[0][83] from 670.000000 to 670.000000
+Updated plau T[1][47] from 671.000000 to 669.000000
+Updated plau T[0][82] from 662.000000 to 662.000000
+Updated plau T[1][46] from 657.000000 to 657.000000
+Updated plau T[0][81] from 654.000000 to 654.000000
+Updated plau T[0][80] from 646.000000 to 646.000000
+Updated plau T[1][45] from 643.000000 to 643.000000
+Updated plau T[0][79] from 638.000000 to 638.000000
+Updated plau T[0][78] from 630.000000 to 630.000000
+Updated plau T[1][44] from 629.000000 to 629.000000
+Updated plau T[0][77] from 622.000000 to 622.000000
+Updated plau T[0][76] from 614.000000 to 614.000000
+Updated plau T[1][43] from 615.000000 to 613.000000
+Updated plau T[0][75] from 606.000000 to 606.000000
+Updated plau T[1][42] from 601.000000 to 601.000000
+Updated plau T[0][74] from 598.000000 to 598.000000
+Updated plau T[0][73] from 590.000000 to 590.000000
+Updated plau T[1][41] from 587.000000 to 587.000000
+Updated plau T[0][72] from 582.000000 to 582.000000
+Updated plau T[0][71] from 574.000000 to 574.000000
+Updated plau T[1][40] from 573.000000 to 573.000000
+Updated plau T[0][70] from 566.000000 to 566.000000
+Updated plau T[0][69] from 558.000000 to 558.000000
+Updated plau T[1][39] from 559.000000 to 557.000000
+Updated plau T[0][68] from 550.000000 to 550.000000
+Updated plau T[1][38] from 545.000000 to 545.000000
+Updated plau T[0][67] from 542.000000 to 542.000000
+Updated plau T[0][66] from 534.000000 to 534.000000
+Updated plau T[1][37] from 531.000000 to 531.000000
+Updated plau T[0][65] from 526.000000 to 526.000000
+Updated plau T[0][64] from 518.000000 to 518.000000
+Updated plau T[1][36] from 517.000000 to 517.000000
+Updated plau T[0][63] from 510.000000 to 510.000000
+Updated plau T[0][62] from 502.000000 to 502.000000
+Updated plau T[1][35] from 503.000000 to 501.000000
+Updated plau T[0][61] from 494.000000 to 494.000000
+Updated plau T[1][34] from 489.000000 to 489.000000
+Updated plau T[2][1] from 467.000000 to 466.000000
+Updated plau T[0][60] from 486.000000 to 464.000000
+Updated plau T[0][59] from 478.000000 to 462.000000
+Updated plau T[1][33] from 475.000000 to 461.000000
+Updated plau T[0][58] from 470.000000 to 459.000000
+Updated plau T[0][57] from 462.000000 to 457.000000
+Updated plau T[1][32] from 461.000000 to 456.000000
+Updated plau T[0][56] from 454.000000 to 454.000000
+Updated plau T[0][55] from 446.000000 to 446.000000
+Updated plau T[1][31] from 447.000000 to 445.000000
+Updated plau T[0][54] from 438.000000 to 438.000000
+Updated plau T[1][30] from 433.000000 to 433.000000
+Updated plau T[0][53] from 430.000000 to 430.000000
+Updated plau T[0][52] from 422.000000 to 422.000000
+Updated plau T[1][29] from 419.000000 to 419.000000
+Updated plau T[3][0] from 385.000000 to 384.000000
+Updated plau T[0][51] from 414.000000 to 382.000000
+Updated plau T[0][50] from 406.000000 to 380.000000
+Updated plau T[1][28] from 405.000000 to 379.000000
+Updated plau T[0][49] from 398.000000 to 377.000000
+Updated plau T[0][48] from 390.000000 to 375.000000
+Updated plau T[1][27] from 391.000000 to 374.000000
+Updated plau T[0][47] from 382.000000 to 372.000000
+Updated plau T[1][26] from 377.000000 to 371.000000
+Updated plau T[0][46] from 374.000000 to 369.000000
+Updated plau T[0][45] from 366.000000 to 366.000000
+Updated plau T[1][25] from 363.000000 to 363.000000
+Updated plau T[0][44] from 358.000000 to 358.000000
+Updated plau T[0][43] from 350.000000 to 350.000000
+Updated plau T[1][24] from 349.000000 to 349.000000
+Updated plau T[0][42] from 342.000000 to 342.000000
+Updated plau T[0][41] from 334.000000 to 334.000000
+Updated plau T[1][23] from 335.000000 to 333.000000
+Updated plau T[0][40] from 326.000000 to 326.000000
+Updated plau T[1][22] from 321.000000 to 321.000000
+Updated plau T[0][39] from 318.000000 to 318.000000
+Updated plau T[0][38] from 310.000000 to 310.000000
+Updated plau T[1][21] from 307.000000 to 307.000000
+Updated plau T[0][37] from 302.000000 to 302.000000
+Updated plau T[0][36] from 294.000000 to 294.000000
+Updated plau T[1][20] from 293.000000 to 293.000000
+Updated plau T[0][35] from 286.000000 to 286.000000
+Updated plau T[0][34] from 278.000000 to 278.000000
+Updated plau T[1][19] from 279.000000 to 277.000000
+Updated plau T[0][33] from 270.000000 to 270.000000
+Updated plau T[1][18] from 265.000000 to 265.000000
+Updated plau T[0][32] from 262.000000 to 262.000000
+Updated plau T[0][31] from 254.000000 to 254.000000
+Updated plau T[1][17] from 251.000000 to 251.000000
+Updated plau T[0][30] from 246.000000 to 246.000000
+Updated plau T[2][0] from 222.000000 to 222.000000
+Updated plau T[0][29] from 238.000000 to 220.000000
+Updated plau T[1][16] from 237.000000 to 219.000000
+Updated plau T[0][28] from 230.000000 to 217.000000
+Updated plau T[0][27] from 222.000000 to 215.000000
+Updated plau T[1][15] from 223.000000 to 214.000000
+Updated plau T[0][26] from 214.000000 to 212.000000
+Updated plau T[1][14] from 209.000000 to 209.000000
+Updated plau T[0][25] from 206.000000 to 206.000000
+Updated plau T[0][24] from 198.000000 to 198.000000
+Updated plau T[1][13] from 195.000000 to 195.000000
+Updated plau T[0][23] from 190.000000 to 190.000000
+Updated plau T[0][22] from 182.000000 to 182.000000
+Updated plau T[1][12] from 181.000000 to 181.000000
+Updated plau T[0][21] from 174.000000 to 174.000000
+Updated plau T[0][20] from 166.000000 to 166.000000
+Updated plau T[1][11] from 167.000000 to 165.000000
+Updated plau T[0][19] from 158.000000 to 158.000000
+Updated plau T[1][10] from 153.000000 to 153.000000
+Updated plau T[0][18] from 150.000000 to 150.000000
+Updated plau T[0][17] from 142.000000 to 142.000000
+Updated plau T[1][9] from 139.000000 to 139.000000
+Updated plau T[0][16] from 134.000000 to 134.000000
+Updated plau T[0][15] from 126.000000 to 126.000000
+Updated plau T[1][8] from 125.000000 to 125.000000
+Updated plau T[0][14] from 118.000000 to 118.000000
+Updated plau T[0][13] from 110.000000 to 110.000000
+Updated plau T[1][7] from 111.000000 to 109.000000
+Updated plau T[0][12] from 102.000000 to 102.000000
+Updated plau T[1][6] from 97.000000 to 97.000000
+Updated plau T[0][11] from 94.000000 to 94.000000
+Updated plau T[0][10] from 86.000000 to 86.000000
+Updated plau T[1][5] from 83.000000 to 83.000000
+Updated plau T[0][9] from 78.000000 to 78.000000
+Updated plau T[0][8] from 70.000000 to 70.000000
+Updated plau T[1][4] from 69.000000 to 69.000000
+Updated plau T[0][7] from 62.000000 to 62.000000
+Updated plau T[0][6] from 54.000000 to 54.000000
+Updated plau T[1][3] from 55.000000 to 53.000000
+Updated plau T[0][5] from 46.000000 to 46.000000
+Updated plau T[1][2] from 41.000000 to 41.000000
+Updated plau T[0][4] from 38.000000 to 38.000000
+Updated plau T[0][3] from 30.000000 to 30.000000
+Updated plau T[1][1] from 27.000000 to 27.000000
+Updated plau T[0][2] from 22.000000 to 22.000000
+Updated plau T[0][1] from 14.000000 to 14.000000
+Updated plau T[1][0] from 13.000000 to 13.000000
+Updated plau T[0][0] from 6.000000 to 6.000000
