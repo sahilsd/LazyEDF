@@ -142,19 +142,26 @@ int update_plausible(int task, node * hyper_node, float exec, float alpha)
 	//fprintf(fpout,"***Changing plau[%d=%d] from %f to %f+%f*%f***\n",task,(temp->job).id,(temp->job).plausible_time,(temp->job).plausible_time,exec,alpha);	
 	(temp->job).plausible_time += exec*alpha;
 }	
-float calc_decision_pt()
+float calc_decision_pt(int next_deadline)
 {
 	float min;
 	int i = 1;
+	float finish_time = (Q->front->job).remaining_time/alpha + time;
 	no_of_decn_pts++;
 	min_arrival = find_min_arrival();
 	if(Q->front != NULL)						//CPU <> IDLE
 	{
-		return MIN(min_arrival,time + (Q->front->job).remaining_time/alpha);
+		fprintf(fpout,"Decision point min(%f,%f,%f)\n",(float)min_arrival,(float)next_deadline,finish_time);
+		if((float)min_arrival < (float)next_deadline)
+		{
+			if((float)min_arrival < finish_time) return min_arrival;
+			else return finish_time;
+		}
+		else if((float)next_deadline < finish_time)
+			return next_deadline;
+		else
+			return finish_time;
 	}
-	else
-		return  min_arrival;
-	
 	return min_arrival;
 }
 int update_deadline(node *hyper_head,node *x)
@@ -278,7 +285,7 @@ void Schedule()
 		fprintf(fpout,"Time : %f (a=%f)\t\t",time,alpha);
 		wrapper_enqueue(time_bef_dec,time);
 		time_bef_dec = time;
-		decision_pt = calc_decision_pt();
+		decision_pt = calc_decision_pt(Q_Hyper_head->job.deadline);
 		if(decision_pt < time) fprintf(fpout,"time travel----need towel\n");
 		fprintf(fpout,"Decision point : %f\n\n",decision_pt);
 		if(Q->front !=NULL)
@@ -353,17 +360,18 @@ void Schedule()
 			else										//execute code//
 			{
 				for(freq_find=0; freq_find<no_of_freq; freq_find++)
-				{
 					if(alpha == freq[freq_find])
-					break;
-				}
+						break;
 			
+				if(time == next_plausible) fprintf(fpout,"After shut down exec with alpha=%f\n",alpha);
 				fprintf(fpout,"task T[%d][%d] from %f to %f\n\n",Q->front->job.id, Q->front->job.instance,time,decision_pt);
-				fprintf(fp_excel_sched,"%f\t%f\tT[%d][%d]\tExecute()\t%f\n",time,decision_pt,(Q->front->job).id,(Q->front->job).release_time / (Q->front->job).period ,alpha);
+				fprintf(fp_excel_sched,"%f\t%f\tT[%d][%d]\tExecute()\t%f\n",\
+				time,decision_pt,(Q->front->job).id,(Q->front->job).release_time / (Q->front->job).period ,alpha);
 				exec = decision_pt - time;
 				total_exec_tasks[(Q->front->job).id] += exec;
 				(Q->front->job).execution_time += exec;
-				fprintf(fp_execution_times,"Total Execution time of Task[%d] is %f\n",(Q->front->job).id,(Q->front->job).execution_time);
+				fprintf(fp_execution_times,"Total Execution time of Task[%d] is %f\n",\
+				(Q->front->job).id,(Q->front->job).execution_time);
 			
 				if((Q->front->job).execution_time < min_exec_tasks[(Q->front->job).id])
 				{
@@ -395,33 +403,40 @@ void Schedule()
 		
 				time = decision_pt;			
 				fprintf(fpout,"Time : %f and decision pt : %f\n",time,decision_pt);
-
-				if((Q->front->job).abs_rem<0.01) 		//T[i][j] act exec exhausted completely
+												//Queue moving code//
+				if((Q->front->job).abs_rem<0.01)
 				{
-					fprintf(fpout,"Moving plau %f>%f+%f\n",time , (Q_Hyper_head->job).plausible_time,(Q->front->job).invocation);
+					Dequeue();
 					if(Q_Hyper_head->next != NULL)
 					{
 						Q_Hyper_head = Q_Hyper_head->next;
-						//remove all the subjobs of T[i][j] from hyper queue
-						remove_hyper(Q_Hyper_head);
-					}				
-					Dequeue();
-					if(Q->front != NULL)		
-						fprintf(fpout,"Dequeued to T[%d][%d] == T[%d][%d]\n\n",Q->front->job.id,Q->front->job.instance,Q_Hyper_head->job.id,Q_Hyper_head->job.instance);
-					finishTask = 1;
-				}
-				else
-				{
-					if(Q->front!=NULL)
-						(Q->front->job).remaining_time = (float)((Q->front->job).abs_rem)/alpha;
-
-					preemptions++;
-					if(Q_Hyper_head->job.max_computation_time == exec)	
-					{
-						fprintf(fpout,"need to move\n");
-						move_subjob(&Q,Q_Hyper_head);
+						fprintf(fpout,"New plausible = T[%d][%d]-%f\n",\
+						Q_Hyper_head->job.id,Q_Hyper_head->job.instance,Q_Hyper_head->job.plausible_time);
 					}
-				}	
+					remove_hyper(Q_Hyper_head);						//remove all the subjobs of T[i][j] from hyper queue
+					if(Q->front != NULL)		
+						fprintf(fpout,"Dequeued to T[%d][%d] == T[%d][%d]\n\n",\
+						Q->front->job.id,Q->front->job.instance,Q_Hyper_head->job.id,Q_Hyper_head->job.instance);
+				}
+				else if(decision_pt == Q_Hyper_head->job.deadline)
+				{
+					(Q->front->job).remaining_time = (float)((Q->front->job).abs_rem)/alpha;	//seg fault?				
+					move_subjob(&Q,Q_Hyper_head);					
+					preemptions++;
+					if(Q_Hyper_head->next != NULL)
+					{
+						Q_Hyper_head = Q_Hyper_head->next;
+						fprintf(fpout,"New plausible = T[%d][%d]-%f\n",\
+						Q_Hyper_head->job.id,Q_Hyper_head->job.instance,Q_Hyper_head->job.plausible_time);
+					}
+				}
+				else		//rem time--; deadline++; preemption++;
+				{
+					fprintf(fpout,"DEBUG:NEVER?\n");
+					(Q->front->job).remaining_time = (float)((Q->front->job).abs_rem)/alpha;			//seg fault?
+					preemptions++;
+				}
+
 				time = decision_pt;
 				continue;
 			}										
