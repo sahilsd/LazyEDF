@@ -28,6 +28,7 @@ void Calc_Plausible_Time_Hyper()
 	while(temp != Q_Hyper->front)
 	{
 		temp1 = temp->prev;
+		printf("T[%d][%d] deadline %d\n",temp->job.id,temp->job.instance,temp->job.deadline);
 		if(temp1->job.release_time+temp1->job.max_computation_time > temp->job.plausible_time)
 		{
 			fprintf(hyper,"Breaking bad S%dE%d\n",temp->job.id,temp->job.instance);
@@ -63,6 +64,7 @@ void Calc_Plausible_Time_Hyper()
 			}
 			else
 			{
+			fprintf(hyper,"moving T[%d][%d] deadline from %d to %d\n",temp->job.id,temp->job.instance,temp->job.deadline,temp1->job.release_time);
 				(z->job).id = (temp->job).id;
 				(z->job).release_time = (temp->job).release_time;
 				(z->job).max_computation_time = temp->job.max_computation_time;
@@ -294,7 +296,7 @@ void Calc_Urgent_Time_Hyper()
 {
 	node *temp;
 	temp = Q_Hyper->front;
-	fprintf(fp_plau,"T[%d][%d]\t%d >\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.release_time/temp->job.period,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
+	fprintf(fp_plau,"T[%d][%d]\t%d >\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.instance,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
 //	fprintf(fp_plau,"URGE time of T[%d] is %f Rls time is %d ",(temp->job).id,(temp->job).start_time,(temp->job).release_time);
 //	fprintf(fp_plau,"Plau T[%d] is %f\n",(temp->job).id,(temp->job).plausible_time);
 	temp = Q_Hyper->front->next;
@@ -304,7 +306,7 @@ void Calc_Urgent_Time_Hyper()
 	{
 		temp1 = temp->prev;
 		(temp->job).start_time = MAX(((temp1->job).start_time + (temp1->job).max_computation_time),(temp->job).start_time);
-		fprintf(fp_plau,"T[%d][%d]\t%d >\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.release_time/temp->job.period,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
+		fprintf(fp_plau,"T[%d][%d]\t%d >\t%f\t%d\t(%f)\n",(temp->job).id,temp->job.instance,(temp->job).release_time,(temp->job).plausible_time,(temp->job).deadline,temp->job.max_computation_time);
 
 //	fprintf(fp_plau,"URGE time of T[%d] is %f Rls time is %d ",(temp->job).id,(temp->job).start_time,(temp->job).release_time);
 //		fprintf(fp_plau,"Plau T[%d] is %f\n",(temp->job).id,(temp->job).plausible_time);
