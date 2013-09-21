@@ -146,7 +146,9 @@ float calc_decision_pt(int next_deadline)
 {
 	float min;
 	int i = 1;
-	float finish_time = (Q->front->job).remaining_time/alpha + time;
+	float finish_time; 
+	if(Q->front != NULL) finish_time= (Q->front->job).remaining_time/alpha + time;
+	else finish_time = hyperperiod;
 	no_of_decn_pts++;
 	min_arrival = find_min_arrival();
 	if(Q->front != NULL)						//CPU <> IDLE

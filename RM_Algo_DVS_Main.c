@@ -136,6 +136,7 @@ int main(int argc, char *argv[])
 	printf("xyz\n");
 	Calc_Urgent_Time_Hyper();
 	Calc_Slack();
+	Print_Queue_Hyper();
 	Schedule();	
 	
 	fprintf(fp_param,"\n\nThe parameters of the algorithm are :\n\n\n");

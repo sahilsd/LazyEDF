@@ -15,240 +15,101 @@ float next_highest_plausible(node *x)
 	return x->next->job.plausible_time;
 }
 
+int find_min_period(node *x)
+{
+	int i=0,min=t[0].period;
+	for(i=0;i<no_of_tasks;i++)
+		if(t[i].period < min)
+			min=t[i].period;
+	fprintf(hyper,"Min period %d\n",min);
+	if(x!=NULL)
+		if(x->job.period == min) min=(int)hyperperiod;
+	
+	return min;	
+}
+int need_break(node *tsk)
+{
+	int min_period = find_min_period(tsk);
+	if(tsk->job.max_computation_time >= (float)min_period)
+		return 1;
+	
+	return 0;
+}
+
+float find_granular_wcet()
+{
+	int i=0;
+	for(i=0;i<no_of_tasks;i++)
+		if(t[i].period == find_min_period(NULL)) break;
+	fprintf(hyper,"Granular wcet = %f\n",(float)t[i].period - t[i].max_computation_time);
+	return (float)t[i].period - t[i].max_computation_time;
+}
 void Calc_Plausible_Time_Hyper()
 {
 	node *temp;
 	node *temp1;
 	node *z;
+	node *br;
 	prev_min = NULL;
 	temp = Q_Hyper->rear;
 	float min_plausible_time;
+	float granular_wcet;
 	float rem_wcet=0;
+	float wcet;
 	fflush(stdout);
 	while(temp != Q_Hyper->front)
 	{
 		temp1 = temp->prev;
 		printf("T[%d][%d] deadline %d\n",temp->job.id,temp->job.instance,temp->job.deadline);
-		if(temp1->job.release_time+temp1->job.max_computation_time > temp->job.plausible_time)
-		{
-			fprintf(hyper,"Breaking bad S%dE%d\n",temp->job.id,temp->job.instance);
-			/****Breaking Bad****/
-			z = create_node(z);
-			
-			/*
-			 * IF small task finish time > large task finish time, shift large task instead of breaking
-			 */
-			if(temp1->job.release_time + temp1->job.max_computation_time < temp->job.plausible_time + temp->job.max_computation_time)
+		if(need_break(temp))
+		{							//breaks i into granular wcets and enqueue(replace) consecutively
+			granular_wcet = find_granular_wcet();
+			temp->job.plausible_time = temp->job.deadline-granular_wcet;
+			wcet = temp->job.max_computation_time;
+			rem_wcet = temp->job.max_computation_time - granular_wcet;
+			temp->job.max_computation_time = granular_wcet;
+			while(rem_wcet > granular_wcet)
 			{
+				z = create_node(z);
 				(z->job).id = (temp->job).id;
 				(z->job).release_time = (temp->job).release_time;
-				(z->job).max_computation_time = temp1->job.release_time+temp1->job.max_computation_time - temp->job.plausible_time;
-				(z->job).deadline = (temp1->job).release_time;
-				(z->job).period = (temp->job).period;
-				//(z->job).remaining_time = (float)rem_wcet;
-				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
-				//job[i][instance].ui = (z->job).ui;
-				//(z->job).abs_rem = (temp1->job).abs_rem;
-				(z->job).plausible_time = (float)((temp1->job).release_time - (z->job).max_computation_time);
-				(z->job).start_time = (float)temp->job.release_time;
+				(z->job).max_computation_time = granular_wcet;				//**
+				(z->job).deadline = temp->job.deadline - wcet + rem_wcet;	//**
+				(z->job).period = (temp1->job).period;
+				(z->job).plausible_time = z->job.deadline - granular_wcet;	//**
+				(z->job).start_time = (float)temp1->job.release_time;
 				(z->job).slack = 0;
 				(z->job).execution_time = 0;
 				z->job.instance = temp->job.instance;
-				
 				Enqueue_Hyper(z);
-				
-				temp->job.plausible_time = temp1->job.release_time + temp1->job.max_computation_time;
-				temp->job.max_computation_time -= z->job.max_computation_time;
-				/****Broken*****/
-				temp1->job.plausible_time=temp1->job.release_time;
+
+				rem_wcet -= granular_wcet;
 			}
-			else
+			if(rem_wcet > 0)
 			{
-			fprintf(hyper,"moving T[%d][%d] deadline from %d to %d\n",temp->job.id,temp->job.instance,temp->job.deadline,temp1->job.release_time);
+				z = create_node(z);
 				(z->job).id = (temp->job).id;
 				(z->job).release_time = (temp->job).release_time;
-				(z->job).max_computation_time = temp->job.max_computation_time;
-				(z->job).deadline = (temp1->job).release_time;
-				(z->job).period = (temp->job).period;
-				//(z->job).remaining_time = (float)rem_wcet;
-				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
-				//job[i][instance].ui = (z->job).ui;
-				//(z->job).abs_rem = (temp1->job).abs_rem;
-				z->job.plausible_time = z->job.deadline - z->job.max_computation_time;
-				//OR 				(z->job).plausible_time = (float)((temp->job).plausible_time);
-				(z->job).start_time = (float)temp->job.release_time;
+				(z->job).max_computation_time = rem_wcet;				//*****
+				(z->job).deadline = temp->job.deadline - wcet + rem_wcet;	//**
+				(z->job).period = (temp1->job).period;
+				(z->job).plausible_time = z->job.deadline - rem_wcet;	//**
+				(z->job).start_time = (float)temp1->job.release_time;
 				(z->job).slack = 0;
 				(z->job).execution_time = 0;
 				z->job.instance = temp->job.instance;
-				
 				Enqueue_Hyper(z);
-				z = temp;
-				temp->prev->next = temp->next;
-				temp->next->prev = temp->prev;				
-				temp = temp->prev;
-				
-				z->next = NULL;
-				z->prev = NULL;
-				free(z);
-				continue;
-				
-				/****Shifted*****/
-				temp1->job.plausible_time=temp1->job.release_time;
 			}
 		}
 		else
+		{
 			temp1->job.plausible_time = MIN(temp1->job.plausible_time , temp->job.plausible_time - temp1->job.max_computation_time);		
-		
-		temp = temp->prev;
-	}
-}
-		
-void Calc_Plausible_Time_Hyper_prev()
-{
-	node *temp;
-	node *temp1;
-	temp = Q_Hyper->rear;
-	float min_plausible_time;
-	//printf("IN FUNC %f\n",(temp->job).plausible_time);
-	fflush(stdout);
-	while(temp != Q_Hyper->front)
-	{
-		temp1 = temp->prev;
-		min_plausible_time = (temp->job).plausible_time;
-		
-		(temp1->job).plausible_time = MIN((min_plausible_time - (temp1->job).max_computation_time),(temp1->job).plausible_time);
-		temp = temp->prev;
-	}
-}
-void Calc_Plausible_Time_Hyper_OBSOLETE()
-{
-	node *temp;
-	node *temp1;
-	node *z;
-	prev_min = NULL;
-	temp = Q_Hyper->rear;
-	float min_plausible_time;
-	float rem_wcet=0;
-	//printf("IN FUNC %f\n",(temp->job).plausible_time);
-	fflush(stdout);
-	while(temp != Q_Hyper->front->next)
-	{
-		printf("plau T[%d][%d](%d)",(temp1->job).id,(temp1->job).release_time/(temp1->job).period,temp1->job.deadline);
-		temp1 = temp->prev;
-		min_plausible_time = (temp->job).plausible_time;
-		fprintf(hyper,"Updated @#$ plau T[%d][%d] from %f to %f (dd-%d)\n",(temp1->job).id,(temp1->job).release_time/(temp1->job).period, (temp1->job).plausible_time,MIN((min_plausible_time - (temp1->job).max_computation_time),(temp1->job).plausible_time),(temp1->job).deadline);
-		(temp1->job).plausible_time = MIN((min_plausible_time - (temp1->job).max_computation_time),(temp1->job).plausible_time);
-		//fprintf(hyper,"check update : %d+%d || %f\n",(temp1->prev->job).release_time , temp1->prev->job.max_computation_time,(temp1->job).plausible_time);
-		
-		//BUG: we need to find task with min release time > plausible time (not just the previous task)
-		min = temp1;
-//		while(temp->prev->job.release_time + temp->prev->job.max_computation_time >= temp1->job.release_time + temp1->job.max_computation_time)
-		while(1)
-		{
-			if(temp1 == NULL) { temp1 = temp->prev; break; }
-			if(temp->prev->job.plausible_time < temp1->job.release_time+temp1->job.max_computation_time)
-			{
-				prev_min = min;			
-				min = temp1;
-				break;
-			}
-			temp1 = temp1->prev;
+			//update the deadline also... deadline(i) = plausible(i+1)!!
+			temp1->job.deadline = temp->job.plausible_time;
 		}
-
-		fprintf(hyper,"***Found prev min(%d) rls T[%d][%d] = %f(%d)\n",min!=temp1,min->job.id, min->job.instance, min->job.plausible_time, min->job.deadline);
-		temp1 = temp->prev;
-		
-//BUG same min found twice... to avoid this, move min towards left when same
-//		while((temp1->job).plausible_time < (temp1->prev->job).release_time + temp1->prev->job.max_computation_time)
-		if((temp1->job).plausible_time < min->job.release_time + min->job.max_computation_time && temp1 != min)
-		{
-			fprintf(hyper,"Changing plau T[%d][%d] from %f to %d\n\n",(temp1->job).id,(temp1->job).release_time/(temp1->job).period, (temp1->job).plausible_time, (min->job).deadline);
-		
-			(temp1->job).plausible_time = (min->job).deadline;
-			if((temp1->job).plausible_time == (temp1->next->job).plausible_time) fprintf(hyper,"______________________\n");
-		/*	if(temp1->job.deadline > min->job.plausible_time)
-			{
-				fprintf(hyper,"Gandla ka\n");
-				//fprintf(fp_plau,"Gandla ki\n");
-			}
-		*/
-			
-			rem_wcet = ((temp1->job).max_computation_time) - (temp1->job.deadline - (temp1->job).plausible_time);
-			temp1->job.max_computation_time -= rem_wcet;
-//we get rem_wcet<0 whenever the task is too small to break (we have to move the entire task i.e. dequeue-> change deadline -> enqueu)
-
-			if(rem_wcet < 0 || (temp1->job).plausible_time == (temp1->next->job).plausible_time)
-			{
-				fprintf(hyper,"can't be broken... so moving (%d)\n",(temp1->job).plausible_time == (temp1->next->job).plausible_time);
-				rem_wcet += temp1->job.max_computation_time;
-				temp1->prev->next = temp1->next;
-				temp1->next->prev = temp1->prev;
-				
-				fprintf(hyper,"rem_wcet@@ T[%d][%d] %f = %f - (%f-%f)\n",(temp1->job).id,(temp1->job).release_time/(temp1->job).period,rem_wcet,((temp1->job).max_computation_time) , next_highest_plausible(temp1), (temp1->job).plausible_time);
-
-				z = create_node(z);
-				(z->job).id = (temp1->job).id;
-				(z->job).release_time = (temp1->job).release_time;
-				(z->job).max_computation_time = rem_wcet;
-				(z->job).deadline = (min->job).plausible_time;
-				(z->job).period = (temp1->job).period;
-				//(z->job).remaining_time = (float)rem_wcet;
-				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
-				//job[i][instance].ui = (z->job).ui;
-				//(z->job).abs_rem = (temp1->job).abs_rem;
-				(z->job).plausible_time = (float)((min->job).plausible_time - rem_wcet);
-				(z->job).start_time = (float)temp1->job.release_time;
-				(z->job).slack = 0;
-				(z->job).execution_time = 0;
-				z->job.instance = temp1->job.instance;
-				fprintf(hyper,"moving T[%d][%d]** (r-%d, dd-%d, plau-%f)\n",z->job.id,z->job.release_time/z->job.period,z->job.release_time,z->job.deadline,z->job.plausible_time);
-				Enqueue_Hyper(z);
-
-			}
-			else
-			{
-				fprintf(hyper,"rem_wcet T[%d][%d] %f = %f - (%f-%f)\n",(temp1->job).id,(temp1->job).release_time/(temp1->job).period,rem_wcet,((temp1->job).max_computation_time) , next_highest_plausible(temp1), (temp1->job).plausible_time);
-
-				z = create_node(z);
-				//here change release time to avoid mispalced enqueue!! use job->instance 
-				(z->job).id = (temp1->job).id;
-				(z->job).release_time = (temp1->job).release_time;
-				(z->job).max_computation_time = rem_wcet;
-				(z->job).deadline = (min->job).plausible_time;
-				(z->job).period = (temp1->job).period;
-				//(z->job).remaining_time = (float)rem_wcet;
-				//(z->job).ui = (float)(z->job).max_computation_time / t[i].period;
-				//job[i][instance].ui = (z->job).ui;
-				//(z->job).abs_rem = rem_wcet;
-				(z->job).plausible_time = (float)((min->job).plausible_time - rem_wcet);
-				(z->job).start_time = (float)temp1->job.release_time;
-				(z->job).slack = 0;
-				(z->job).execution_time = 0;
-				z->job.instance = temp1->job.instance;
-				fprintf(hyper,"Enqueued T[%d][%d]** (r-%d, dd-%d, plau-%f, abs rem-%f)\n",z->job.id,z->job.release_time/z->job.period,z->job.release_time,z->job.deadline,z->job.plausible_time,z->job.abs_rem);
-				Enqueue_Hyper(z);
-			}
-		//	temp1 = temp1->prev;
-		}			
-
 		temp = temp->prev;
-		printf("(%d) ",temp->job.deadline);
-printf("done\n");
 	}
-	
-//	printf("XXX%d\n",temp->job.id);
-	temp->job.plausible_time > (temp->next->job.plausible_time-temp->job.max_computation_time) ? temp->job.plausible_time = temp->next->job.plausible_time-temp->job.max_computation_time : 1;
-	fprintf(hyper,"2nd last job %f<> %f\n",temp->job.plausible_time , (temp->next->job.plausible_time-temp->job.max_computation_time));
-	while(temp->job.plausible_time < temp->prev->job.release_time+temp->prev->job.max_computation_time)
-	{
-		printf("STILL GG\n\n");
-	}
-	temp = temp->prev;
-	temp->job.plausible_time > (temp->next->job.plausible_time-temp->job.max_computation_time) ? temp->job.plausible_time = temp->next->job.plausible_time-temp->job.max_computation_time : 1;
-	fprintf(hyper,"last job %f <> %f\n",temp->job.plausible_time , (temp->next->job.plausible_time-temp->job.max_computation_time));
-
 }
-
 void Enqueue_Hyper(node *z)
 {
 	node *y;
@@ -333,11 +194,13 @@ void Calc_Slack()
 void Print_Queue_Hyper()
 {
 	node *temp;
+	FILE *f1 = fopen("hyper_queue.txt","a+");
 	temp = Q_Hyper->front;
 	while(temp != NULL)
 	{
-		printf("T[] : %d\t%d\t%d\t%f\n",(temp->job).release_time, (temp->job).deadline, (temp->job).period, (temp->job).max_computation_time);
+		fprintf(f1,"T[] : %d\t%d\t%d\t%f\n",(temp->job).release_time, (temp->job).deadline, (temp->job).period, (temp->job).max_computation_time);
 		fflush(stdout);
 		temp = temp->next;
 	}
+	fclose(f1);
 }

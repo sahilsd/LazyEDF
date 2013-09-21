@@ -106,7 +106,7 @@ int Print_Current_Status()
 		temp = temp->next;
 	}
 	fprintf(fpout,"\nsize=%d\n",count);
-	if(count>no_of_tasks) fprintf(fpout,"overflow ur buffer making all ur data suffer\n");
+	if(count>no_of_tasks) exit(1);
 	return 1;
 }
 
